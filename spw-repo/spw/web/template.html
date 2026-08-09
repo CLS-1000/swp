@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Service Plan Writer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75,500;75,700;100,400;100,600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14161A; --surface:#1E2127; --line:#2E333B; --line-lo:#242830;
+  --text:#E9E7E2; --muted:#8D96A3; --amber:#F2A33C; --red:#E5484D;
+  --steel:#C8D2DE; --ok:#7BC47F;
+  --disp:'Archivo',sans-serif; --mono:'IBM Plex Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--disp);font-size:16px;line-height:1.55}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 80px}
+
+/* header */
+header{padding:8px 0 20px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+h1{font-family:var(--disp);font-stretch:75%;font-weight:700;font-size:clamp(26px,6vw,34px);letter-spacing:.01em;text-transform:uppercase;margin-top:4px}
+h1 .dot{color:var(--amber)}
+
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px;margin-bottom:16px}
+.card h2{font-stretch:75%;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+
+label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:10px 0 4px}
+input,textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:4px;color:var(--text);font-family:var(--mono);font-size:15px;padding:10px 12px}
+input:focus,textarea:focus,button:focus{outline:2px solid var(--steel);outline-offset:1px}
+textarea{min-height:74px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+
+.vinline{display:flex;gap:8px}
+.vinline input{flex:1;letter-spacing:.08em;text-transform:uppercase}
+
+button{font-family:var(--disp);font-stretch:75%;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;border:0;border-radius:4px;padding:11px 18px;cursor:pointer}
+.btn-steel{background:var(--steel);color:#14161A}
+.btn-steel:active{transform:translateY(1px)}
+.btn-ghost{background:transparent;color:var(--steel);border:1px solid var(--line)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.btn-main{width:100%;margin-top:16px;padding:14px}
+
+.status{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px;min-height:16px}
+.status.err{color:var(--red)}
+.status.ok{color:var(--ok)}
+
+/* data plate — signature element */
+.plate{border:2px solid var(--steel);border-radius:3px;background:linear-gradient(180deg,#252932,#1C1F26);padding:14px 16px;margin:16px 0 0;position:relative;display:none}
+.plate.show{display:block}
+.plate::before,.plate::after,
+.plate .riv1,.plate .riv2{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#dfe6ee,#5a6472)}
+.plate::before{top:6px;left:6px}.plate::after{top:6px;right:6px}
+.plate .riv1{bottom:6px;left:6px}.plate .riv2{bottom:6px;right:6px}
+.plate-title{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--muted);text-align:center;text-transform:uppercase;margin-bottom:10px}
+.plate table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px}
+.plate td{padding:4px 6px;border-top:1px solid var(--line-lo)}
+.plate td:first-child{color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:.1em;width:38%}
+.plate td:last-child{color:var(--text);text-transform:uppercase}
+
+/* output */
+#out{display:none}
+#out.show{display:block}
+.verify{border:1px solid var(--amber);border-radius:4px;padding:10px 12px;font-family:var(--mono);font-size:12px;color:var(--amber);margin-bottom:16px}
+.sop h3{font-stretch:75%;font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sop h4{font-stretch:75%;font-weight:700;font-size:14px;letter-spacing:.05em;text-transform:uppercase;color:var(--steel);margin:18px 0 8px}
+.sop p{margin:0 0 10px}
+.sop ul,.sop ol{margin:0 0 12px 22px}
+.sop li{margin-bottom:7px}
+.sop strong{color:#fff}
+.sop table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px;margin:0 0 14px;display:block;overflow-x:auto}
+.sop th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left}
+.sop th,.sop td{border:1px solid var(--line);padding:7px 9px;min-width:90px}
+.hazard{margin:14px 0;padding:12px 14px 12px 18px;background:#241E19;border-radius:0 4px 4px 0;border-left:6px solid transparent;
+  border-image:repeating-linear-gradient(135deg,var(--amber) 0 8px,#14161A 8px 16px) 6;font-size:15px}
+.hazard.red{background:#261A1B;border-image:repeating-linear-gradient(135deg,var(--red) 0 8px,#14161A 8px 16px) 6}
+.hazard strong{color:var(--amber)}
+.hazard.red strong{color:var(--red)}
+
+.outbar{display:flex;gap:8px;margin-top:22px}
+.outbar button{flex:1}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+
+/* donor pool */
+.donor h3{font-stretch:75%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}
+.donor table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}
+.donor th,.donor td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.donor th{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tag{display:inline-block;font-size:10px;letter-spacing:.06em;padding:1px 6px;border-radius:3px;border:1px solid var(--line)}
+.tag.edc{color:var(--ok);border-color:var(--ok)}
+.tag.cur{color:var(--steel);border-color:var(--steel)}
+.tag.flag{color:var(--amber);border-color:var(--amber)}
+
+/* print = garage runbook */
+@media print{
+  body{background:#fff;color:#000}
+  .card:not(#outcard):not(#donorcard),header .eyebrow,.outbar,.btn-main,.status{display:none!important}
+  .card{border:none;padding:0}
+  .plate{background:#fff;border-color:#000}
+  .plate td:last-child,.sop strong{color:#000}
+  .sop h3,.sop h4{color:#000}
+  .verify{color:#000;border-color:#000}
+  .hazard{background:#f2f2f2;color:#000}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">EVASTARARCANA / GARAGE TOOLING — V0.3 — PRODUCTION BUILD</div>
+  <h1>Service Plan Writer<span class="dot">.</span></h1>
+</header>
+
+<div class="card">
+  <h2>1 — Vehicle</h2>
+  <label for="vin">VIN (17-char) — auto-decode</label>
+  <div class="vinline">
+    <input id="vin" maxlength="17" autocomplete="off" spellcheck="false" placeholder="JH4KB16669C000000">
+    <button class="btn-ghost" id="decodeBtn">Decode</button>
+  </div>
+  <div class="status" id="vinStatus"></div>
+
+  <div class="row">
+    <div><label for="year">Year</label><input id="year" placeholder="2009"></div>
+    <div><label for="make">Make</label><input id="make" placeholder="Acura"></div>
+    <div><label for="model">Model</label><input id="model" placeholder="RL"></div>
+    <div><label for="trim">Trim / Drivetrain</label><input id="trim" placeholder="SH-AWD"></div>
+  </div>
+  <label for="engine">Engine</label>
+  <input id="engine" placeholder="3.7L J37A4 V6">
+
+  <div class="plate" id="plate">
+    <span class="riv1"></span><span class="riv2"></span>
+    <div class="plate-title">Vehicle Data Plate — NHTSA vPIC</div>
+    <table id="plateBody"></table>
+  </div>
+</div>
+
+<div class="card" id="apikeycard">
+  <h2>API KEY <span style="font-weight:400">(standalone mode only — not needed on claude.ai)</span></h2>
+  <label for="apikey">Anthropic API Key (kept in memory only, never persisted)</label>
+  <input id="apikey" type="password" placeholder="sk-ant-..." autocomplete="off">
+  <div class="status" id="apikeyStatus">If opened from disk, an API key is needed for SOP generation. All offline features work without one.</div>
+</div>
+
+<div class="card">
+  <h2>2 — Repair Job</h2>
+  <label for="job">Job / repair profile</label>
+  <textarea id="job" placeholder="Cooling system replacement: radiator, thermostat, hoses"></textarea>
+  <button class="btn-steel btn-main" id="genBtn">Generate Service Plan</button>
+  <div class="status" id="genStatus"></div>
+</div>
+
+<div class="card" id="donorcard" style="display:none">
+  <h2>3 — Donor Pool <span style="font-weight:400">(offline dataset — EDC-1057 + curated)</span></h2>
+  <div class="donor" id="donorbody"></div>
+</div>
+
+<div class="card" id="outcard" style="display:none">
+  <div id="out">
+    <div class="verify">⚠ UNVERIFIED SPECS — AI-generated values. Verify all torque figures against the factory service manual before final tightening.</div>
+    <div class="sop" id="sop"></div>
+    <div class="outbar">
+      <button class="btn-ghost" id="copyBtn">Copy Plan</button>
+      <button class="btn-ghost" onclick="window.print()">Print Runbook</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+
+/* ---------- vPIC decode ---------- */
+$('decodeBtn').addEventListener('click', async ()=>{
+  const vin=$('vin').value.trim().toUpperCase();
+  const st=$('vinStatus'); st.className='status';
+  if(vin.length!==17){st.textContent='VIN must be 17 characters.';st.className='status err';return}
+  st.textContent='Decoding via NHTSA vPIC…';
+  $('decodeBtn').disabled=true;
+  try{
+    const r=await fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/${vin}?format=json`);
+    if(!r.ok) throw new Error('vPIC HTTP '+r.status);
+    const d=(await r.json()).Results?.[0]||{};
+    if(!d.Make&&!d.Model) throw new Error('No decode returned — check VIN.');
+    $('year').value=d.ModelYear||'';
+    $('make').value=d.Make?cap(d.Make):'';
+    $('model').value=d.Model||'';
+    $('trim').value=[d.Trim,d.DriveType].filter(Boolean).join(' · ');
+    $('engine').value=[d.DisplacementL?d.DisplacementL+'L':'',d.EngineModel,d.EngineCylinders?d.EngineCylinders+'-cyl':'',d.FuelTypePrimary].filter(Boolean).join(' ');
+    plate([
+      ['Year',d.ModelYear],['Make',d.Make],['Model',d.Model],['Trim',d.Trim],
+      ['Body',d.BodyClass],['Engine',[d.DisplacementL&&d.DisplacementL+'L',d.EngineModel].filter(Boolean).join(' ')],
+      ['Cylinders',d.EngineCylinders],['Drive',d.DriveType],['Fuel',d.FuelTypePrimary],['Plant',[d.PlantCity,d.PlantCountry].filter(Boolean).join(', ')]
+    ]);
+    st.textContent='Decode complete. Fields populated — correct anything wrong before generating.';
+    findDonors();
+    st.className='status ok';
+  }catch(e){st.textContent='Decode failed: '+e.message;st.className='status err'}
+  $('decodeBtn').disabled=false;
+});
+function cap(s){return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}
+function plate(rows){
+  $('plateBody').innerHTML=rows.filter(r=>r[1]).map(r=>`<tr><td>${r[0]}</td><td>${esc(String(r[1]))}</td></tr>`).join('');
+  $('plate').classList.add('show');
+}
+
+/* ---------- SOP generation ---------- */
+$('genBtn').addEventListener('click', async ()=>{
+  const vehicle=[$('year').value,$('make').value,$('model').value,$('trim').value].filter(Boolean).join(' ');
+  const engine=$('engine').value.trim();
+  const job=$('job').value.trim();
+  const st=$('genStatus'); st.className='status';
+  if(!vehicle){st.textContent='Vehicle required — decode a VIN or fill fields manually.';st.className='status err';return}
+  if(!job){st.textContent='Repair job required.';st.className='status err';return}
+  st.textContent='Generating SOP…';
+  $('genBtn').disabled=true;
+
+  const prompt=`You are an expert, highly meticulous Master Automotive Technician specializing in home-garage DIY repair diagnostics and execution. Your goal is to provide a comprehensive, highly scannable, and safety-focused Standard Operating Procedure (SOP) for the vehicle and repair job specified below.
+
+Structure your response exactly into the following clear sections, using Markdown:
+
+### 1. SPECIFICATIONS & CAPACITIES
+Provide a clean Markdown table listing all critical fluid capacities, precise torque specs (in ft-lbs and in-lbs), and part numbers/types if applicable to this specific job.
+
+### 2. REQUIRED TOOLKIT & SUPPLIES
+List all required tools split into two sub-bullets: "Standard Tools" and "Specialty Tools/Consumables".
+
+### 3. THE S.O.P. (STEP-BY-STEP REPAIR)
+Provide a chronological, step-by-step execution plan using a clean numbered sequence.
+- Group steps into logical phases using #### subheadings (e.g., Phase 1: Prep & Drain).
+- Bold key actions, hardware sizes, and components.
+- Highlight safety warnings using blockquotes starting with "> CAUTION:" for danger or "> WARNING:" for high-risk failure points.
+
+### 4. COMMON PITFALLS & PEER TIPS
+Detail 3-5 specific mistakes, shortcuts to avoid, or "while you are in there" part replacements specific to this platform/job.
+
+Respond with ONLY the SOP content. No preamble, no closing remarks.
+
+---
+VEHICLE: ${vehicle}${engine?' — '+engine:''}
+JOB/REPAIR PROFILE: ${job}`;
+
+  try{
+    const apiKey=$('apikey').value.trim();
+    const headers={'Content-Type':'application/json'};
+    if(apiKey){headers['x-api-key']=apiKey;headers['anthropic-version']='2023-06-01';}
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',headers,
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:4096,
+        messages:[{role:'user',content:prompt}]})
+    });
+    const data=await r.json();
+    if(data.error) throw new Error(data.error.message||'API error');
+    const md=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('\n');
+    if(!md) throw new Error('Empty response.');
+    $('sop').innerHTML=render(md);
+    $('outcard').style.display='block';$('out').classList.add('show');
+    st.textContent='Plan generated.';st.className='status ok';
+    $('outcard').scrollIntoView({behavior:'smooth'});
+  }catch(e){st.textContent='Generation failed: '+e.message;st.className='status err'}
+  $('genBtn').disabled=false;
+});
+
+/* ---------- minimal markdown renderer ---------- */
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function inline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`(.+?)`/g,'<code>$1</code>')}
+function render(md){
+  const lines=md.split('\n');let html='',i=0;
+  while(i<lines.length){
+    const L=lines[i];
+    if(/^\s*$/.test(L)){i++;continue}
+    if(/^####\s/.test(L)){html+=`<h4>${inline(L.replace(/^####\s*/,''))}</h4>`;i++;continue}
+    if(/^###\s/.test(L)){html+=`<h3>${inline(L.replace(/^###\s*/,''))}</h3>`;i++;continue}
+    if(/^\s*\|/.test(L)){ // table
+      const rows=[];while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i]);i++}
+      const cells=r=>r.trim().replace(/^\||\|$/g,'').split('|').map(c=>inline(c.trim()));
+      let t='<table>';
+      rows.forEach((r,idx)=>{
+        if(/^\s*\|[\s:|-]+\|\s*$/.test(r))return;
+        const tag=idx===0?'th':'td';
+        t+='<tr>'+cells(r).map(c=>`<${tag}>${c}</${tag}>`).join('')+'</tr>';
+      });
+      html+=t+'</table>';continue}
+    if(/^>\s*/.test(L)){
+      const txt=L.replace(/^>\s*/,'');
+      const red=/^CAUTION/i.test(txt);
+      html+=`<div class="hazard${red?' red':''}">${inline(txt)}</div>`;i++;continue}
+    if(/^\s*\d+\.\s/.test(L)){
+      html+='<ol>';while(i<lines.length&&/^\s*\d+\.\s/.test(lines[i])){html+=`<li>${inline(lines[i].replace(/^\s*\d+\.\s*/,''))}</li>`;i++}
+      html+='</ol>';continue}
+    if(/^\s*[-*●]\s/.test(L)){
+      html+='<ul>';while(i<lines.length&&/^\s*[-*●]\s/.test(lines[i])){html+=`<li>${inline(lines[i].replace(/^\s*[-*●]\s*/,''))}</li>`;i++}
+      html+='</ul>';continue}
+    html+=`<p>${inline(L)}</p>`;i++;
+  }
+  return html;
+}
+
+
+/* ---------- offline donor dataset ---------- */
+const DS = __DATA__;
+const byVid = {}, byCid = {};
+DS.m.forEach(e=>{ (byVid[e[0]]=byVid[e[0]]||[]).push(e); (byCid[e[1]]=byCid[e[1]]||[]).push(e); });
+const VIDX = {}; DS.v.forEach(v=>VIDX[v[0]]=v);
+
+function findDonors(){
+  const make=$('make').value.trim().toLowerCase();
+  const model=$('model').value.trim().toLowerCase();
+  const year=parseInt($('year').value,10);
+  if(!make||!model||!year){$('donorcard').style.display='none';return}
+  const badge=(model.match(/\d{3}/)||[])[0];
+  const series=badge?badge[0]:(model.match(/^(\d)/)||[])[1];
+  const mm = m => {
+    m=m.toLowerCase();
+    if(m.includes(model)||model.includes(m)) return true;
+    if(badge && m.split(/[ ,\/]+/).some(t=>t.startsWith(badge))) return true;
+    if(series && m===series+'-series') return true;
+    return false;
+  };
+  const subj = DS.v.filter(v=>v[1].toLowerCase()===make && v[7]<=year && v[8]>=year && mm(v[2]));
+  if(!subj.length){$('donorcard').style.display='block';
+    $('donorbody').innerHTML='<p style="font-family:var(--mono);font-size:12px;color:var(--muted)">No dataset match. EDC coverage ends 2012 — post-2012 vehicles need manual curation.</p>';return}
+  const groups={structural:new Map(),engine_family:new Map()};
+  const subjIds=new Set(subj.map(v=>v[0]));
+  subj.forEach(v=>(byVid[v[0]]||[]).forEach(mem=>{
+    const [_,cid,scope,conf,note]=mem, ctype=(DS.c[cid]||[])[0];
+    (byCid[cid]||[]).forEach(pm=>{
+      const pv=VIDX[pm[0]]; if(!pv||subjIds.has(pv[0]))return;
+      const key=pv[1]+'|'+pv[2]+'|'+(pm[4]||'');
+      const g=groups[ctype]; if(g&&!g.has(key)) g.set(key,{v:pv,conf:pm[3],note:pm[4],scope:pm[2]});
+    });
+  }));
+  const tag=c=>c==='edc'?'<span class="tag edc">EDC</span>':c==='edc-flagged'?'<span class="tag flag">EDC ⚠ FLAGGED</span>':'<span class="tag cur">CURATED</span>';
+  const tbl=(title,map)=>{
+    if(!map.size)return '';
+    let t=`<h3>${title}</h3><table><tr><th>Make</th><th>Model</th><th>Years</th><th>Confidence</th><th>Qualifier</th></tr>`;
+    [...map.values()].sort((a,b)=>(a.v[1]+a.v[2]).localeCompare(b.v[1]+b.v[2])).forEach(d=>{
+      t+=`<tr><td>${esc(d.v[1])}</td><td>${esc(d.v[2])}</td><td>${d.v[7]}–${d.v[8]}</td><td>${tag(d.conf)}</td><td>${esc(d.note||'—')}</td></tr>`});
+    return t+'</table>';
+  };
+  $('donorbody').innerHTML =
+    tbl('Structural siblings (body / chassis / suspension)',groups.structural) +
+    tbl('Engine family (engine-loop accessories)',groups.engine_family) ||
+    '<p style="font-family:var(--mono);font-size:12px;color:var(--muted)">Vehicle found, no cluster links.</p>';
+  $('donorcard').style.display='block';
+}
+['year','make','model'].forEach(id=>$(id).addEventListener('change',findDonors));
+
+/* ---------- copy ---------- */
+$('copyBtn').addEventListener('click',()=>{
+  navigator.clipboard.writeText($('sop').innerText).then(()=>{
+    $('copyBtn').textContent='Copied ✓';setTimeout(()=>$('copyBtn').textContent='Copy Plan',1500);
+  });
+});
+</script>
+</body>
+</html>
