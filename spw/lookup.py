@@ -53,14 +53,14 @@ def donor_pool(make: str, model: str, year: int, db_path: str | Path = DEFAULT_D
             )
         )
         matched = [row for row in candidates if model_matches(model, row["model"])]
-        matched_ids = {row["id"] for row in matched}
-        cluster_ids = {
+        matched_ids = [row["id"] for row in matched]
+        cluster_ids = sorted({
             row[0]
             for row in conn.execute(
                 f"SELECT DISTINCT cluster_id FROM membership WHERE vehicle_id IN ({','.join('?' for _ in matched_ids)})",
                 tuple(matched_ids),
             )
-        } if matched_ids else set()
+        }) if matched_ids else []
         result: dict[str, list[dict[str, Any]]] = {"structural": [], "engine_family": []}
         if not cluster_ids:
             return {"input": {"make": make, "model": model, "year": year}, **result}

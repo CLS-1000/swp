@@ -8,6 +8,7 @@ from spw.validate import validate_database
 def test_parse_integrity_and_flagged_baseline(tmp_path: Path) -> None:
     db_path = tmp_path / "clone_clusters.db"
     report = parse_pdf(tmp_path / "missing.pdf", db_path)
+    assert report["source_available"] is False
     assert report["skipped_ratio"] < 0.01
     assert report["unique_vehicles"] >= 1800
     assert report["structural_clusters"] == 973

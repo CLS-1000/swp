@@ -65,7 +65,7 @@ def iter_synthetic_rows() -> list[SeedVehicle]:
         style = "SUV" if index % 5 == 0 else "Sedan"
         label = f"Synthetic structural cluster {cluster_id}"
         make_a = f"SeedMake{index:03d}"
-        make_b = f"SeedMate{index:03d}"
+        make_b = f"SeedMakePeer{index:03d}"
         model_a = f"Series{index:03d}A"
         model_b = f"Series{index:03d}B"
         if flagged:

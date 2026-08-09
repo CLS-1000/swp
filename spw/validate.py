@@ -85,7 +85,9 @@ def validate_database(db_path: str | Path = DEFAULT_DB_PATH) -> dict[str, Any]:
             WHERE scope = 'structural'
               AND confidence = 'edc-flagged'
               AND cluster_id IN (
-                  SELECT cluster_id FROM clusters WHERE type = 'structural' AND source = 'EDC-1057'
+                  SELECT DISTINCT cluster_id
+                  FROM verdicts
+                  WHERE method = 'consistency-check' AND result = 'flag'
               )
             """
         )

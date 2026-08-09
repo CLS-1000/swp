@@ -1,4 +1,4 @@
-# swp
+# spw
 
 Service Plan Writer (SPW) is a local-first service plan generator for DIY mechanics.
 It resolves a vehicle, looks up deterministic donor pools from SQLite, and produces a

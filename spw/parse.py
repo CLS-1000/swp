@@ -73,6 +73,7 @@ def parse_pdf(source_path: str | Path, db_path: str | Path = DEFAULT_DB_PATH) ->
     db_file = Path(db_path)
     db_file.parent.mkdir(parents=True, exist_ok=True)
     rows = iter_edc_rows()
+    inserted_vehicle_count = 0
     with sqlite3.connect(db_file) as conn:
         ensure_schema(conn)
         _remove_edc_rows(conn)
@@ -103,18 +104,21 @@ def parse_pdf(source_path: str | Path, db_path: str | Path = DEFAULT_DB_PATH) ->
                 ),
             )
             vehicle_id = int(cursor.lastrowid)
+            inserted_vehicle_count += 1
             conn.execute(
                 "INSERT INTO membership(vehicle_id, cluster_id, scope, confidence, note) VALUES (?, ?, 'structural', 'edc', '')",
                 (vehicle_id, row.cluster_id),
             )
         conn.commit()
+    raw_rows = PARSE_STATS["raw_rows"]
+    skipped_rows = PARSE_STATS["skipped_rows"]
     return {
         "source_path": str(source),
         "source_available": source.exists(),
-        "raw_rows": PARSE_STATS["raw_rows"],
-        "skipped_rows": PARSE_STATS["skipped_rows"],
-        "skipped_ratio": PARSE_STATS["skipped_rows"] / PARSE_STATS["raw_rows"],
-        "unique_vehicles": len(rows),
+        "raw_rows": raw_rows,
+        "skipped_rows": skipped_rows,
+        "skipped_ratio": skipped_rows / raw_rows if raw_rows else 0.0,
+        "unique_vehicles": inserted_vehicle_count,
         "structural_clusters": len(inserted_clusters),
     }
 
