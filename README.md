@@ -15,7 +15,7 @@ open dist/spw.html
 ## Commands
 
 ```bash
-spw parse assets/EDC-1057.pdf
+spw parse assets/EDC-1057.pdf  # optional; falls back to bundled seed dataset if missing
 spw validate
 spw lookup "2010 Chevrolet Tahoe"
 spw decode WBANU53598CT10444
