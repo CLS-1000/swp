@@ -1,0 +1,246 @@
+cluster_id,make,model_like,year_from,year_to,note
+LS-GEN4,Chevrolet,Silverado%,1999,2013,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
+LS-GEN4,Chevrolet,Tahoe,2000,2012,4.8 / 5.3 / 6.2 V8
+LS-GEN4,Chevrolet,Suburban,2000,2012,5.3 / 6.0 V8 — 2500 is 6.0
+LS-GEN4,Chevrolet,Avalanche,2002,2012,5.3 / 6.0 V8
+LS-GEN4,Chevrolet,Express,2003,2012,4.8 / 5.3 / 6.0 V8
+LS-GEN4,Chevrolet,2500HD%,2001,2012,6.0 L96 gas V8 only
+LS-GEN4,Chevrolet,Corvette,1997,2012,LS1 / LS2 / LS3 — dry-sump variants differ
+LS-GEN4,Chevrolet,Camaro,2010,2012,6.2 L99 / LS3
+LS-GEN4,Chevrolet,SSR,2004,2006,5.3 / 6.0 V8
+LS-GEN4,Chevrolet,Impala%,2006,2009,SS 5.3 LS4 transverse — accessory drive differs
+LS-GEN4,Chevrolet,Trailblazer%,2006,2009,SS 6.0 LS2 only — 4.2 I6 excluded
+LS-GEN4,GMC,Sierra%,1999,2013,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
+LS-GEN4,GMC,Yukon,2000,2012,4.8 / 5.3 / 6.2 V8
+LS-GEN4,GMC,Yukon XL,2000,2012,5.3 / 6.0 V8
+LS-GEN4,GMC,Savana,2003,2012,4.8 / 5.3 / 6.0 V8
+LS-GEN4,GMC,2500HD%,2001,2012,6.0 L96 gas V8 only
+LS-GEN4,GMC,Envoy%,2006,2009,Denali 5.3 only — 4.2 I6 excluded
+LS-GEN4,Cadillac,Escalade%,2002,2012,5.3 / 6.0 / 6.2 V8
+LS-GEN4,Pontiac,GTO,2004,2006,5.7 LS1 / 6.0 LS2
+LS-GEN4,Pontiac,G8,2008,2009,GT 6.0 L76 — V6 excluded
+LS-GEN4,Hummer,Hummer H2,2003,2009,6.0 / 6.2 V8
+LS-GEN4,Hummer,Hummer H3,2008,2009,Alpha 5.3 only — 3.7 I5 excluded
+LS-GEN4,Buick,Rainier,2004,2007,5.3 V8 option only
+DMAX-66,Chevrolet,2500HD%,2001,2012,6.6 Duramax diesel only
+DMAX-66,GMC,2500HD%,2001,2012,6.6 Duramax diesel only
+HFV6-36,Chevrolet,Traverse,2009,2012,3.6 LLT / LFX V6
+HFV6-36,Chevrolet,Equinox,2010,2012,3.6 LFX V6 — 2.4 4-cyl excluded
+HFV6-36,Chevrolet,Camaro,2010,2012,3.6 LLT / LFX V6 — V8 excluded
+HFV6-36,Chevrolet,Malibu,2008,2012,3.6 LY7 / LFX V6 — 2.4 excluded
+HFV6-36,Chevrolet,Impala%,2012,2012,3.6 LFX V6
+HFV6-36,GMC,Acadia,2007,2012,3.6 LLT / LFX V6
+HFV6-36,GMC,Terrain,2010,2012,3.6 LFX V6 — 2.4 excluded
+HFV6-36,Buick,Enclave,2008,2012,3.6 LLT / LFX V6
+HFV6-36,Buick,LaCrosse,2010,2012,3.6 LFX V6 — 2.4 excluded
+HFV6-36,Cadillac,CTS,2008,2012,3.6 LLT / LFX V6
+HFV6-36,Cadillac,SRX,2010,2012,3.6 LFX V6
+HFV6-36,Cadillac,STS,2005,2011,3.6 LY7 V6
+HFV6-36,Saturn,Outlook,2007,2010,3.6 LLT V6
+HFV6-36,Saturn,Aura,2007,2009,3.6 LY7 V6 option
+HFV6-36,Saturn,Vue,2008,2010,3.6 LY7 V6 option
+ECOTEC-24,Chevrolet,Equinox,2010,2012,2.4 LAF / LEA — 3.6 V6 excluded
+ECOTEC-24,GMC,Terrain,2010,2012,2.4 LAF / LEA — 3.6 V6 excluded
+ECOTEC-24,Chevrolet,Malibu,2008,2012,2.4 LAF / LE5 — V6 excluded
+ECOTEC-24,Buick,LaCrosse,2010,2012,2.4 LAF — V6 excluded
+ECOTEC-24,Buick,Regal,2011,2012,2.4 LAF — 2.0 turbo excluded
+ECOTEC-24,Buick,Verano,2012,2012,2.4 LAF — 2.0 turbo excluded
+MOD-46,Ford,F150%,1997,2012,4.6 / 5.4 Triton — 3-valve heads from 2004
+MOD-46,Ford,Expedition,1997,2012,4.6 / 5.4 Triton
+MOD-46,Ford,Crown Victoria,1998,2011,4.6 2-valve
+MOD-46,Ford,Mustang,1996,2010,GT 4.6 2V/3V — V6 excluded
+MOD-46,Ford,Explorer,2002,2010,4.6 V8 option only
+MOD-46,Ford,Econoline%,1997,2012,4.6 / 5.4 Triton
+MOD-46,Ford,Super Duty%,1999,2010,5.4 Triton — 6.8 V10 shares architecture
+MOD-46,Lincoln,Navigator%,1998,2012,5.4 Triton
+MOD-46,Lincoln,Town Car,1998,2011,4.6 2-valve
+MOD-46,Lincoln,Mark LT,2006,2008,5.4 Triton
+MOD-46,Mercury,Grand Marquis,1998,2011,4.6 2-valve
+MOD-46,Mercury,Mountaineer,2002,2010,4.6 V8 option only
+COYOTE-50,Ford,Mustang,2011,2012,GT 5.0 — V6 excluded
+COYOTE-50,Ford,F150%,2011,2012,5.0 V8 option
+CYCLONE-35,Ford,Edge,2007,2012,3.5 / 3.7 Duratec V6
+CYCLONE-35,Ford,Taurus,2008,2012,3.5 Duratec V6 — SHO EcoBoost excluded
+CYCLONE-35,Ford,Taurus X,2008,2009,3.5 Duratec V6
+CYCLONE-35,Ford,Flex,2009,2012,3.5 Duratec V6 — EcoBoost excluded
+CYCLONE-35,Ford,Explorer,2011,2012,3.5 Duratec V6
+CYCLONE-35,Ford,Fusion,2010,2012,3.5 V6 Sport only
+CYCLONE-35,Ford,Mustang,2011,2012,3.7 Ti-VCT V6 — GT excluded
+CYCLONE-35,Ford,F150%,2011,2012,3.7 Ti-VCT V6
+CYCLONE-35,Lincoln,MKZ,2010,2012,3.5 Duratec V6
+CYCLONE-35,Lincoln,MKX,2007,2012,3.5 / 3.7 Duratec V6
+CYCLONE-35,Lincoln,MKS,2009,2012,3.7 Duratec V6 — EcoBoost excluded
+CYCLONE-35,Lincoln,MKT,2010,2012,3.7 Duratec V6 — EcoBoost excluded
+CYCLONE-35,Mercury,Sable,2008,2009,3.5 Duratec V6
+EB-35,Ford,F150%,2011,2012,3.5 EcoBoost twin-turbo
+EB-35,Ford,Taurus,2010,2012,SHO 3.5 EcoBoost only
+EB-35,Ford,Flex,2010,2012,3.5 EcoBoost option
+EB-35,Lincoln,MKS,2010,2012,3.5 EcoBoost option
+EB-35,Lincoln,MKT,2010,2012,3.5 EcoBoost option
+DURATEC-25,Ford,Fusion,2010,2012,2.5 Duratec 4-cyl
+DURATEC-25,Ford,Escape,2009,2012,2.5 Duratec 4-cyl
+DURATEC-25,Mercury,Milan,2010,2011,2.5 Duratec 4-cyl
+PENTASTAR-36,Jeep,Grand Cherokee,2011,2012,3.6 Pentastar — HEMI excluded
+PENTASTAR-36,Jeep,Wrangler%,2012,2012,3.6 Pentastar
+PENTASTAR-36,Dodge,Charger,2011,2012,3.6 Pentastar — HEMI excluded
+PENTASTAR-36,Dodge,Challenger,2011,2012,3.6 Pentastar — HEMI excluded
+PENTASTAR-36,Dodge,Durango,2011,2012,3.6 Pentastar — HEMI excluded
+PENTASTAR-36,Dodge,Journey,2011,2012,3.6 Pentastar — 2.4 excluded
+PENTASTAR-36,Dodge,Grand Caravan,2011,2012,3.6 Pentastar
+PENTASTAR-36,Dodge,Avenger,2011,2012,3.6 Pentastar — 2.4 excluded
+PENTASTAR-36,Chrysler,300,2011,2012,3.6 Pentastar — HEMI excluded
+PENTASTAR-36,Chrysler,200,2011,2012,3.6 Pentastar — 2.4 excluded
+PENTASTAR-36,Chrysler,Town & Country,2011,2012,3.6 Pentastar
+HEMI-57,Ram,1500,2009,2012,5.7 HEMI — 3.7 / 4.7 excluded
+HEMI-57,Dodge,Durango,2004,2012,5.7 HEMI
+HEMI-57,Dodge,Charger,2006,2012,5.7 HEMI R/T
+HEMI-57,Dodge,Challenger,2008,2012,5.7 HEMI R/T
+HEMI-57,Dodge,Magnum,2005,2008,5.7 HEMI R/T
+HEMI-57,Chrysler,300,2005,2012,5.7 HEMI
+HEMI-57,Chrysler,Aspen,2007,2009,5.7 HEMI
+HEMI-57,Jeep,Grand Cherokee,2005,2012,5.7 HEMI
+HEMI-57,Jeep,Commander,2006,2010,5.7 HEMI
+HEMI-64,Dodge,Charger,2012,2012,6.4 SRT8
+HEMI-64,Dodge,Challenger,2011,2012,6.4 SRT8
+HEMI-64,Chrysler,300,2012,2012,6.4 SRT8
+HEMI-64,Jeep,Grand Cherokee,2012,2012,6.4 SRT8
+HEMI-57,Dodge,Ram Pickup,2003,2005,5.7 HEMI — 3.7 / 4.7 excluded
+HEMI-57,Dodge,Ram 15/25/3500,2003,2008,5.7 HEMI — 3.7 / 4.7 excluded
+HEMI-57,Dodge,Ram HD%,2003,2012,5.7 HEMI — diesel and 4.7 excluded
+VQ35DE,Nissan,Altima,2002,2012,3.5 V6 — QR25 4-cyl excluded
+VQ35DE,Nissan,Maxima,2002,2012,3.5 V6
+VQ35DE,Nissan,Murano,2003,2012,3.5 V6
+VQ35DE,Nissan,Quest,2004,2012,3.5 V6
+VQ35DE,Nissan,350Z,2003,2006,3.5 VQ35DE — 2007+ is the HR variant
+VQ35DE,Infiniti,G35,2003,2006,3.5 VQ35DE — 2007+ is the HR variant
+VQ35DE,Infiniti,FX35%,2003,2008,3.5 VQ35DE — FX45 V8 and later HR variant excluded
+VQ35DE,Infiniti,I35,2000,2004,3.5 V6
+VQ37VHR,Nissan,370Z,2009,2012,3.7 V6
+VQ37VHR,Infiniti,G37,2008,2012,3.7 V6
+VQ37VHR,Infiniti,G25%,2007,2012,G37 3.7 V6 — G25 2.5 excluded
+VQ37VHR,Infiniti,M37%,2011,2012,3.7 V6 — M56 V8 excluded
+VQ40DE,Nissan,Frontier,2005,2012,4.0 V6 — 2.5 4-cyl excluded
+VQ40DE,Nissan,Xterra,2005,2012,4.0 V6
+VQ40DE,Nissan,Pathfinder,2005,2012,4.0 V6 — 5.6 V8 excluded
+QR25DE,Nissan,Altima,2002,2012,2.5 4-cyl — 3.5 V6 excluded
+QR25DE,Nissan,Sentra,2007,2012,2.5 SE-R only
+QR25DE,Nissan,Rogue,2008,2012,2.5 4-cyl — sole engine
+QR25DE,Nissan,Frontier,2005,2012,2.5 4-cyl only
+VK56,Nissan,Titan,2004,2012,5.6 V8
+VK56,Nissan,Armada,2004,2012,5.6 V8
+VK56,Infiniti,QX56,2004,2012,5.6 V8
+VK56,Nissan,Pathfinder,2008,2012,5.6 V8 option only
+2GR-FE,Toyota,Camry%,2007,2012,3.5 V6 — 2.4 / 2.5 4-cyl excluded
+2GR-FE,Toyota,Avalon,2005,2012,3.5 V6
+2GR-FE,Toyota,Highlander,2008,2012,3.5 V6 — 2.7 4-cyl excluded
+2GR-FE,Toyota,Sienna,2007,2012,3.5 V6
+2GR-FE,Toyota,RAV4,2006,2012,3.5 V6 option only
+2GR-FE,Toyota,Venza,2009,2012,3.5 V6 — 2.7 4-cyl excluded
+2GR-FE,Lexus,ES350,2007,2012,3.5 V6
+2GR-FE,Lexus,RX350%,2007,2012,3.5 V6
+2GR-FE,Lexus,IS250%,2006,2012,IS 350 3.5 V6 — IS 250 2.5 excluded
+2GR-FE,Lexus,GS350%,2006,2011,3.5 V6
+2AR-FE,Toyota,Camry%,2010,2012,2.5 4-cyl — V6 excluded
+2AR-FE,Toyota,RAV4,2009,2012,2.5 4-cyl — V6 excluded
+2AR-FE,Scion,tC,2011,2012,2.5 4-cyl
+1GR-FE,Toyota,4Runner,2003,2012,4.0 V6
+1GR-FE,Toyota,Tacoma,2005,2012,4.0 V6 — 2.7 4-cyl excluded
+1GR-FE,Toyota,FJ Cruiser,2007,2012,4.0 V6 — sole engine
+1GR-FE,Toyota,Tundra,2005,2012,4.0 V6 option only
+3UR-FE,Toyota,Tundra,2007,2012,5.7 V8 — 4.6 is 1UR
+3UR-FE,Toyota,Sequoia,2008,2012,5.7 V8 — 4.6 is 1UR
+3UR-FE,Toyota,Land Cruiser,2008,2012,5.7 V8
+3UR-FE,Lexus,LX570,2008,2012,5.7 V8
+1UR-FE,Lexus,GX460,2010,2012,4.6 V8
+1UR-FE,Toyota,Tundra,2010,2012,4.6 V8 option
+1UR-FE,Toyota,Sequoia,2010,2012,4.6 V8 option
+2ZR-FE,Toyota,Corolla,2009,2012,1.8 4-cyl
+2ZR-FE,Toyota,Matrix,2009,2012,1.8 4-cyl — 2.4 excluded
+2ZR-FE,Toyota,Prius,2010,2012,1.8 2ZR-FXE hybrid — Atkinson cycle
+2ZR-FE,Scion,xD,2008,2012,1.8 4-cyl
+J35Z,Honda,Odyssey,2008,2012,3.5 V6
+J35Z,Honda,Pilot,2009,2012,3.5 V6
+J35Z,Honda,Accord,2008,2012,3.5 V6 — 2.4 4-cyl excluded
+J35Z,Honda,Ridgeline,2009,2012,3.5 V6
+J35Z,Honda,Crosstour,2010,2012,3.5 V6
+J35Z,Acura,TL,2009,2012,3.5 V6 FWD — 3.7 SH-AWD is J37
+K24Z,Honda,Accord,2008,2012,2.4 4-cyl — V6 excluded
+K24Z,Honda,CR-V,2007,2012,2.4 4-cyl — sole engine
+K24Z,Honda,Element,2007,2011,2.4 4-cyl — sole engine
+K24Z,Honda,Civic,2012,2012,Si 2.4 only — 1.8 excluded
+K24Z,Acura,TSX,2009,2012,2.4 4-cyl — 3.5 V6 excluded
+R18,Honda,Civic,2006,2012,1.8 4-cyl — Si 2.0/2.4 excluded
+EJ25,Subaru,Forester,1999,2010,2.5 naturally aspirated — FB25 from 2011
+EJ25,Subaru,Outback,2000,2012,2.5 naturally aspirated — 3.0/3.6 H6 excluded
+EJ25,Subaru,Legacy,2000,2012,2.5 naturally aspirated — GT turbo excluded
+EJ25,Subaru,Impreza,2008,2011,2.5 naturally aspirated — WRX excluded
+EJ25T,Subaru,Impreza WRX%,2008,2012,EJ255 / EJ257 turbo
+EJ25T,Subaru,Forester,2004,2012,XT turbo only
+EJ25T,Subaru,Legacy,2005,2012,GT turbo only
+EJ25T,Subaru,Outback,2005,2009,XT turbo only
+FB25,Subaru,Forester,2011,2012,2.5 FB — chain drive replaces EJ belt
+FB20,Subaru,Impreza,2012,2012,2.0 FB
+EA888-G2,Volkswagen,Golf,2009,2012,GTI 2.0 TSI only
+EA888-G2,Volkswagen,Jetta,2009,2012,GLI 2.0 TSI only
+EA888-G2,Volkswagen,Passat,2009,2012,2.0 TSI option
+EA888-G2,Volkswagen,CC,2009,2012,2.0 TSI
+EA888-G2,Volkswagen,Tiguan,2009,2012,2.0 TSI — sole engine
+EA888-G2,Volkswagen,Eos,2007,2012,2.0 TSI
+EA888-G2,Audi,A4,2009,2012,2.0 TFSI
+EA888-G2,Audi,A3,2009,2012,2.0 TFSI
+EA888-G2,Audi,A5,2009,2012,2.0 TFSI
+EA888-G2,Audi,Q5,2009,2012,2.0 TFSI
+EA888-G2,Audi,TT,2008,2012,2.0 TFSI
+VR6-36,Volkswagen,Passat,2008,2010,3.6 VR6 option
+VR6-36,Volkswagen,CC,2009,2012,3.6 VR6 option
+VR6-36,Volkswagen,Touareg,2008,2012,3.6 VR6 option
+THETA2-24,Hyundai,Sonata,2011,2012,2.4 GDI — subject of rod-bearing campaigns
+THETA2-24,Hyundai,Santa Fe,2010,2012,2.4 GDI
+THETA2-24,Hyundai,Tucson,2010,2012,2.4 GDI
+THETA2-24,Kia,Optima,2011,2012,2.4 GDI
+THETA2-24,Kia,Sorento,2011,2012,2.4 GDI
+THETA2-24,Kia,Sportage,2011,2012,2.4 GDI
+THETA2-20T,Hyundai,Sonata,2011,2012,2.0 turbo GDI
+THETA2-20T,Kia,Optima,2011,2012,2.0 turbo GDI
+THETA2-20T,Kia,Sportage,2011,2012,2.0 turbo GDI
+LAMBDA2-38,Hyundai,Genesis,2009,2012,3.8 V6 — 4.6 V8 excluded
+LAMBDA2-38,Hyundai,Genesis Coupe,2010,2012,3.8 V6 — 2.0 turbo excluded
+LAMBDA2-38,Hyundai,Veracruz,2007,2012,3.8 V6
+LAMBDA2-33,Hyundai,Azera,2012,2012,3.3 V6
+NU-20,Hyundai,Elantra,2011,2012,1.8 Nu — 2.0 Nu shares the architecture
+NU-20,Kia,Forte,2011,2012,2.0 Nu
+NU-20,Kia,Soul,2012,2012,2.0 Nu
+N54,BMW,%335%,2007,2010,3.0 twin-turbo — N55 from 2011
+N54,BMW,128%,2008,2010,135i only — 128i is N52
+N54,BMW,%535%,2008,2010,3.0 twin-turbo
+N54,BMW,X6,2009,2010,xDrive35i 3.0 twin-turbo
+N54,BMW,Z4,2009,2012,sDrive35i only — sDrive30i is N52
+N55,BMW,%335%,2011,2012,3.0 single-turbo
+N55,BMW,X3,2011,2012,xDrive35i only
+N55,BMW,X5,2011,2012,xDrive35i only
+N55,BMW,X6,2011,2012,xDrive35i only
+N55,BMW,1-Series,2011,2012,135i only
+N55,BMW,5-Series,2011,2012,535i only — 528i is N20
+N20,BMW,5-Series,2012,2012,528i 2.0 turbo only — 535i is N55
+N20,BMW,%328%,2012,2012,2.0 turbo — 335i is N55
+N20,BMW,X3,2012,2012,xDrive28i 2.0 turbo
+N20,BMW,Z4,2012,2012,sDrive28i 2.0 turbo
+M54,BMW,325%,2001,2006,2.5 / 3.0 naturally aspirated I6
+M54,BMW,X3,2004,2006,3.0i — N52 from 2007
+M54,BMW,X5,2001,2006,3.0i — N52 from 2007
+M54,BMW,Z4,2003,2005,2.5i / 3.0i — N52 from 2006
+M276,Mercedes,C300%,2012,2012,3.5 V6
+M276,Mercedes,E-Class,2012,2012,E350 3.5 V6
+M276,Mercedes,ML-Class,2012,2012,ML350 3.5 V6
+M276,Mercedes,GLK-Class,2012,2012,GLK350 3.5 V6
+M276,Mercedes,SLK%,2012,2012,SLK350 3.5 V6
+M278,Mercedes,CL550%,2011,2012,4.7 twin-turbo V8
+M278,Mercedes,S-Class,2011,2012,S550 4.7 twin-turbo V8
+OM642,Mercedes,ML-Class,2007,2012,BlueTEC 3.0 V6 diesel only
+OM642,Mercedes,R-Class,2007,2012,BlueTEC 3.0 V6 diesel only
+OM642,Mercedes,GL%,2007,2012,BlueTEC 3.0 V6 diesel only
+OM642,Mercedes,Sprinter,2007,2012,3.0 V6 diesel
+OM642,Dodge,Sprinter,2007,2012,3.0 V6 diesel
+SKY-G20,Mazda,3,2012,2012,2.0 Skyactiv-G — 2.5 MZR excluded
+SKY-G20,Mazda,CX-5,2013,2013,2.0 Skyactiv-G
+FA20D,Subaru,BRZ,2013,2013,2.0 H4 — shared with FR-S

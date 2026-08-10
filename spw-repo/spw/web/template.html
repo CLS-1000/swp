@@ -96,6 +96,8 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .tag.edc{color:var(--ok);border-color:var(--ok)}
 .tag.cur{color:var(--steel);border-color:var(--steel)}
 .tag.flag{color:var(--amber);border-color:var(--amber)}
+.tag.comp{color:#9BB8D3;border-color:#9BB8D3}
+.legend{font-family:var(--mono);font-size:11px;line-height:1.7;color:var(--muted);margin-top:14px;padding-top:10px;border-top:1px solid var(--line-lo)}
 
 /* print = garage runbook */
 @media print{
@@ -158,7 +160,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 </div>
 
 <div class="card" id="donorcard" style="display:none">
-  <h2>3 — Donor Pool <span style="font-weight:400">(offline dataset — EDC-1057 + curated)</span></h2>
+  <h2>3 — Donor Pool <span style="font-weight:400">(offline dataset — EDC-1057 + curated + compiled)</span></h2>
   <div class="donor" id="donorbody"></div>
 </div>
 
@@ -306,27 +308,39 @@ function render(md){
 
 /* ---------- offline donor dataset ---------- */
 const DS = __DATA__;
+const LEGEND = '<div class="legend">'
+  + '<span class="tag edc">EDC</span> EDC-1057 structural interchange — crash-reconstruction authority.<br>'
+  + '<span class="tag flag">EDC ⚠ FLAGGED</span> EDC row that failed a consistency check. Measure before trusting.<br>'
+  + '<span class="tag cur">CURATED</span> Hand-verified engine family.<br>'
+  + '<span class="tag comp">COMPILED</span> Compiled from published engine-application and platform data. '
+  + 'Not authority-verified — confirm the qualifier column against the donor\'s own VIN before buying.'
+  + '</div>';
 const byVid = {}, byCid = {};
 DS.m.forEach(e=>{ (byVid[e[0]]=byVid[e[0]]||[]).push(e); (byCid[e[1]]=byCid[e[1]]||[]).push(e); });
 const VIDX = {}; DS.v.forEach(v=>VIDX[v[0]]=v);
 
+/* make/model normalisation — must stay in sync with spw/lookup.py */
+const MAKE_ALIASES={'mercedes-benz':'mercedes','vw':'volkswagen','chevy':'chevrolet'};
+const normMake=s=>{const m=s.trim().toLowerCase();return MAKE_ALIASES[m]||m};
+const normModel=s=>s.trim().toLowerCase().replace(/[-_]+/g,' ').replace(/\s+/g,' ').trim();
+
 function findDonors(){
-  const make=$('make').value.trim().toLowerCase();
-  const model=$('model').value.trim().toLowerCase();
+  const make=normMake($('make').value);
+  const model=normModel($('model').value);
   const year=parseInt($('year').value,10);
   if(!make||!model||!year){$('donorcard').style.display='none';return}
   const badge=(model.match(/\d{3}/)||[])[0];
   const series=badge?badge[0]:(model.match(/^(\d)/)||[])[1];
   const mm = m => {
-    m=m.toLowerCase();
+    m=normModel(m);
     if(m.includes(model)||model.includes(m)) return true;
     if(badge && m.split(/[ ,\/]+/).some(t=>t.startsWith(badge))) return true;
-    if(series && m===series+'-series') return true;
+    if(series && m===series+' series') return true;
     return false;
   };
-  const subj = DS.v.filter(v=>v[1].toLowerCase()===make && v[7]<=year && v[8]>=year && mm(v[2]));
+  const subj = DS.v.filter(v=>normMake(v[1])===make && v[7]<=year && v[8]>=year && mm(v[2]));
   if(!subj.length){$('donorcard').style.display='block';
-    $('donorbody').innerHTML='<p style="font-family:var(--mono);font-size:12px;color:var(--muted)">No dataset match. EDC coverage ends 2012 — post-2012 vehicles need manual curation.</p>';return}
+    $('donorbody').innerHTML='<p style="font-family:var(--mono);font-size:12px;color:var(--muted)">No dataset match. Check the make and model spelling — the dataset covers 1974-2025 but not every trim name.</p>';return}
   const groups={structural:new Map(),engine_family:new Map()};
   const subjIds=new Set(subj.map(v=>v[0]));
   subj.forEach(v=>(byVid[v[0]]||[]).forEach(mem=>{
@@ -334,21 +348,24 @@ function findDonors(){
     (byCid[cid]||[]).forEach(pm=>{
       const pv=VIDX[pm[0]]; if(!pv||subjIds.has(pv[0]))return;
       const key=pv[1]+'|'+pv[2]+'|'+(pm[4]||'');
-      const g=groups[ctype]; if(g&&!g.has(key)) g.set(key,{v:pv,conf:pm[3],note:pm[4],scope:pm[2]});
+      const label=(DS.c[cid]||[])[1]||'';
+      const g=groups[ctype]; if(g&&!g.has(key)) g.set(key,{v:pv,conf:pm[3],note:pm[4],scope:pm[2],label});
     });
   }));
-  const tag=c=>c==='edc'?'<span class="tag edc">EDC</span>':c==='edc-flagged'?'<span class="tag flag">EDC ⚠ FLAGGED</span>':'<span class="tag cur">CURATED</span>';
+  const tag=c=>c==='edc'?'<span class="tag edc">EDC</span>':c==='edc-flagged'?'<span class="tag flag">EDC ⚠ FLAGGED</span>':c==='compiled'?'<span class="tag comp">COMPILED</span>':'<span class="tag cur">CURATED</span>';
   const tbl=(title,map)=>{
     if(!map.size)return '';
     let t=`<h3>${title}</h3><table><tr><th>Make</th><th>Model</th><th>Years</th><th>Confidence</th><th>Qualifier</th></tr>`;
     [...map.values()].sort((a,b)=>(a.v[1]+a.v[2]).localeCompare(b.v[1]+b.v[2])).forEach(d=>{
-      t+=`<tr><td>${esc(d.v[1])}</td><td>${esc(d.v[2])}</td><td>${d.v[7]}–${d.v[8]}</td><td>${tag(d.conf)}</td><td>${esc(d.note||'—')}</td></tr>`});
+      t+=`<tr><td>${esc(d.v[1])}</td><td>${esc(d.v[2])}</td><td>${d.v[7]}–${d.v[8]}</td><td>${tag(d.conf)}</td><td>${esc(d.note||d.label||'—')}</td></tr>`});
     return t+'</table>';
   };
-  $('donorbody').innerHTML =
+  const tables =
     tbl('Structural siblings (body / chassis / suspension)',groups.structural) +
-    tbl('Engine family (engine-loop accessories)',groups.engine_family) ||
-    '<p style="font-family:var(--mono);font-size:12px;color:var(--muted)">Vehicle found, no cluster links.</p>';
+    tbl('Engine family (engine-loop accessories)',groups.engine_family);
+  $('donorbody').innerHTML = tables
+    ? tables + LEGEND
+    : '<p style="font-family:var(--mono);font-size:12px;color:var(--muted)">Vehicle found, no cluster links.</p>';
   $('donorcard').style.display='block';
 }
 ['year','make','model'].forEach(id=>$(id).addEventListener('change',findDonors));

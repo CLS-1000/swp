@@ -8,6 +8,7 @@ from pathlib import Path
 
 from spw import __version__
 from spw.parse import parse, apply_curated
+from spw.compiled import apply_compiled
 from spw.validate import validate
 from spw.lookup import donor_pool, format_pool
 from spw.decode import decode, format_decode
@@ -40,7 +41,31 @@ def cmd_parse(args: argparse.Namespace) -> None:
     sql = ASSETS / "curated.sql"
     n = apply_curated(db, sql)
     print(f"  curated: {n} memberships applied from {sql.name}")
+    _compile(db)
     print("  ✓ Gate 1 passed.")
+
+
+def _compile(db: Path) -> dict:
+    """Apply the compiled overlay and print/validate its stats."""
+    stats = apply_compiled(db, ASSETS)
+    print(
+        f"  compiled: {stats['clusters']} clusters | {stats['vehicles']} vehicles | "
+        f"{stats['memberships']} memberships | {stats['legacy_links']} legacy links"
+    )
+    for ref in stats["unknown_clusters"]:
+        print(f"  ⚠ compiled overlay references undefined cluster: {ref}", file=sys.stderr)
+    for rule in stats["empty_rules"]:
+        print(f"  ⚠ compiled legacy rule matched no vehicles: {rule}", file=sys.stderr)
+    if stats["unknown_clusters"]:
+        sys.exit(1)
+    return stats
+
+
+def cmd_compile(args: argparse.Namespace) -> None:
+    db = Path(args.db) if args.db else DEFAULT_DB
+    print(f"Applying compiled overlay → {db}")
+    _compile(db)
+    print("  ✓ Compiled overlay applied.")
 
 
 def cmd_validate(args: argparse.Namespace) -> None:
@@ -115,6 +140,8 @@ def main() -> None:
     sp = sub.add_parser("parse", help="Parse EDC-1057 PDF into SQLite")
     sp.add_argument("pdf", nargs="?", help="Path to EDC-1057.pdf")
 
+    sub.add_parser("compile", help="Re-apply the compiled overlay without re-parsing")
+
     sub.add_parser("validate", help="Run Gate 4 consistency checks")
 
     sl = sub.add_parser("lookup", help="Donor pool lookup")
@@ -141,7 +168,7 @@ def main() -> None:
         sys.exit(1)
 
     cmds = {
-        "parse": cmd_parse, "validate": cmd_validate,
+        "parse": cmd_parse, "compile": cmd_compile, "validate": cmd_validate,
         "lookup": cmd_lookup, "decode": cmd_decode,
         "verdict": cmd_verdict, "build": cmd_build,
     }

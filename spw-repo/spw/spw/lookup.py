@@ -17,17 +17,43 @@ class Donor:
     year_start: int
     year_end: int
     note: str
+    cluster_label: str = ""
+
+    @property
+    def qualifier(self) -> str:
+        """Per-vehicle note if there is one, otherwise the cluster's own label."""
+        return self.note or self.cluster_label or "—"
+
+
+# vPIC spells some makes differently from EDC-1057. Normalise to the EDC form so
+# a decoded VIN reaches the dataset rows instead of silently missing them.
+MAKE_ALIASES = {
+    "mercedes-benz": "mercedes",
+    "vw": "volkswagen",
+    "chevy": "chevrolet",
+}
+
+
+def norm_make(make: str) -> str:
+    """Fold a make name to the spelling used in the dataset."""
+    m = make.strip().lower()
+    return MAKE_ALIASES.get(m, m)
+
+
+def norm_model(model: str) -> str:
+    """Fold separators so '3-Series', '3 Series' and '3_series' compare equal."""
+    return re.sub(r"\s+", " ", re.sub(r"[-_]+", " ", model.strip().lower())).strip()
 
 
 def _match_model_sql(user_model: str) -> tuple[str, list]:
     """Build SQL WHERE fragments for model matching.
 
     Rules (must match frontend logic):
-    1. Case-insensitive substring either direction.
+    1. Case-insensitive substring either direction, separators normalised.
     2. 3-digit badge from user model matches any comma/slash token in row.
-    3. Badge leading digit N matches row = 'N-Series'.
+    3. Badge leading digit N matches row = 'N Series'.
     """
-    um = user_model.strip().lower()
+    um = norm_model(user_model)
     badge_m = re.search(r"(\d{3})", um)
     badge = badge_m.group(1) if badge_m else None
     series = badge[0] if badge else (re.match(r"^(\d)", um).group(1) if re.match(r"^(\d)", um) else None)
@@ -54,13 +80,13 @@ def donor_pool(
     candidates = c.execute(
         """SELECT id, model FROM vehicles
            WHERE LOWER(make) = ? AND year_start <= ? AND year_end >= ?""",
-        (make.strip().lower(), year, year),
+        (norm_make(make), year, year),
     ).fetchall()
 
     # apply model matching rules
     subject_ids: set[int] = set()
     for vid, row_model in candidates:
-        rm = row_model.lower()
+        rm = norm_model(row_model)
         # rule 1: substring either direction
         if um in rm or rm in um:
             subject_ids.add(vid)
@@ -72,7 +98,7 @@ def donor_pool(
                 subject_ids.add(vid)
                 continue
         # rule 3: N-Series
-        if series and rm == f"{series}-series":
+        if series and rm == f"{series} series":
             subject_ids.add(vid)
 
     if not subject_ids:
@@ -84,7 +110,7 @@ def donor_pool(
     rows = c.execute(
         f"""SELECT DISTINCT c.type, m2.scope, m2.confidence,
                    v2.make, v2.model, v2.year_start, v2.year_end,
-                   IFNULL(m2.note, '')
+                   IFNULL(m2.note, ''), IFNULL(c.label, '')
             FROM membership m1
             JOIN clusters c ON c.cluster_id = m1.cluster_id
             JOIN membership m2 ON m2.cluster_id = m1.cluster_id
@@ -108,6 +134,7 @@ def donor_pool(
         donors.append(Donor(
             cluster_type=r[0], scope=r[1], confidence=r[2],
             make=r[3], model=r[4], year_start=r[5], year_end=r[6], note=r[7],
+            cluster_label=r[8],
         ))
     return donors
 
@@ -127,6 +154,8 @@ def format_pool(donors: list[Donor]) -> str:
             return "[EDC]"
         elif conf == "edc-flagged":
             return "[EDC ⚠ FLAGGED]"
+        elif conf == "compiled":
+            return "[COMPILED]"
         return "[CURATED]"
 
     if structural:
@@ -136,7 +165,7 @@ def format_pool(donors: list[Donor]) -> str:
         for d in structural:
             lines.append(
                 f"  {d.make:<12} {d.model:<22} {d.year_start}–{d.year_end:<7} "
-                f"{_tag(d.confidence):<18} {d.note or '—'}"
+                f"{_tag(d.confidence):<18} {d.qualifier}"
             )
 
     if engine:
@@ -148,7 +177,7 @@ def format_pool(donors: list[Donor]) -> str:
         for d in engine:
             lines.append(
                 f"  {d.make:<12} {d.model:<22} {d.year_start}–{d.year_end:<7} "
-                f"{_tag(d.confidence):<18} {d.note or '—'}"
+                f"{_tag(d.confidence):<18} {d.qualifier}"
             )
 
     return "\n".join(lines)

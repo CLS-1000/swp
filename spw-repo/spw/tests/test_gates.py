@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from spw.parse import parse, apply_curated, SCHEMA
+from spw.compiled import apply_compiled
 from spw.validate import validate
 from spw.lookup import donor_pool
 from spw.export import to_json, to_csv
@@ -31,6 +32,9 @@ def db_path(tmp_path_factory):
     assert stats["skipped_ratio"] <= 0.01, f"Gate 1: skipped ratio {stats['skipped_ratio']:.2%} > 1%"
     assert stats["unique"] >= 1800, f"Gate 1: unique {stats['unique']} < 1800"
     apply_curated(db, CURATED)
+    compiled = apply_compiled(db, ASSETS)
+    assert compiled["unknown_clusters"] == [], compiled["unknown_clusters"]
+    assert compiled["empty_rules"] == [], compiled["empty_rules"]
     validate(db)
     return db
 
