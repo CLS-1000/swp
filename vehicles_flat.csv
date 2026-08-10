@@ -7,10 +7,15 @@ Acura,3.2 CL,2d,106.9,u,f,2001,2003,3.2 TL,,005970,structural,edc-flagged,
 Acura,3.2 TL,4d,108.1,u,f,2000,2003,,,005970,structural,edc-flagged,
 Acura,3.2TL,4d,108.1,u,f,2000,2003,,New. (Honda Accord chassis),005970,structural,edc-flagged,
 Acura,3.5 RL,4d,114.6,u,f,1996,2004,,,005660,structural,edc,
+Acura,ILX,4d,105.1,u,f,2013,2022,,,K24W,engine-loop,compiled,2.4 A-Spec
+Acura,ILX,4d,105.1,u,f,2013,2022,,,R18,engine-loop,compiled,1.5/2.0 base
 Acura,Integra,"3d,5d","96.5,99.2",u,f,1986,1989,Honda Quint (Japan),Based on Honda Civic,004480,structural,edc,
 Acura,Integra,"3d,5d","100.4,102.4",u,f,1990,1993,Honda Civic?,Based on Honda Civic,000721,structural,edc-flagged,
 Acura,Integra,"3d,4d","101.2,103.1",u,f,1994,2001,Honda Civic?,Based on old Honda Civic,000731,structural,edc-flagged,
 Acura,Integra,"3d,5d","101.2,103.1",u,f,1994,2001,Honda Civic?,Based on Honda Civic,000731,structural,edc-flagged,
+Acura,Integra,5d,107.7,u,f,2023,2025,,,HONDA-CGP,platform,compiled,
+Acura,Integra,5d,107.7,u,f,2023,2025,,,K20C,engine-loop,compiled,2.0 turbo Type S
+Acura,Integra,5d,107.7,u,f,2023,2025,,,L15B7,engine-loop,compiled,1.5 turbo
 Acura,Legend,4d,108.7,u,f,1986,1990,,,004470,structural,edc-flagged,
 Acura,Legend,"2d,4d","106.5,108.7",u,f,1986,1990,,New Coupe,004470,structural,edc-flagged,
 Acura,Legend,4d,114.6,u,f,1991,1995,,,004940,structural,edc-flagged,
@@ -19,8 +24,15 @@ Acura,Legend Coupe,2d,111.4,u,f,1991,1995,,,004940,structural,edc-flagged,
 Acura,MDX,SW,106.3,u,4,2001,2006,Pilot,,001670,structural,edc,
 Acura,MDX,SW,108.3,u,4,2007,2012,,,006730,structural,edc,
 Acura,MDX,SW,108.3,u,4,2007,2012,,,J37-LOOP,engine-loop,curated,shares 3.7L block
+Acura,MDX,SUV,111.0,u,"f,4",2014,2020,,,HONDA-LGP,platform,compiled,
+Acura,MDX,SUV,111.0,u,"f,4",2014,2020,,,J35Y,engine-loop,compiled,3.5 V6
+Acura,MDX,SUV,113.8,u,"f,4",2022,2025,,,HONDA-LGP,platform,compiled,
+Acura,MDX,SUV,113.8,u,"f,4",2022,2025,,,J35Y,engine-loop,compiled,3.5 V6
 Acura,NSX,2d,99.6,u,r,1991,2005,,,004950,structural,edc,
 Acura,RDX,SW,104.3,u,"f,4",2007,2012,CR-V,,006940,structural,edc,
+Acura,RDX,SUV,105.7,u,"f,4",2013,2018,,,J35Y,engine-loop,compiled,3.5 V6
+Acura,RDX,SUV,108.3,u,"f,4",2019,2025,,,HONDA-CGP,platform,compiled,
+Acura,RDX,SUV,108.3,u,"f,4",2019,2025,,,K20C,engine-loop,compiled,2.0 turbo
 Acura,RL,4d,110.2,u,4,2005,2012,,,006510,structural,edc,
 Acura,RL,4d,110.2,u,4,2005,2012,,,J37-LOOP,engine-loop,curated,exact J37 match
 Acura,RSX,3d,101.2,u,f,2002,2006,('01+) Honda Civic?,Civic Chassis,000751,structural,edc,
@@ -28,10 +40,18 @@ Acura,SLX,SW,104.3,u,4,1996,1999,Isuzu Trooper,,001710,structural,edc-flagged,
 Acura,Spider,Cnv,88.6,u,r,1980,1993,,,000280,structural,edc,
 Acura,TL,4d,107.9,u,f,2004,2008,,,006410,structural,edc,
 Acura,TL,4d,109.3,u,f,2009,2012,,,006920,structural,edc,
+Acura,TL,4d,109.3,u,f,2009,2012,,,J35Z,engine-loop,compiled,3.5 V6 FWD — 3.7 SH-AWD is J37
 Acura,TL,4d,109.3,u,f,2009,2012,,,J37-LOOP,engine-loop,curated,exact J37A4 match
+Acura,TLX,4d,109.3,u,"f,4",2015,2020,,,HONDA-ACC9,platform,compiled,
+Acura,TLX,4d,109.3,u,"f,4",2015,2020,,,J35Y,engine-loop,compiled,3.5 V6
+Acura,TLX,4d,109.3,u,"f,4",2015,2020,,,K24W,engine-loop,compiled,2.4 4-cyl
+Acura,TLX,4d,113.0,u,"f,4",2021,2025,,,HONDA-CGP,platform,compiled,
+Acura,TLX,4d,113.0,u,"f,4",2021,2025,,,K20C,engine-loop,compiled,2.0 turbo
 Acura,TSX,4d,105.1,u,f,2004,2008,,,006400,structural,edc,
 Acura,TSX,"4d, SW",106.5,u,f,2009,2012,,,006930,structural,edc,
+Acura,TSX,"4d, SW",106.5,u,f,2009,2012,,,K24Z,engine-loop,compiled,2.4 4-cyl — 3.5 V6 excluded
 Acura,TSX,4d,106.5,u,f,2009,2012,,,006930,structural,edc,
+Acura,TSX,4d,106.5,u,f,2009,2012,,,K24Z,engine-loop,compiled,2.4 4-cyl — 3.5 V6 excluded
 Acura,Vigor,4d,110.4,u,f,1992,1994,,,005110,structural,edc,
 Acura,ZDX,SW,108.3,u,4,2010,2012,MDX,,006731,structural,edc,
 Acura,ZDX,SW,108.3,u,4,2010,2012,MDX,,J37-LOOP,engine-loop,curated,shares 3.7L block
@@ -58,19 +78,35 @@ Audi,80,4d,100.2,u,f,1988,1992,,,001860,structural,edc,
 Audi,"80,90",4d,100.2,u,f,1988,1992,,,001860,structural,edc,
 Audi,90,4d,102.8,u,f,1993,1995,,,001870,structural,edc,
 Audi,A3,SW,101.5,u,"f,4",2006,2012,,,001910,structural,edc,
+Audi,A3,SW,101.5,u,"f,4",2006,2012,,,EA888-G2,engine-loop,compiled,2.0 TFSI
+Audi,A3,4d,103.8,u,"f,4",2015,2020,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,A3,4d,103.8,u,"f,4",2015,2020,,,VW-MQB,platform,compiled,
 Audi,A4,"4d, SW",103,u,"f,4",1996,2001,,Also S4,001880,structural,edc,
 Audi,A4,4d,103,u,"f,4",1996,2001,,,001880,structural,edc,
 Audi,A4,"4d,SW,Cnv",104.3,u,"f,4",2002,2005,,Also S4,001890,structural,edc,
 Audi,A4,"4d, SW",104.3,u,"f,4",2002,2005,,,001890,structural,edc,
 Audi,A4,Conv,104.3,u,"f,4",2005,2009,,Conv stays on old body,001891,structural,edc,
+Audi,A4,Conv,104.3,u,"f,4",2005,2009,,Conv stays on old body,EA888-G2,engine-loop,compiled,2.0 TFSI
 Audi,A4,"4d,SW,Cnv",104.3,u,"f,4",2005,2012,,Also S4,001891,structural,edc,
+Audi,A4,"4d,SW,Cnv",104.3,u,"f,4",2005,2012,,Also S4,EA888-G2,engine-loop,compiled,2.0 TFSI
 Audi,A4,4d,110.6,u,"f,4",2009,2012,A5,,001900,structural,edc,
+Audi,A4,4d,110.6,u,"f,4",2009,2012,A5,,EA888-G2,engine-loop,compiled,2.0 TFSI
+Audi,A4,4d,111.0,u,"f,4",2017,2025,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,A4,4d,111.0,u,"f,4",2017,2025,,,VW-MLB-EVO,platform,compiled,
 Audi,A5,"2d, Conv",108.3,u,"f,4",2008,2012,A4,Also S5,001901,structural,edc,
+Audi,A5,"2d, Conv",108.3,u,"f,4",2008,2012,A4,Also S5,EA888-G2,engine-loop,compiled,2.0 TFSI
 Audi,A5,2d,108.3,u,"f,4",2008,2012,A4 (not conv),Also S5,001901,structural,edc,
+Audi,A5,2d,108.3,u,"f,4",2008,2012,A4 (not conv),Also S5,EA888-G2,engine-loop,compiled,2.0 TFSI
+Audi,A5,2d,111.2,u,4,2018,2025,,,EA839-30T,engine-loop,compiled,3.0 TFSI S5
+Audi,A5,2d,111.2,u,4,2018,2025,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,A5,2d,111.2,u,4,2018,2025,,,VW-MLB-EVO,platform,compiled,
 Audi,A6,"4d,SW",105.8,u,"f,4",1992,1997,,,001920,structural,edc,
 Audi,A6,"4d,SW",108.7,u,"f,4",1998,2004,Passat,Wagon is called Avant,001930,structural,edc,
 Audi,A6,"4d,SW",111.9,u,"f,4",2005,2011,,Also S6,001940,structural,edc,
 Audi,A6,4d,114.7,u,"f,4",2012,2012,A7,New,007550,structural,edc,
+Audi,A6,4d,115.1,u,4,2019,2025,,,EA839-30T,engine-loop,compiled,3.0 TFSI
+Audi,A6,4d,115.1,u,4,2019,2025,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,A6,4d,115.1,u,4,2019,2025,,,VW-MLB-EVO,platform,compiled,
 Audi,A7,5d,114.7,u,"f,4",2012,2012,A6,New,007550,structural,edc,
 Audi,A8,4d,"113.4,118.5",u,"f,4",1997,2003,,,001950,structural,edc,
 Audi,A8,4d,121,u,"f,4",2004,2010,,Also S8,001960,structural,edc,
@@ -80,22 +116,52 @@ Audi,Cabriolet,Conv,100.6,u,f,1995,1998,Older 90,Based on 90 Series,001871,struc
 Audi,Coupe,2d,99.5,u,f,1980,1987,,,000291,structural,edc,
 Audi,Coupe,2d,99.5,u,f,1981,1987,,,000291,structural,edc,
 Audi,Coupe,2d,100.4,u,f,1990,1991,Audi 80/90,,001861,structural,edc,
+Audi,Q3,SUV,105.5,u,4,2019,2025,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,Q3,SUV,105.5,u,4,2019,2025,,,VW-MQB,platform,compiled,
 Audi,Q5,SW,110.5,u,4,2009,2012,,A4/A5 Chassis,001980,structural,edc,
+Audi,Q5,SW,110.5,u,4,2009,2012,,A4/A5 Chassis,EA888-G2,engine-loop,compiled,2.0 TFSI
+Audi,Q5,SUV,111.0,u,4,2018,2025,,,EA839-30T,engine-loop,compiled,3.0 TFSI SQ5
+Audi,Q5,SUV,111.0,u,4,2018,2025,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,Q5,SUV,111.0,u,4,2018,2025,,,VW-MLB-EVO,platform,compiled,
 Audi,Q7,SW,118,u,4,2007,2012,"Toureg, Cayenne",Stretched Toureg Chassis,001971,structural,edc,
+Audi,Q7,SUV,117.9,u,4,2017,2025,,,EA839-30T,engine-loop,compiled,3.0 TFSI
+Audi,Q7,SUV,117.9,u,4,2017,2025,,,EA888-G3,engine-loop,compiled,2.0 TFSI 2017-2019
+Audi,Q7,SUV,117.9,u,4,2017,2025,,,VW-MLB-EVO,platform,compiled,
+Audi,Q8,SUV,117.9,u,4,2019,2025,,,EA839-30T,engine-loop,compiled,3.0 TFSI
+Audi,Q8,SUV,117.9,u,4,2019,2025,,,VW-MLB-EVO,platform,compiled,
 Audi,R8,2d,104.3,u,4,2008,2012,Lamborghini Gallardo,,001991,structural,edc,
 Audi,TT,"2d,Conv",95.4,u,"f,4",2000,2006,,,002000,structural,edc,
 Audi,TT,"2d,Conv",97.2,u,4,2008,2012,,,002010,structural,edc,
+Audi,TT,"2d,Conv",97.2,u,4,2008,2012,,,EA888-G2,engine-loop,compiled,2.0 TFSI
+Audi,TT,2d,98.6,u,4,2016,2023,,,EA888-G3,engine-loop,compiled,2.0 TFSI
+Audi,TT,2d,98.6,u,4,2016,2023,,,VW-MQB,platform,compiled,
 Audi,V8,4d,106.4,u,a,1990,1994,,,002020,structural,edc,
 BMW,1-Series,"2d,Cnv",104.7,u,r,2008,2012,,,001500,structural,edc,
-BMW,1-Series,"2d,Cnv",104.7,u,r,2008,2012,,,N52-LOOP,engine-loop,curated,128i only � 135i turbo excluded
+BMW,1-Series,"2d,Cnv",104.7,u,r,2008,2012,,,N52-LOOP,engine-loop,curated,128i only — 135i turbo excluded
+BMW,1-Series,"2d,Cnv",104.7,u,r,2008,2012,,,N55,engine-loop,compiled,135i only
 BMW,"128,135","2d,Cnv",104.7,u,r,2008,2012,,,001500,structural,edc,
-BMW,"128,135","2d,Cnv",104.7,u,r,2008,2012,,,N52-LOOP,engine-loop,curated,128i only � 135i turbo excluded
+BMW,"128,135","2d,Cnv",104.7,u,r,2008,2012,,,N52-LOOP,engine-loop,curated,128i only — 135i turbo excluded
+BMW,"128,135","2d,Cnv",104.7,u,r,2008,2012,,,N54,engine-loop,compiled,135i only — 128i is N52
+BMW,2-Series 228i 230i,2d,105.9,u,"r,4",2014,2021,,,B48,engine-loop,compiled,230i 2.0 turbo 2017-2021
+BMW,2-Series 228i 230i,2d,105.9,u,"r,4",2014,2021,,,BMW-F1X,platform,compiled,
+BMW,2-Series 228i 230i,2d,105.9,u,"r,4",2014,2021,,,N20,engine-loop,compiled,228i 2.0 turbo
+BMW,2-Series M235i M240i,2d,105.9,u,"r,4",2014,2021,,,B58,engine-loop,compiled,M240i 3.0 turbo 2017-2021
+BMW,2-Series M235i M240i,2d,105.9,u,"r,4",2014,2021,,,BMW-F1X,platform,compiled,
+BMW,2-Series M235i M240i,2d,105.9,u,"r,4",2014,2021,,,N55,engine-loop,compiled,M235i 3.0 turbo
 BMW,3-Series,"2d,Conv",107.3,u,"r,4",2006,2012,,Old Chassis,001490,structural,edc,
 BMW,3-Series,"2d,Conv",107.3,u,"r,4",2006,2012,,Old Chassis,N52-LOOP,engine-loop,curated,N52 NA badges only
 BMW,3-Series,2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,001490,structural,edc,
 BMW,3-Series,2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,N52-LOOP,engine-loop,curated,N52 NA badges only
 BMW,3-Series,4d,110.6,u,"r,4",2012,2012,,New,007560,structural,edc,
 BMW,3-Series,4d,110.6,u,"r,4",2012,2012,,New,N52-LOOP,engine-loop,curated,N52 NA badges only
+BMW,3-Series 320i 328i 330i,4d,110.6,u,"r,4",2013,2018,,,BMW-F1X,platform,compiled,
+BMW,3-Series 320i 328i 330i,4d,110.6,u,"r,4",2013,2018,,,N20,engine-loop,compiled,320i/328i 2.0 turbo — 335i excluded
+BMW,3-Series 330i,4d,112.2,u,"r,4",2017,2025,,,B48,engine-loop,compiled,2.0 turbo I4
+BMW,3-Series 330i,4d,112.2,u,"r,4",2017,2025,,,BMW-CLAR,platform,compiled,
+BMW,3-Series 335i,4d,110.6,u,"r,4",2013,2015,,,BMW-F1X,platform,compiled,
+BMW,3-Series 335i,4d,110.6,u,"r,4",2013,2015,,,N55,engine-loop,compiled,3.0 turbo I6
+BMW,3-Series 340i M340i,4d,112.2,u,"r,4",2016,2025,,,B58,engine-loop,compiled,3.0 turbo I6
+BMW,3-Series 340i M340i,4d,112.2,u,"r,4",2016,2025,,,BMW-CLAR,platform,compiled,
 BMW,"318,323,328","2d, Cnv",106.3,u,r,1992,1999,,"Cpe, Cnv stay on old body",001470,structural,edc,
 BMW,"318,323,328","2d,4d,Cnv",106.3,u,r,1992,1999,,Also M3,001470,structural,edc,
 BMW,"318,325","2d,4d",101.2,u,r,1984,1991,,,001460,structural,edc,
@@ -110,31 +176,53 @@ BMW,325,"2d,4d",101.2,u,r,1984,1991,,,001460,structural,edc,
 BMW,325,"4d,2d",106.3,u,r,1992,1999,,,001470,structural,edc,
 BMW,325,4d,106.3,u,r,1992,1999,,New,001470,structural,edc,
 BMW,"325,330","2d,Cnv",106.3,u,"r,4",1999,2006,,Also M3. Old body,001480,structural,edc,
+BMW,"325,330","2d,Cnv",106.3,u,"r,4",1999,2006,,Also M3. Old body,M54,engine-loop,compiled,2.5 / 3.0 naturally aspirated I6
 BMW,"325,330","2d,Cnv",106.3,u,"r,4",1999,2006,,Also M3. Old body,N52-LOOP,engine-loop,curated,E90 325i/330i
 BMW,"325,330","2d,4d,Cnv",106.3,u,"r,4",1999,2006,,Also M3,001480,structural,edc,
+BMW,"325,330","2d,4d,Cnv",106.3,u,"r,4",1999,2006,,Also M3,M54,engine-loop,compiled,2.5 / 3.0 naturally aspirated I6
 BMW,"325,330","2d,4d,Cnv",106.3,u,"r,4",1999,2006,,Also M3,N52-LOOP,engine-loop,curated,E90 325i/330i
 BMW,"325,330",4d,107.3,u,"r,4",2006,2012,,New,001490,structural,edc,
+BMW,"325,330",4d,107.3,u,"r,4",2006,2012,,New,M54,engine-loop,compiled,2.5 / 3.0 naturally aspirated I6
 BMW,"325,330",4d,107.3,u,"r,4",2006,2012,,New,N52-LOOP,engine-loop,curated,E90 325i/330i
 BMW,325C,Conv,101.2,u,r,1987,1993,Older 3 Series,Old body,001460,structural,edc,
 BMW,"328,335",2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,001490,structural,edc,
-BMW,"328,335",2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,N52-LOOP,engine-loop,curated,328i only � 335i turbo (N54/N55) excluded
+BMW,"328,335",2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,N20,engine-loop,compiled,2.0 turbo — 335i is N55
+BMW,"328,335",2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,N52-LOOP,engine-loop,curated,328i only — 335i turbo (N54/N55) excluded
+BMW,"328,335",2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,N54,engine-loop,compiled,3.0 twin-turbo — N55 from 2011
+BMW,"328,335",2/4/Cv/SW,107.3,u,"r,4",2006,2012,,,N55,engine-loop,compiled,3.0 single-turbo
 BMW,"328,335","2d,4d,Cnv",107.3,u,"r,4",2006,2012,,,001490,structural,edc,
-BMW,"328,335","2d,4d,Cnv",107.3,u,"r,4",2006,2012,,,N52-LOOP,engine-loop,curated,328i only � 335i turbo (N54/N55) excluded
+BMW,"328,335","2d,4d,Cnv",107.3,u,"r,4",2006,2012,,,N20,engine-loop,compiled,2.0 turbo — 335i is N55
+BMW,"328,335","2d,4d,Cnv",107.3,u,"r,4",2006,2012,,,N52-LOOP,engine-loop,curated,328i only — 335i turbo (N54/N55) excluded
+BMW,"328,335","2d,4d,Cnv",107.3,u,"r,4",2006,2012,,,N54,engine-loop,compiled,3.0 twin-turbo — N55 from 2011
+BMW,"328,335","2d,4d,Cnv",107.3,u,"r,4",2006,2012,,,N55,engine-loop,compiled,3.0 single-turbo
+BMW,4-Series 428i 430i,2d,110.6,u,"r,4",2014,2020,,,B48,engine-loop,compiled,430i 2.0 turbo 2017-2020
+BMW,4-Series 428i 430i,2d,110.6,u,"r,4",2014,2020,,,BMW-F1X,platform,compiled,
+BMW,4-Series 428i 430i,2d,110.6,u,"r,4",2014,2020,,,N20,engine-loop,compiled,428i 2.0 turbo
+BMW,4-Series 435i 440i,2d,110.6,u,"r,4",2014,2020,,,B58,engine-loop,compiled,440i 3.0 turbo 2017-2020
+BMW,4-Series 435i 440i,2d,110.6,u,"r,4",2014,2020,,,BMW-F1X,platform,compiled,
+BMW,4-Series 435i 440i,2d,110.6,u,"r,4",2014,2020,,,N55,engine-loop,compiled,435i 3.0 turbo
 BMW,5-Series,4d,116.9,u,r,2011,2012,,Also M5,007190,structural,edc-flagged,
+BMW,5-Series,4d,116.9,u,r,2011,2012,,Also M5,N20,engine-loop,compiled,528i 2.0 turbo only — 535i is N55
+BMW,5-Series,4d,116.9,u,r,2011,2012,,Also M5,N55,engine-loop,compiled,535i only — 528i is N20
+BMW,5-Series 528i 530i,4d,116.9,u,"r,4",2013,2025,,,B48,engine-loop,compiled,530i 2.0 turbo 2017-2025
+BMW,5-Series 528i 530i,4d,116.9,u,"r,4",2013,2025,,,N20,engine-loop,compiled,528i 2.0 turbo 2013-2016
+BMW,5-Series 535i 540i,4d,116.9,u,"r,4",2013,2025,,,B58,engine-loop,compiled,540i 3.0 turbo 2017-2025
+BMW,5-Series 535i 540i,4d,116.9,u,"r,4",2013,2025,,,N55,engine-loop,compiled,535i 3.0 turbo
 BMW,5-Series GT,5d,120.9,u,r,2010,2012,,,007190,structural,edc-flagged,
 BMW,"525,530,540",4d,108.7,u,r,1989,1995,,,001510,structural,edc,
 BMW,"525,530,540","4d, SW",108.7,u,r,1996,2003,,Also M5,001520,structural,edc,
 BMW,"525,530,540","4d,SW",108.7,u,r,1996,2003,,Also M5,001520,structural,edc,
 BMW,"525,530,545",4d,113.7,u,r,2004,2010,,,001530,structural,edc,
-BMW,"525,530,545",4d,113.7,u,r,2004,2010,,,N52-LOOP,engine-loop,curated,525i/528i/530i badges only � V8/545 excluded
+BMW,"525,530,545",4d,113.7,u,r,2004,2010,,,N52-LOOP,engine-loop,curated,525i/528i/530i badges only — V8/545 excluded
 BMW,"525,530,550",4d,113.7,u,r,2004,2010,,Also M5,001530,structural,edc,
-BMW,"525,530,550",4d,113.7,u,r,2004,2010,,Also M5,N52-LOOP,engine-loop,curated,525i/528i/530i badges only � V8 excluded
+BMW,"525,530,550",4d,113.7,u,r,2004,2010,,Also M5,N52-LOOP,engine-loop,curated,525i/528i/530i badges only — V8 excluded
 BMW,"525,535",4d,108.7,u,r,1989,1995,,,001510,structural,edc,
 BMW,"525,540",4d,108.7,u,r,1989,1995,,,001510,structural,edc,
 BMW,528,4d,103.3,u,r,1980,1988,,,000320,structural,edc,
 BMW,"528,535",4d,103.3,u,r,1980,1988,,,000320,structural,edc,
 BMW,"528,535,550",4d,113.7,u,r,2004,2010,,Also M5,001530,structural,edc,
-BMW,"528,535,550",4d,113.7,u,r,2004,2010,,Also M5,N52-LOOP,engine-loop,curated,525i/528i/530i badges only � V8/550 excluded
+BMW,"528,535,550",4d,113.7,u,r,2004,2010,,Also M5,N52-LOOP,engine-loop,curated,525i/528i/530i badges only — V8/550 excluded
+BMW,"528,535,550",4d,113.7,u,r,2004,2010,,Also M5,N54,engine-loop,compiled,3.0 twin-turbo
 BMW,"528,540",4d,108.7,u,r,1996,2003,,,001520,structural,edc,
 BMW,535,4d,103.3,u,r,1980,1988,,,000320,structural,edc,
 BMW,6-Series,"2d,Conv",112.4,u,r,2012,2012,,New,007570,structural,edc,
@@ -158,21 +246,59 @@ BMW,"750,750L,760L",4d,"117.7,123.2",u,r,2002,2008,,,001570,structural,edc,
 BMW,750iL,4d,116,u,r,1988,1994,740,,001550,structural,edc-flagged,
 BMW,"840,850",2d,105.7,u,r,1991,1997,,,001590,structural,edc,
 BMW,850,2d,105.7,u,r,1991,1997,,,001590,structural,edc,
+BMW,X1,SUV,105.1,u,"f,4",2016,2025,,,B48,engine-loop,compiled,2.0 turbo I4
+BMW,X1,SUV,105.1,u,"f,4",2016,2025,,,BMW-UKL2,platform,compiled,
+BMW,X2,SUV,105.1,u,"f,4",2018,2023,,,B48,engine-loop,compiled,2.0 turbo I4
+BMW,X2,SUV,105.1,u,"f,4",2018,2023,,,BMW-UKL2,platform,compiled,
 BMW,X3,SW,110.1,u,4,2004,2010,,,001600,structural,edc,
-BMW,X3,SW,110.1,u,4,2004,2010,,,N52-LOOP,engine-loop,curated,X3 3.0si 2007-2010 only � pre-2007 M54
+BMW,X3,SW,110.1,u,4,2004,2010,,,M54,engine-loop,compiled,3.0i — N52 from 2007
+BMW,X3,SW,110.1,u,4,2004,2010,,,N52-LOOP,engine-loop,curated,X3 3.0si 2007-2010 only — pre-2007 M54
 BMW,X3,SW,110.6,u,4,2011,2012,,,007260,structural,edc-flagged,
+BMW,X3,SW,110.6,u,4,2011,2012,,,N20,engine-loop,compiled,xDrive28i 2.0 turbo
 BMW,X3,SW,110.6,u,4,2011,2012,,,N52-LOOP,engine-loop,curated,X3 xDrive28i 2011-2012 (N52)
+BMW,X3,SW,110.6,u,4,2011,2012,,,N55,engine-loop,compiled,xDrive35i only
+BMW,X3,SUV,110.6,u,4,2013,2017,,,BMW-F1X,platform,compiled,
+BMW,X3,SUV,110.6,u,4,2013,2017,,,N20,engine-loop,compiled,xDrive28i 2.0 turbo
+BMW,X3,SUV,110.6,u,4,2013,2017,,,N55,engine-loop,compiled,xDrive35i 3.0 turbo
+BMW,X3,SUV,112.8,u,4,2018,2025,,,B48,engine-loop,compiled,xDrive30i 2.0 turbo
+BMW,X3,SUV,112.8,u,4,2018,2025,,,B58,engine-loop,compiled,M40i 3.0 turbo
+BMW,X3,SUV,112.8,u,4,2018,2025,,,BMW-CLAR,platform,compiled,
+BMW,X4,SUV,110.6,u,4,2015,2018,,,BMW-F1X,platform,compiled,
+BMW,X4,SUV,110.6,u,4,2015,2018,,,N20,engine-loop,compiled,xDrive28i 2.0 turbo
+BMW,X4,SUV,110.6,u,4,2015,2018,,,N55,engine-loop,compiled,xDrive35i 3.0 turbo
+BMW,X4,SUV,112.8,u,4,2019,2025,,,B48,engine-loop,compiled,xDrive30i 2.0 turbo
+BMW,X4,SUV,112.8,u,4,2019,2025,,,B58,engine-loop,compiled,M40i 3.0 turbo
+BMW,X4,SUV,112.8,u,4,2019,2025,,,BMW-CLAR,platform,compiled,
 BMW,X5,SW,111,u,4,2000,2006,,,001610,structural,edc,
+BMW,X5,SW,111,u,4,2000,2006,,,M54,engine-loop,compiled,3.0i — N52 from 2007
 BMW,X5,SW,115.5,u,4,2007,2012,X6,,001620,structural,edc,
-BMW,X5,SW,115.5,u,4,2007,2012,X6,,N52-LOOP,engine-loop,curated,X5 3.0si/xDrive30i 2007-2010 only � later N55
+BMW,X5,SW,115.5,u,4,2007,2012,X6,,N52-LOOP,engine-loop,curated,X5 3.0si/xDrive30i 2007-2010 only — later N55
+BMW,X5,SW,115.5,u,4,2007,2012,X6,,N55,engine-loop,compiled,xDrive35i only
+BMW,X5,SUV,115.5,u,4,2014,2018,,,N55,engine-loop,compiled,xDrive35i 3.0 turbo
+BMW,X5,SUV,115.5,u,4,2014,2018,,,N63,engine-loop,compiled,xDrive50i 4.4 twin-turbo
+BMW,X5,SUV,117.1,u,4,2019,2025,,,B58,engine-loop,compiled,xDrive40i 3.0 turbo
+BMW,X5,SUV,117.1,u,4,2019,2025,,,BMW-CLAR,platform,compiled,
+BMW,X5,SUV,117.1,u,4,2019,2025,,,N63,engine-loop,compiled,xDrive50i/M60i 4.4 twin-turbo
 BMW,X6,SW,116,u,4,2009,2012,X5,Fastback X5,001621,structural,edc,
+BMW,X6,SW,116,u,4,2009,2012,X5,Fastback X5,N54,engine-loop,compiled,xDrive35i 3.0 twin-turbo
+BMW,X6,SW,116,u,4,2009,2012,X5,Fastback X5,N55,engine-loop,compiled,xDrive35i only
+BMW,X7,SUV,122.2,u,4,2019,2025,,,B58,engine-loop,compiled,xDrive40i 3.0 turbo
+BMW,X7,SUV,122.2,u,4,2019,2025,,,BMW-CLAR,platform,compiled,
+BMW,X7,SUV,122.2,u,4,2019,2025,,,N63,engine-loop,compiled,xDrive50i/M60i 4.4 twin-turbo
 BMW,Z3,Cnv,96.3,u,r,1996,2002,,"Also M Rdstr, M Coupe",001630,structural,edc,
 BMW,Z4,"2d,Cnv",98.2,u,r,2003,2008,,,001640,structural,edc,
-BMW,Z4,"2d,Cnv",98.2,u,r,2003,2008,,,N52-LOOP,engine-loop,curated,Z4 3.0si 2006-2008 only � earlier M54
+BMW,Z4,"2d,Cnv",98.2,u,r,2003,2008,,,M54,engine-loop,compiled,2.5i / 3.0i — N52 from 2006
+BMW,Z4,"2d,Cnv",98.2,u,r,2003,2008,,,N52-LOOP,engine-loop,curated,Z4 3.0si 2006-2008 only — earlier M54
 BMW,Z4,Cnv,98.2,u,r,2003,2008,,,001640,structural,edc,
-BMW,Z4,Cnv,98.2,u,r,2003,2008,,,N52-LOOP,engine-loop,curated,Z4 3.0si 2006-2008 only � earlier M54
+BMW,Z4,Cnv,98.2,u,r,2003,2008,,,M54,engine-loop,compiled,2.5i / 3.0i — N52 from 2006
+BMW,Z4,Cnv,98.2,u,r,2003,2008,,,N52-LOOP,engine-loop,curated,Z4 3.0si 2006-2008 only — earlier M54
 BMW,Z4,Cnv,98.2,u,r,2009,2012,,,001650,structural,edc,
+BMW,Z4,Cnv,98.2,u,r,2009,2012,,,N20,engine-loop,compiled,sDrive28i 2.0 turbo
 BMW,Z4,Cnv,98.2,u,r,2009,2012,,,N52-LOOP,engine-loop,curated,Z4 sDrive30i (E89)
+BMW,Z4,Cnv,98.2,u,r,2009,2012,,,N54,engine-loop,compiled,sDrive35i only — sDrive30i is N52
+BMW,Z4,2d,97.2,u,r,2019,2025,,,B48,engine-loop,compiled,sDrive30i 2.0 turbo
+BMW,Z4,2d,97.2,u,r,2019,2025,,,B58,engine-loop,compiled,M40i 3.0 turbo
+BMW,Z4,2d,97.2,u,r,2019,2025,,,BMW-G29,platform,compiled,
 BMW,Z8,Cnv,98.6,u,r,2001,2003,,,001660,structural,edc,
 Bentley,Arnage,4d,122.7,f,r,1999,2009,"Brooklands, Azure",,005530,structural,edc-flagged,
 Bentley,Azure,Conv,122.7,f,r,2007,2010,Arnage,,005530,structural,edc-flagged,
@@ -196,9 +322,17 @@ Buick,Electra,"2d,4d",127,f,r,1974,1976,GM Fullsize(Watch WB),,000030,structural
 Buick,Electra,"2d,4d",119,f,r,1977,1984,98,Also see LeSabre,000200,structural,edc-flagged,
 Buick,Electra,"2d,4d",110.8,u,f,1985,1990,"98,DeVille",,002300,structural,edc-flagged,
 Buick,Enclave,SW,118.9,u,"f,4",2008,2012,"Outlk, Acad.,Traverse",,002170,structural,edc,
+Buick,Enclave,SW,118.9,u,"f,4",2008,2012,"Outlk, Acad.,Traverse",,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6
+Buick,Enclave,SUV,120.9,u,"f,4",2018,2024,,,GM-C1XX,platform,compiled,
+Buick,Enclave,SUV,120.9,u,"f,4",2018,2024,,,HFV6-36,engine-loop,compiled,3.6 LFY V6
 Buick,Estate Wagon,SW,116,f,r,1977,1990,Older GM Fullsize RWD,Same old RWD car,000200,structural,edc-flagged,
 Buick,LaCrosse,4d,110.5,u,f,2005,2009,"Impala,older GrPrix",,002650,structural,edc,
 Buick,LaCrosse,4d,111.7,u,f,2010,2012,,,003150,structural,edc,
+Buick,LaCrosse,4d,111.7,u,f,2010,2012,,,ECOTEC-24,engine-loop,compiled,2.4 LAF — V6 excluded
+Buick,LaCrosse,4d,111.7,u,f,2010,2012,,,HFV6-36,engine-loop,compiled,3.6 LFX V6 — 2.4 excluded
+Buick,LaCrosse,4d,111.7,u,"f,4",2013,2016,,,ECOTEC-24,engine-loop,compiled,2.4 LAF 4-cyl
+Buick,LaCrosse,4d,111.7,u,"f,4",2013,2016,,,GM-E2XX,platform,compiled,
+Buick,LaCrosse,4d,111.7,u,"f,4",2013,2016,,,HFV6-36,engine-loop,compiled,3.6 LFX V6
 Buick,LeSabre,"2d,4d,SW 123.5,127(S",,f,r,1974,1976,GM Fullsize(Watch WB),Wagon Estate Wagon,000030,structural,edc-flagged,
 Buick,LeSabre,"2d,4d,SW",116,f,r,1977,1985,Caprice,Same old RWD car,000200,structural,edc-flagged,
 Buick,LeSabre,"2d,4d",110.8,u,f,1986,1991,"88,Bonneville",,002303,structural,edc,
@@ -208,6 +342,7 @@ Buick,Lucerne,4d,115.6,u,f,2006,2011,DTS,,002640,structural,edc,
 Buick,Park Avenue,"2d,4d",110.8,u,f,1991,1996,98,,002301,structural,edc,
 Buick,Park Avenue,4d,113.8,u,f,1997,2005,"Bonnev,LeSabre",,002321,structural,edc-flagged,
 Buick,Rainier,SUV,113,f,"r,4",2004,2007,"TrailBlazer,Envoy,etc",,002110,structural,edc-flagged,
+Buick,Rainier,SUV,113,f,"r,4",2004,2007,"TrailBlazer,Envoy,etc",,LS-GEN4,engine-loop,compiled,5.3 V8 option only
 Buick,Reatta,2d,98.5,u,f,1988,1991,Riviera(?),,002513,structural,edc,
 Buick,Regal,"2d,4d",108,f,r,1978,1987,Cutlass Supreme,NOT Somerset,000221,structural,edc,
 Buick,Regal,"2d,4d,SW",108,f,r,1978,1987,"Malibu,etc.",,000221,structural,edc,
@@ -215,6 +350,9 @@ Buick,Regal,2d,108,f,r,1978,1987,Monte Carlo,,000221,structural,edc,
 Buick,Regal,"2d, 4d",107.5,u,f,1988,1997,This is the carryover,Watch Out! mid-year change!,002500,structural,edc-flagged,
 Buick,Regal,2d,107.5,u,f,1988,1996,"Gr Prix,Cutl Supreme",,002500,structural,edc-flagged,
 Buick,Regal,4d,107.8,u,f,2011,2012,Opel Insignia,Shortened Epsilon II,003151,structural,edc,
+Buick,Regal,4d,107.8,u,f,2011,2012,Opel Insignia,Shortened Epsilon II,ECOTEC-24,engine-loop,compiled,2.4 LAF — 2.0 turbo excluded
+Buick,Regal,4d,107.8,u,"f,4",2013,2017,,,GM-E2XX,platform,compiled,
+Buick,Regal,4d,107.8,u,"f,4",2013,2017,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG
 Buick,Rendezvous,Van?SUV?,112,u,"f,4",2002,2007,Pontiac Aztek(older),Based on Venture/Montana,002161,structural,edc-flagged,
 Buick,Riviera,2d,122,f,r,1974,1976,Toronado(/Eldorado?),"Toro is FWD. Still,comparable",000040,structural,edc-flagged,
 Buick,Riviera,2d,116,f,r,1977,1978,"LeSabre,etc",,000200,structural,edc-flagged,
@@ -236,13 +374,27 @@ Buick,Somerset Regal,2d,103.4,u,f,1985,1991,"GrandAm,Calais",New.NOT plain Regal
 Buick,"Somerset,Skylark","2d,4d",103.4,u,f,1985,1991,"GrandAm,Calais",Coupe still Somerset Regal,002230,structural,edc,
 Buick,Terraza,Van,121.1,u,"f,4",2005,2007,"Uplander, Relay",,002162,structural,edc,
 Buick,Verano,4d,105.7,u,f,2012,2012,Cruze,New. (To Buick),007260,structural,edc-flagged,
+Buick,Verano,4d,105.7,u,f,2012,2012,Cruze,New. (To Buick),ECOTEC-24,engine-loop,compiled,2.4 LAF — 2.0 turbo excluded
 Cadillac,60 Special,4d,113.8,u,f,1989,1993,"98,Electra(Fr-NoteWB)",Not Fleetwood any more,002300,structural,edc-flagged,
+Cadillac,ATS,4d,109.3,u,"r,4",2013,2019,,,GM-ALPHA,platform,compiled,
+Cadillac,ATS,4d,109.3,u,"r,4",2013,2019,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
+Cadillac,ATS,4d,109.3,u,"r,4",2013,2019,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG
 Cadillac,Allante,2d,99.4,u,f,1987,1993,,,002350,structural,edc,
 Cadillac,Brougham,4d,121.5,f,r,1977,1992,Old GM Fullsize RWD,Same old RWD car,000200,structural,edc-flagged,
+Cadillac,CT4,4d,109.3,u,"r,4",2020,2024,,,GM-ALPHA,platform,compiled,
+Cadillac,CT4,4d,109.3,u,"r,4",2020,2024,,,LTG-20T,engine-loop,compiled,2.0 turbo LSY
+Cadillac,CT5,4d,116.0,u,"r,4",2020,2025,,,GM-ALPHA,platform,compiled,
+Cadillac,CT5,4d,116.0,u,"r,4",2020,2025,,,LTG-20T,engine-loop,compiled,2.0 turbo LSY
 Cadillac,CTS,4d,113.4,u,r,2003,2007,STS,Also -V,002410,structural,edc-flagged,
 Cadillac,CTS,"2d,4d, SW",113.4,u,r,2008,2012,,Also -V,002420,structural,edc-flagged,
+Cadillac,CTS,"2d,4d, SW",113.4,u,r,2008,2012,,Also -V,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6
 Cadillac,CTS,"4d, SW",113.4,u,r,2008,2012,,New SW. Also -V,002420,structural,edc-flagged,
+Cadillac,CTS,"4d, SW",113.4,u,r,2008,2012,,New SW. Also -V,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6
 Cadillac,CTS,4d,113.4,u,r,2008,2012,,Also -V,002420,structural,edc-flagged,
+Cadillac,CTS,4d,113.4,u,r,2008,2012,,Also -V,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6
+Cadillac,CTS,4d,114.6,u,"r,4",2014,2019,,,GM-ALPHA,platform,compiled,
+Cadillac,CTS,4d,114.6,u,"r,4",2014,2019,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
+Cadillac,CTS,4d,114.6,u,"r,4",2014,2019,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG
 Cadillac,Catera,4d,107.4,u,r,1997,2001,Opel(Ger.),,002430,structural,edc,
 Cadillac,Catera,4d,107.4,u,r,1997,2001,Opel(Ger.),New,002420,structural,edc-flagged,
 Cadillac,Cimarron,4d,101.2,u,f,1982,1988,Cavalier,,002240,structural,edc,
@@ -263,32 +415,59 @@ Cadillac,Eldorado,2d,108,u,f,1988,1991,"Toronado,Riviera",,002511,structural,edc
 Cadillac,Eldorado,2d,108,u,f,1992,2002,92-97 Seville,Same old car,002520,structural,edc-flagged,
 Cadillac,Escalade,SUV,111.5,f,"r,4",1999,2000,"99-earlierTahoe,Yukon",Same old Truck,002042,structural,edc,
 Cadillac,Escalade,SUV,117.5,f,"r,4",2001,2006,"Tahoe, Yukon",,002052,structural,edc-flagged,
+Cadillac,Escalade,SUV,117.5,f,"r,4",2001,2006,"Tahoe, Yukon",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8
 Cadillac,Escalade,SUV,116,f,"r,4",2007,2012,"Tahoe, Yukon",,002062,structural,edc,
+Cadillac,Escalade,SUV,116,f,"r,4",2007,2012,"Tahoe, Yukon",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8
+Cadillac,Escalade,SUV,116.0,f,"r,4",2015,2020,,,GM-K2XX,platform,compiled,
+Cadillac,Escalade,SUV,116.0,f,"r,4",2015,2020,,,LT-GEN5,engine-loop,compiled,6.2 L86
+Cadillac,Escalade,SUV,120.9,f,"r,4",2021,2025,,,GM-T1XX,platform,compiled,
+Cadillac,Escalade,SUV,120.9,f,"r,4",2021,2025,,,LT-GEN5,engine-loop,compiled,6.2 L87
 Cadillac,Escalade ESV,SUV,130,f,"r,4",2003,2006,"Suburban, Yukon XL",,002051,structural,edc,
+Cadillac,Escalade ESV,SUV,130,f,"r,4",2003,2006,"Suburban, Yukon XL",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8
 Cadillac,Escalade ESV,SUV,130,f,"r,4",2007,2012,"Suburban, Yukon XL",,002061,structural,edc,
+Cadillac,Escalade ESV,SUV,130,f,"r,4",2007,2012,"Suburban, Yukon XL",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8
+Cadillac,Escalade ESV,SUV,130.0,f,"r,4",2015,2020,,,GM-K2XX,platform,compiled,
+Cadillac,Escalade ESV,SUV,130.0,f,"r,4",2015,2020,,,LT-GEN5,engine-loop,compiled,6.2 L86
 Cadillac,Escalade EXT,Pickup/SU,130,f,"r,4",2002,2006,Avalanche,Front same as Escalade,002053,structural,edc,
+Cadillac,Escalade EXT,Pickup/SU,130,f,"r,4",2002,2006,Avalanche,Front same as Escalade,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8
 Cadillac,Escalade EXT,Pickup/SU,130,f,"r,4",2007,2012,Avalanche,Front same as Escalade,002063,structural,edc,
+Cadillac,Escalade EXT,Pickup/SU,130,f,"r,4",2007,2012,Avalanche,Front same as Escalade,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8
 Cadillac,Fleetwood,4d,121.5,f,r,1993,1996,Caprice,,002310,structural,edc-flagged,
 Cadillac,Fleetwood 60 Spc,4d,113.8,u,f,1989,1993,"98,Electra(Fr-NoteWB)",,002300,structural,edc-flagged,
 Cadillac,Fleetwood Brghm,4d,121.5,f,r,1977,1992,Old GM Fullsize RWD,Same old RWD car,000200,structural,edc-flagged,
 Cadillac,Fleetwood Brghm,"2d,4d",121.5,f,r,1977,1992,Old GM Fullsize RWD,Note WB.Was old DeVille,000200,structural,edc-flagged,
 Cadillac,SRX,SUV,116.4,u,"r,4",2004,2009,03-07 CTS,,002411,structural,edc,
 Cadillac,SRX,SUV,110.5,u,"r,4",2010,2012,Equinox(GM says NOT),,003161,structural,edc,
+Cadillac,SRX,SUV,110.5,u,"r,4",2010,2012,Equinox(GM says NOT),,HFV6-36,engine-loop,compiled,3.6 LFX V6
 Cadillac,STS,4d,116.4,u,"r,4",2005,2011,03-07 CTS,Also -V,002410,structural,edc-flagged,
+Cadillac,STS,4d,116.4,u,"r,4",2005,2011,03-07 CTS,Also -V,HFV6-36,engine-loop,compiled,3.6 LY7 V6
 Cadillac,Seville,4d,114.3,f,r,1976,1979,Nova?,Basically a modified Nova,000011,structural,edc,
 Cadillac,Seville,4d,114,f,f,1980,1985,,Basically a 4 door Eldorado,000251,structural,edc,
 Cadillac,Seville,4d,108,u,f,1986,1991,,Basically a 4 door Eldorado,002512,structural,edc,
 Cadillac,Seville,4d,111,u,f,1992,1997,Eldorado,,002520,structural,edc-flagged,
 Cadillac,Seville,4d,112.2,u,f,1998,2004,"LeSbre,PkAv,Bonnev",,002321,structural,edc-flagged,
 Cadillac,XLR,Conv,105.7,f,r,2004,2009,Corvette,Also -V,002290,structural,edc-flagged,
+Cadillac,XT5,SUV,112.5,u,"f,4",2017,2025,,,GM-C1XX,platform,compiled,
+Cadillac,XT5,SUV,112.5,u,"f,4",2017,2025,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
+Cadillac,XT5,SUV,112.5,u,"f,4",2017,2025,,,LTG-20T,engine-loop,compiled,2.0 turbo LSY 2020-2025
+Cadillac,XT6,SUV,112.7,u,"f,4",2020,2025,,,GM-C1XX,platform,compiled,
+Cadillac,XT6,SUV,112.7,u,"f,4",2020,2025,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
 Chevrolet,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2001,2007,GMC Sierra HD,,002070,structural,edc,
+Chevrolet,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2001,2007,GMC Sierra HD,,DMAX-66,engine-loop,compiled,6.6 Duramax diesel only
+Chevrolet,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2001,2007,GMC Sierra HD,,LS-GEN4,engine-loop,compiled,6.0 L96 gas V8 only
 Chevrolet,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2008,2012,GMC Sierra HD,,002080,structural,edc,
+Chevrolet,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2008,2012,GMC Sierra HD,,DMAX-66,engine-loop,compiled,6.6 Duramax diesel only
+Chevrolet,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2008,2012,GMC Sierra HD,,LS-GEN4,engine-loop,compiled,6.0 L96 gas V8 only
 Chevrolet,Astro,MiniVan,111,f,"r,4",1985,2005,GMC Safari,,002120,structural,edc,
 Chevrolet,Avalanche,Pickup/SU,130,f,"r,4",2002,2006,Escalade EXT,,002053,structural,edc,
+Chevrolet,Avalanche,Pickup/SU,130,f,"r,4",2002,2006,Escalade EXT,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8
 Chevrolet,Avalanche,Pickup/SU,130,f,"r,4",2007,2012,Escalade EXT,,002063,structural,edc,
+Chevrolet,Avalanche,Pickup/SU,130,f,"r,4",2007,2012,Escalade EXT,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8
 Chevrolet,Aveo,"4d, 5d",97.6,u,f,2004,2006,,,002360,structural,edc,
 Chevrolet,Aveo,"4d, 5d",97.6,u,f,2007,2011,,,002361,structural,edc,
 Chevrolet,Blazer,SUV,100.5,f,"r,4",1995,2005,"95-01 Jimmy, Bravada",,002101,structural,edc-flagged,
+Chevrolet,Blazer,SUV,112.7,u,"f,4",2019,2025,,,GM-C1XX,platform,compiled,
+Chevrolet,Blazer,SUV,112.7,u,"f,4",2019,2025,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
 Chevrolet,"C,K",Pickup,"117.5,131.5",f,"r,4",1988,1999,GMC Sierra,(Some 99's were old body),002040,structural,edc,
 Chevrolet,"C,K-10/20/30",Pickup,"117.5,131.5",f,"r,4",1980,1980,GMC 15/25/35,K=4WD,000360,structural,edc,
 Chevrolet,"C,K-10/20/30",Pickup,"117.5,131.5",f,"r,4",1981,1987,GMC 15/25/35,,002030,structural,edc,
@@ -301,7 +480,17 @@ Chevrolet,Camaro,"2d, Conv",101.1,u,r,1993,1997,Firebird,,002460,structural,edc,
 Chevrolet,Camaro,2d,101.1,u,r,1993,1997,Firebird,New,002460,structural,edc,
 Chevrolet,Camaro,"2d, Conv",101.1,u,r,1998,2002,Firebird,,002461,structural,edc,
 Chevrolet,Camaro,"2d, Conv",112.3,u,r,2010,2012,,,002471,structural,edc,
+Chevrolet,Camaro,"2d, Conv",112.3,u,r,2010,2012,,,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6 — V8 excluded
+Chevrolet,Camaro,"2d, Conv",112.3,u,r,2010,2012,,,LS-GEN4,engine-loop,compiled,6.2 L99 / LS3
 Chevrolet,Camaro,2d,112.3,u,r,2010,2012,,Zeta II Chassis (G8),002471,structural,edc,
+Chevrolet,Camaro,2d,112.3,u,r,2010,2012,,Zeta II Chassis (G8),HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6 — V8 excluded
+Chevrolet,Camaro,2d,112.3,u,r,2010,2012,,Zeta II Chassis (G8),LS-GEN4,engine-loop,compiled,6.2 L99 / LS3
+Chevrolet,Camaro,2d,112.3,u,r,2013,2015,,,HFV6-36,engine-loop,compiled,3.6 LFX V6
+Chevrolet,Camaro,2d,112.3,u,r,2013,2015,,,LS-GEN4,engine-loop,compiled,6.2 LS3/L99 V8
+Chevrolet,Camaro,2d,110.7,u,r,2016,2024,,,GM-ALPHA,platform,compiled,
+Chevrolet,Camaro,2d,110.7,u,r,2016,2024,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
+Chevrolet,Camaro,2d,110.7,u,r,2016,2024,,,LT-GEN5,engine-loop,compiled,6.2 LT1 V8
+Chevrolet,Camaro,2d,110.7,u,r,2016,2024,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG
 Chevrolet,Caprice,"2d,4d,SW",116,f,r,1977,1990,Older cars,Same old RWD car,000200,structural,edc-flagged,
 Chevrolet,Caprice,"4d,SW",115.9,f,r,1991,1996,"Cstm Cr,Rdmstr,Fltwd",Also Impala SS,002310,structural,edc-flagged,
 Chevrolet,Cavalier,"2d,4d,SW",101.2,u,f,1982,1994,Sunbird,,002240,structural,edc,
@@ -318,24 +507,49 @@ Chevrolet,Citation II,"2d,3d,5d",105,u,f,1980,1985,"Phoenix,Omega,Skylark",,0003
 Chevrolet,Classic,4d,107,u,f,1997,2012,Cutlass(to 99),Was Malibu (watch out!),002400,structural,edc-flagged,
 Chevrolet,Cobalt,"2d,4d",103.3,u,f,2005,2010,G5,,002260,structural,edc,
 Chevrolet,Colorado,Pickup,"111.3,125.9",f,"r,4",2004,2012,Canyon,,002440,structural,edc-flagged,
+Chevrolet,Colorado,Pickup,128.3,f,"r,4",2015,2022,,2.5 LCV 4-cyl is separate family,GM-31XX,platform,compiled,
+Chevrolet,Colorado,Pickup,128.3,f,"r,4",2015,2022,,2.5 LCV 4-cyl is separate family,HFV6-36,engine-loop,compiled,3.6 LGZ V6
+Chevrolet,Colorado,Pickup,131.4,f,"r,4",2023,2025,,2.7 L3B turbo only,GM-31XX,platform,compiled,
 Chevrolet,Corsica/Beretta,"2d,4d",103.4,u,f,1987,1996,"GrndAm,Achieva,Skylrk",,002232,structural,edc,
 Chevrolet,Corsica/Beretta,"2d,4d",103.4,u,f,1987,1996,"GrndAm,Calais,Skylrk?",Less similar than other three,002231,structural,edc,
 Chevrolet,Corvette,2d,98,f,r,1974,1982,,,000060,structural,edc,
 Chevrolet,Corvette,2d,96.2,f,r,1984,1996,,,002270,structural,edc,
 Chevrolet,Corvette,"2d,Cnv",104.5,f,r,1997,2004,,,002280,structural,edc,
+Chevrolet,Corvette,"2d,Cnv",104.5,f,r,1997,2004,,,LS-GEN4,engine-loop,compiled,LS1 / LS2 / LS3 — dry-sump variants differ
 Chevrolet,Corvette,2d,104.5,f,r,1997,2004,,New,002280,structural,edc,
+Chevrolet,Corvette,2d,104.5,f,r,1997,2004,,New,LS-GEN4,engine-loop,compiled,LS1 / LS2 / LS3 — dry-sump variants differ
 Chevrolet,Corvette,"2d,Cnv",104.5,f,r,2005,2012,Old XLR,,002290,structural,edc-flagged,
+Chevrolet,Corvette,"2d,Cnv",104.5,f,r,2005,2012,Old XLR,,LS-GEN4,engine-loop,compiled,LS1 / LS2 / LS3 — dry-sump variants differ
+Chevrolet,Corvette,2d,106.7,u,r,2014,2019,,,LT-GEN5,engine-loop,compiled,6.2 LT1 V8
 Chevrolet,Cruze,4d,105.7,u,f,2011,2012,,,007260,structural,edc-flagged,
+Chevrolet,Cruze,4d,106.3,u,f,2016,2019,,1.4 LE2 turbo — separate family,GM-D2XX,platform,compiled,
 Chevrolet,El Camino,Car/Pckup,117,f,r,1980,1988,Caballero/Diablo,Also Malibu (Front Only),000222,structural,edc,
 Chevrolet,Equinox,SW,112.5,u,"f,4",2005,2012,"Torrent, Vue",,002180,structural,edc,
+Chevrolet,Equinox,SW,112.5,u,"f,4",2005,2012,"Torrent, Vue",,ECOTEC-24,engine-loop,compiled,2.4 LAF / LEA — 3.6 V6 excluded
+Chevrolet,Equinox,SW,112.5,u,"f,4",2005,2012,"Torrent, Vue",,HFV6-36,engine-loop,compiled,3.6 LFX V6 — 2.4 4-cyl excluded
 Chevrolet,Equinox,SW,112.5,u,"f,4",2010,2012,"Terrain, SRX?",,003160,structural,edc,
+Chevrolet,Equinox,SW,112.5,u,"f,4",2010,2012,"Terrain, SRX?",,ECOTEC-24,engine-loop,compiled,2.4 LAF / LEA — 3.6 V6 excluded
+Chevrolet,Equinox,SW,112.5,u,"f,4",2010,2012,"Terrain, SRX?",,HFV6-36,engine-loop,compiled,3.6 LFX V6 — 2.4 4-cyl excluded
+Chevrolet,Equinox,SUV,112.5,u,"f,4",2013,2017,,,ECOTEC-24,engine-loop,compiled,2.4 LEA 4-cyl
+Chevrolet,Equinox,SUV,112.5,u,"f,4",2013,2017,,,HFV6-36,engine-loop,compiled,3.6 LFX V6
+Chevrolet,Equinox,SUV,107.3,u,"f,4",2018,2024,,,GM-D2XX,platform,compiled,
+Chevrolet,Equinox,SUV,107.3,u,"f,4",2018,2024,,,LFV-15T,engine-loop,compiled,1.5 turbo LFV
+Chevrolet,Equinox,SUV,107.3,u,"f,4",2018,2024,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG 2018-2019
 Chevrolet,Express,Van,"135,155",u,r,2003,2012,GMC Savana,,002140,structural,edc,
+Chevrolet,Express,Van,"135,155",u,r,2003,2012,GMC Savana,,LS-GEN4,engine-loop,compiled,4.8 / 5.3 / 6.0 V8
+Chevrolet,Express,Van,135.0,f,"r,4",2013,2025,,,LS-GEN4,engine-loop,compiled,4.8 / 6.0 V8 through 2019
 Chevrolet,HHR,SW,103.5,u,f,2006,2011,,,002580,structural,edc,
 Chevrolet,Impala,"2d,4d,SW 121.5,125(S",,f,r,1974,1976,GM Fullsize(Watch WB),Also Caprice,000030,structural,edc-flagged,
 Chevrolet,Impala,"2d,4d,SW",116,f,r,1977,1988,"Bonneville,88,LeSabre",Also Caprice,000200,structural,edc-flagged,
 Chevrolet,Impala,4d,110.5,u,f,2006,2012,"LaCrosse, Old GrPrix",,002650,structural,edc,
+Chevrolet,Impala,4d,110.5,u,f,2006,2012,"LaCrosse, Old GrPrix",,HFV6-36,engine-loop,compiled,3.6 LFX V6
+Chevrolet,Impala,4d,110.5,u,f,2006,2012,"LaCrosse, Old GrPrix",,LS-GEN4,engine-loop,compiled,SS 5.3 LS4 transverse — accessory drive differs
+Chevrolet,Impala,4d,111.7,u,f,2014,2020,,,GM-E2XX,platform,compiled,
+Chevrolet,Impala,4d,111.7,u,f,2014,2020,,,HFV6-36,engine-loop,compiled,3.6 LFX/LGX V6
 Chevrolet,"Impala,Monte Carlo","4d,2d",110.5,u,f,2000,2005,"Century,Grand Prix",,002220,structural,edc-flagged,
 Chevrolet,"Impala,Monte Carlo","4d,2d",110.5,u,f,2006,2012,"Grand Prix, LaCrosse",,002650,structural,edc,
+Chevrolet,"Impala,Monte Carlo","4d,2d",110.5,u,f,2006,2012,"Grand Prix, LaCrosse",,HFV6-36,engine-loop,compiled,3.6 LFX V6
+Chevrolet,"Impala,Monte Carlo","4d,2d",110.5,u,f,2006,2012,"Grand Prix, LaCrosse",,LS-GEN4,engine-loop,compiled,SS 5.3 LS4 transverse — accessory drive differs
 Chevrolet,K-5 Blazer,SUV,106.5,f,"r,4",1980,1980,"Jimmy,Fullsize Pickup",,000361,structural,edc,
 Chevrolet,K-5 Blazer,SUV,106.5,f,"r,4",1981,1992,"Jimmy,P/U pre-88",,002032,structural,edc,
 Chevrolet,K-5 Blazer,SUV,111.5,f,"r,4",1992,1999,"Yukon,Fullsize Pickup",,002042,structural,edc,
@@ -352,6 +566,13 @@ Chevrolet,Malibu,"2d,4d,SW",108,f,r,1978,1983,"LeMans,Cutlass,Centur",,000220,st
 Chevrolet,Malibu,4d,107,u,f,1997,2003,Cutlass(to 99),Cutlass discont. 2000,002400,structural,edc-flagged,
 Chevrolet,Malibu,4d,106.3,u,f,2004,2007,"9-3, G6",,002370,structural,edc-flagged,
 Chevrolet,Malibu,4d,,u,f,2008,2012,"Aura, G6, 9-3",,002371,structural,edc-flagged,
+Chevrolet,Malibu,4d,,u,f,2008,2012,"Aura, G6, 9-3",,ECOTEC-24,engine-loop,compiled,2.4 LAF / LE5 — V6 excluded
+Chevrolet,Malibu,4d,,u,f,2008,2012,"Aura, G6, 9-3",,HFV6-36,engine-loop,compiled,3.6 LY7 / LFX V6 — 2.4 excluded
+Chevrolet,Malibu,4d,107.8,u,f,2013,2015,,,GM-E2XX,platform,compiled,
+Chevrolet,Malibu,4d,107.8,u,f,2013,2015,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG 2013-2015
+Chevrolet,Malibu,4d,111.4,u,f,2016,2024,,,GM-E2XX,platform,compiled,
+Chevrolet,Malibu,4d,111.4,u,f,2016,2024,,,LFV-15T,engine-loop,compiled,1.5 turbo LFV
+Chevrolet,Malibu,4d,111.4,u,f,2016,2024,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG 2016-2020
 Chevrolet,Malibu Maxx,5d,112.3,u,f,2004,2007,"9-3, G6",,002370,structural,edc-flagged,
 Chevrolet,Metro,"3d,4d",93.1,u,r,1995,2001,Suzuki Swift,Was Geo,002630,structural,edc-flagged,
 Chevrolet,Monte Carlo,2d,116,f,r,1974,1977,Grand Prix,Also see Malibu,000021,structural,edc,
@@ -367,9 +588,22 @@ Chevrolet,S10/T10,Pickup,"108,118,123",f,"r,4",1982,1993,GMC Sonoma,,002090,stru
 Chevrolet,S10/T10,Pickup,,f,"r,4",1994,2004,"Sonoma, Isuzu Hombre",Old model crew cab still sold,002100,structural,edc,
 Chevrolet,S10/T10 Blazer,SUV,100.5,f,"r,4",1983,1994,GMC Jimmy,Extra year on old body style,002091,structural,edc-flagged,
 Chevrolet,SSR,Pickup,116,f,r,2004,2006,None,,002660,structural,edc,
+Chevrolet,SSR,Pickup,116,f,r,2004,2006,None,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8
 Chevrolet,Silverado,Pickup,"119,133",f,"r,4",1999,2006,GMC Sierra,,002050,structural,edc,
+Chevrolet,Silverado,Pickup,"119,133",f,"r,4",1999,2006,GMC Sierra,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
 Chevrolet,Silverado,Pickup,"133.9,143.5",f,"r,4",2007,2012,GMC Sierra,,002060,structural,edc,
+Chevrolet,Silverado,Pickup,"133.9,143.5",f,"r,4",2007,2012,GMC Sierra,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
+Chevrolet,Silverado 1500,Pickup,143.5,f,"r,4",2014,2018,,,GM-K2XX,platform,compiled,
+Chevrolet,Silverado 1500,Pickup,143.5,f,"r,4",2014,2018,,,LT-GEN5,engine-loop,compiled,5.3 L83 / 6.2 L86 — 4.3 V6 excluded
+Chevrolet,Silverado 1500,Pickup,147.4,f,"r,4",2019,2025,,,GM-T1XX,platform,compiled,
+Chevrolet,Silverado 1500,Pickup,147.4,f,"r,4",2019,2025,,,LT-GEN5,engine-loop,compiled,5.3 L84 / 6.2 L87
+Chevrolet,Silverado 2500HD,Pickup,158.9,f,"r,4",2015,2019,,,DMAX-66,engine-loop,compiled,6.6 Duramax diesel
+Chevrolet,Silverado 2500HD,Pickup,158.9,f,"r,4",2015,2019,,,GM-K2XX,platform,compiled,
+Chevrolet,Silverado 2500HD,Pickup,158.9,f,"r,4",2015,2019,,,LS-GEN4,engine-loop,compiled,6.0 L96 gas V8
+Chevrolet,Silverado 2500HD,Pickup,158.9,f,"r,4",2020,2025,,6.6 L8T gas is separate family,DMAX-66,engine-loop,compiled,6.6 Duramax diesel
+Chevrolet,Silverado 2500HD,Pickup,158.9,f,"r,4",2020,2025,,6.6 L8T gas is separate family,GM-T1XX,platform,compiled,
 Chevrolet,Silverado Classic,Pickup,"119,143.5",f,"r,4",1999,2007,GMC Sierra Classic,Continuation model,002050,structural,edc,
+Chevrolet,Silverado Classic,Pickup,"119,143.5",f,"r,4",1999,2007,GMC Sierra Classic,Continuation model,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
 Chevrolet,Sonic,"4d, 5d",99.4,u,f,2012,2012,,New,007580,structural,edc,
 Chevrolet,Spectrum,"3d,4d",94.5,u,f,1985,1989,Isuzu I-Mark,,002670,structural,edc,
 Chevrolet,Sprint,"3d,5d",88.4,u,r,1985,1988,,Made by Suzuki,002680,structural,edc,
@@ -378,15 +612,33 @@ Chevrolet,Suburban,SW,129.5,f,"r,4",1980,1980,Fullsize Pickups(Fr),Including GMC
 Chevrolet,Suburban,SW,129.5,f,"r,4",1981,1991,Fullsize Pickups(Fr),,002031,structural,edc,
 Chevrolet,Suburban,SW,131.5,f,"r,4",1992,1999,Fullsize Pickups(Fr),Old truck body still,002041,structural,edc-flagged,
 Chevrolet,Suburban,SW,130,f,"r,4",2000,2006,"Yukon XL,Escalade ESV",,002051,structural,edc,
+Chevrolet,Suburban,SW,130,f,"r,4",2000,2006,"Yukon XL,Escalade ESV",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8 — 2500 is 6.0
 Chevrolet,Suburban,SW,130,f,"r,4",2007,2012,"Yukon XL,Escalade ESV",,002061,structural,edc,
+Chevrolet,Suburban,SW,130,f,"r,4",2007,2012,"Yukon XL,Escalade ESV",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8 — 2500 is 6.0
+Chevrolet,Suburban,SUV,130.0,f,"r,4",2015,2020,,,GM-K2XX,platform,compiled,
+Chevrolet,Suburban,SUV,130.0,f,"r,4",2015,2020,,,LT-GEN5,engine-loop,compiled,5.3 L83
+Chevrolet,Suburban,SUV,134.1,f,"r,4",2021,2025,,,GM-T1XX,platform,compiled,
+Chevrolet,Suburban,SUV,134.1,f,"r,4",2021,2025,,,LT-GEN5,engine-loop,compiled,5.3 L84 / 6.2 L87
 Chevrolet,Tahoe,SUV,"111.5,117.5",f,"r,4",1992,1999,"Yukon, Escalade",Old truck body still,002042,structural,edc,
 Chevrolet,Tahoe,SUV,116,f,"r,4",2000,2006,Yukon,,002052,structural,edc-flagged,
+Chevrolet,Tahoe,SUV,116,f,"r,4",2000,2006,Yukon,,LS-GEN4,engine-loop,compiled,4.8 / 5.3 / 6.2 V8
 Chevrolet,Tahoe,SUV,116,f,"r,4",2007,2012,Yukon,,002062,structural,edc,
+Chevrolet,Tahoe,SUV,116,f,"r,4",2007,2012,Yukon,,LS-GEN4,engine-loop,compiled,4.8 / 5.3 / 6.2 V8
+Chevrolet,Tahoe,SUV,116.0,f,"r,4",2015,2020,,,GM-K2XX,platform,compiled,
+Chevrolet,Tahoe,SUV,116.0,f,"r,4",2015,2020,,,LT-GEN5,engine-loop,compiled,5.3 L83
+Chevrolet,Tahoe,SUV,120.9,f,"r,4",2021,2025,,,GM-T1XX,platform,compiled,
+Chevrolet,Tahoe,SUV,120.9,f,"r,4",2021,2025,,,LT-GEN5,engine-loop,compiled,5.3 L84 / 6.2 L87
 Chevrolet,Tracker,SUV,"86.6,97.6",u,"r,4",1989,1998,Suzuki Sidekick,,002190,structural,edc,
 Chevrolet,Tracker,SUV,"86.6,97.6",u,"r,4",1999,2004,Suzuki Vitara,,002200,structural,edc-flagged,
 Chevrolet,TrailBlazer,SUV,113,f,"r,4",2002,2012,"Envoy,9-7X,Ascender",,002110,structural,edc-flagged,
+Chevrolet,TrailBlazer,SUV,113,f,"r,4",2002,2012,"Envoy,9-7X,Ascender",,LS-GEN4,engine-loop,compiled,SS 6.0 LS2 only — 4.2 I6 excluded
 Chevrolet,"TrailBlazer,EXT",SUV,"113,129",f,"r,4",2002,2009,"Envoy,Ranier,9-7X,Asc",,002110,structural,edc-flagged,
+Chevrolet,"TrailBlazer,EXT",SUV,"113,129",f,"r,4",2002,2009,"Envoy,Ranier,9-7X,Asc",,LS-GEN4,engine-loop,compiled,SS 6.0 LS2 only — 4.2 I6 excluded
 Chevrolet,Traverse,SW,118.9,u,"f,4",2009,2012,"Outlk, Acad.,Enclave",,002170,structural,edc,
+Chevrolet,Traverse,SW,118.9,u,"f,4",2009,2012,"Outlk, Acad.,Enclave",,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6
+Chevrolet,Traverse,SUV,118.9,u,"f,4",2013,2017,,,HFV6-36,engine-loop,compiled,3.6 LFX V6
+Chevrolet,Traverse,SUV,120.9,u,"f,4",2018,2023,,,GM-C1XX,platform,compiled,
+Chevrolet,Traverse,SUV,120.9,u,"f,4",2018,2023,,,HFV6-36,engine-loop,compiled,3.6 LFY V6
 Chevrolet,Uplander,Van,121.1,u,"f,4",2005,2008,,,002162,structural,edc,
 Chevrolet,Van/Express,Van,"135,155",u,r,1996,2002,GMC Savana,,002130,structural,edc,
 Chevrolet,Van/Sportvan,Van,"125,146",u,r,1980,1995,GMC Vandura/Rally,,000380,structural,edc-flagged,
@@ -394,11 +646,26 @@ Chevrolet,Vega,"2d,3d,SW",97,u,r,1974,1977,Astre,,000070,structural,edc,
 Chevrolet,Venture,Van,"112,120",u,f,1997,2005,Montana,Same old Venture,002160,structural,edc-flagged,
 Chevrolet,Volt,4d,105.7,u,f,2011,2012,,Cruze chassis,007270,structural,edc,
 Chrysler,200,"4d,Conv",108.9,u,f,2007,2012,Avenger,,003760,structural,edc,
+Chrysler,200,"4d,Conv",108.9,u,f,2007,2012,Avenger,,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — 2.4 excluded
+Chrysler,200,4d,108.0,u,"f,4",2015,2017,,,FCA-CUSW,platform,compiled,
+Chrysler,200,4d,108.0,u,"f,4",2015,2017,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Chrysler,200,4d,108.0,u,"f,4",2015,2017,,,TIGERSHARK-24,engine-loop,compiled,2.4 4-cyl
 Chrysler,300,4d,120,u,"r,4",2005,2012,Charger,,003710,structural,edc,
+Chrysler,300,4d,120,u,"r,4",2005,2012,Charger,,HEMI-57,engine-loop,compiled,5.7 HEMI
+Chrysler,300,4d,120,u,"r,4",2005,2012,Charger,,HEMI-64,engine-loop,compiled,6.4 SRT8
+Chrysler,300,4d,120,u,"r,4",2005,2012,Charger,,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — HEMI excluded
 Chrysler,300,"4d 120,",,u,"r,4",2005,2012,"Charger, Magnum",,003710,structural,edc,
+Chrysler,300,"4d 120,",,u,"r,4",2005,2012,"Charger, Magnum",,HEMI-57,engine-loop,compiled,5.7 HEMI
+Chrysler,300,"4d 120,",,u,"r,4",2005,2012,"Charger, Magnum",,HEMI-64,engine-loop,compiled,6.4 SRT8
+Chrysler,300,"4d 120,",,u,"r,4",2005,2012,"Charger, Magnum",,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — HEMI excluded
+Chrysler,300,4d,120.2,u,"r,4",2013,2023,,,FCA-LX,platform,compiled,
+Chrysler,300,4d,120.2,u,"r,4",2013,2023,,,HEMI-57,engine-loop,compiled,5.7 V8
+Chrysler,300,4d,120.2,u,"r,4",2013,2023,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Chrysler,300M,4d,113,u,f,1999,2004,LHS(but shorter tail),,003562,structural,edc,
 Chrysler,Aspen,SUV,119.2,f,"r,4",2006,2009,Durango,New(to Chrysler),003670,structural,edc,
+Chrysler,Aspen,SUV,119.2,f,"r,4",2006,2009,Durango,New(to Chrysler),HEMI-57,engine-loop,compiled,5.7 HEMI
 Chrysler,Aspen,SW,119.2,f,"r,4",2007,2009,Durango,,003670,structural,edc,
+Chrysler,Aspen,SW,119.2,f,"r,4",2007,2009,Durango,,HEMI-57,engine-loop,compiled,5.7 HEMI
 Chrysler,Cirrus,4d,108,u,f,1995,2000,"Stratus, Breeze",,003500,structural,edc-flagged,
 Chrysler,Concorde,4d,113,u,f,1993,1997,"Intrepid, Vision",,003460,structural,edc,
 Chrysler,Concorde,4d,113,u,f,1998,2004,Intrepid,,003560,structural,edc,
@@ -438,6 +705,8 @@ Chrysler,"Newport,N Yorker",4d,118.5,u,r,1979,1981,"Gran Fury,St Regis",,000260,
 Chrysler,PT Cruiser,4d,103,u,f,2001,2009,,,003610,structural,edc,
 Chrysler,PT Cruiser,"4d,Conv",103,u,f,2001,2009,,,003610,structural,edc,
 Chrysler,Pacifica,SW,116.3,u,"f,4",2004,2008,,,003680,structural,edc,
+Chrysler,Pacifica,Van,121.6,u,"f,4",2017,2025,,,FCA-RU,platform,compiled,
+Chrysler,Pacifica,Van,121.6,u,"f,4",2017,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Chrysler,Prowler,2d,113.3,f,f,1998,2002,None!,Aluminum Chassis.Was Plymouth,003550,structural,edc,
 Chrysler,Sebring,2d,103.7,u,f,1995,2000,Avenger,,003510,structural,edc,
 Chrysler,Sebring,"4d,Conv","108,106",u,f,2001,2006,Stratus Sedan,NOT old Stratus Coupe,003590,structural,edc,
@@ -452,6 +721,10 @@ Chrysler,Town & Country,Van,119.3,u,f,1991,1995,Grand Voyager/Caravan,,003221,st
 Chrysler,Town & Country,Van,"113.3,119.3",u,f,1996,2000,Voyager/Caravan,,003520,structural,edc-flagged,
 Chrysler,Town & Country,Van,"112,119.3",u,"f,4",2001,2007,Caravan,,003600,structural,edc-flagged,
 Chrysler,Town & Country,Van,121.2,u,f,2008,2012,"Gr Caravan, VW Routan",,003780,structural,edc,
+Chrysler,Town & Country,Van,121.2,u,f,2008,2012,"Gr Caravan, VW Routan",,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar
+Chrysler,Town & Country,Van,121.2,u,f,2013,2016,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Chrysler,Voyager,Van,121.6,u,f,2020,2025,,,FCA-RU,platform,compiled,
+Chrysler,Voyager,Van,121.6,u,f,2020,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Chrysler,"Voyager, Twn&Cntry",MiniVan,"112,119.3",u,f,1996,2000,"Caravan, Gr Caravan",Voyager was Plymouth,003520,structural,edc-flagged,
 Chrysler,"Voyager,Tn & Cntry",Van,"112,119.3",u,"f,4",2001,2012,Caravan,,003600,structural,edc-flagged,
 Daewoo,Lanos,"2d,4d",99.2,u,f,1999,2002,,,005880,structural,edc,
@@ -469,6 +742,7 @@ Dodge,Aries,"2d,4d,SW",99.6,u,f,1981,1989,Reliant,,003190,structural,edc,
 Dodge,Aspen,"2d,4d,SW","108.7,112.7",u,r,1976,1980,Volare,,000190,structural,edc,
 Dodge,Avenger,2d,103.7,u,f,1995,2000,Sebring Coupe,,003510,structural,edc,
 Dodge,Avenger,4d,108.9,u,f,2007,2012,200,,003760,structural,edc,
+Dodge,Avenger,4d,108.9,u,f,2007,2012,200,,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — 2.4 excluded
 Dodge,Caliber,5d,103.7,u,f,2007,2012,"Compass, Patriot",,003750,structural,edc,
 Dodge,Caravan,Van,"113.3,119.3",u,"f,4",2001,2007,Town&Country,,003600,structural,edc-flagged,
 Dodge,"Caravan,Grand C.",Van,"112,119.1",u,f,1984,1990,Voyager,,003220,structural,edc-flagged,
@@ -480,11 +754,25 @@ Dodge,"Cargo Van, RamWagon",Van,"109.6,127.6",u,r,1994,2003,,Was RamVan,000461,s
 Dodge,Challenger,2d,108,u,r,1974,1974,Barracuda,,000090,structural,edc,
 Dodge,Challenger,2d,99.6,u,r,1980,1983,Plymouth Sapporo,,000410,structural,edc,
 Dodge,Challenger,2d,116,u,r,2008,2012,300?,Shortened 300 Chassis,003790,structural,edc,
+Dodge,Challenger,2d,116,u,r,2008,2012,300?,Shortened 300 Chassis,HEMI-57,engine-loop,compiled,5.7 HEMI R/T
+Dodge,Challenger,2d,116,u,r,2008,2012,300?,Shortened 300 Chassis,HEMI-64,engine-loop,compiled,6.4 SRT8
+Dodge,Challenger,2d,116,u,r,2008,2012,300?,Shortened 300 Chassis,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — HEMI excluded
+Dodge,Challenger,2d,116.2,u,"r,4",2013,2023,,,FCA-LX,platform,compiled,
+Dodge,Challenger,2d,116.2,u,"r,4",2013,2023,,,HEMI-57,engine-loop,compiled,5.7 V8
+Dodge,Challenger,2d,116.2,u,"r,4",2013,2023,,,HEMI-64,engine-loop,compiled,6.4 SRT
+Dodge,Challenger,2d,116.2,u,"r,4",2013,2023,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Dodge,Charger,2d,115,u,r,1974,1979,Cordoba,Also Magnum XE,000080,structural,edc,
 Dodge,Charger,2d,115,u,r,1974,1974,Sebring,,000100,structural,edc,
 Dodge,Charger,2d,115,u,r,1975,1979,Cordoba,New,000080,structural,edc,
 Dodge,Charger,3d,96.7,u,f,1979,1987,Turismo,Also Shelby,000231,structural,edc,
 Dodge,Charger,4d,120,u,r,2006,2012,300,,003710,structural,edc,
+Dodge,Charger,4d,120,u,r,2006,2012,300,,HEMI-57,engine-loop,compiled,5.7 HEMI R/T
+Dodge,Charger,4d,120,u,r,2006,2012,300,,HEMI-64,engine-loop,compiled,6.4 SRT8
+Dodge,Charger,4d,120,u,r,2006,2012,300,,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — HEMI excluded
+Dodge,Charger,4d,120.2,u,"r,4",2013,2023,,,FCA-LX,platform,compiled,
+Dodge,Charger,4d,120.2,u,"r,4",2013,2023,,,HEMI-57,engine-loop,compiled,5.7 V8
+Dodge,Charger,4d,120.2,u,"r,4",2013,2023,,,HEMI-64,engine-loop,compiled,6.4 SRT
+Dodge,Charger,4d,120.2,u,"r,4",2013,2023,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Dodge,Colt,"3d,5d","90.6,93.6",u,f,1980,1984,Plymouth Colt,,000420,structural,edc,
 Dodge,Colt,3d,90.6,u,f,1980,1984,Plymouth Champ,,000420,structural,edc,
 Dodge,Colt,"2d,SW",99,u,r,1980,1980,Plymouth Arrow (2d),Watch Out! Different cars,000430,structural,edc-flagged,
@@ -504,6 +792,8 @@ Dodge,Dakota,Pickup,"112,124",f,"r,4",1987,1996,,,003290,structural,edc,
 Dodge,Dakota,Pickup,"111.9,130.9",f,"r,4",1997,2004,,,003540,structural,edc,
 Dodge,Dakota,Pickup,131.3,f,"r,4",2005,2011,,,003671,structural,edc-flagged,
 Dodge,Dart,"2d,4d","108,111",u,r,1974,1976,Valiant/Duster,,000110,structural,edc-flagged,
+Dodge,Dart,4d,106.4,u,f,2013,2016,,,FCA-CUSW,platform,compiled,
+Dodge,Dart,4d,106.4,u,f,2013,2016,,,TIGERSHARK-24,engine-loop,compiled,2.4 4-cyl
 Dodge,Dart Swinger,2d,111,u,r,1974,1976,Scamp,,000110,structural,edc-flagged,
 Dodge,Daytona,3d,97.2,u,f,1984,1993,84-86 Chrysler Laser,,003240,structural,edc,
 Dodge,Diplomat,4d,112.7,u,r,1977,1989,"N Y 5th Ave,Gran Fury",,000191,structural,edc-flagged,
@@ -512,15 +802,28 @@ Dodge,Diplomat,"2d,4d","108.7,112.7",u,r,1977,1989,LeBaron,,000191,structural,ed
 Dodge,Durango,SW,115.9,f,"r,4",1998,2003,Dakota (Frontal),,003541,structural,edc,
 Dodge,Durango,SUV,115.9,f,"r,4",1998,2003,Dakota (Frontal),Based on Dakota,003541,structural,edc,
 Dodge,Durango,SW,119.2,f,"r,4",2004,2009,Aspen,,003670,structural,edc,
+Dodge,Durango,SW,119.2,f,"r,4",2004,2009,Aspen,,HEMI-57,engine-loop,compiled,5.7 HEMI
 Dodge,Durango,SUV,119.2,f,"r,4",2004,2009,Dakota (Frontal),Based on Dakota,003670,structural,edc,
+Dodge,Durango,SUV,119.2,f,"r,4",2004,2009,Dakota (Frontal),Based on Dakota,HEMI-57,engine-loop,compiled,5.7 HEMI
 Dodge,Durango,SUV,114.8,u,"r,4",2011,2012,"Gr Cherokee,12 M-B ML",,007280,structural,edc,
+Dodge,Durango,SUV,114.8,u,"r,4",2011,2012,"Gr Cherokee,12 M-B ML",,HEMI-57,engine-loop,compiled,5.7 HEMI
+Dodge,Durango,SUV,114.8,u,"r,4",2011,2012,"Gr Cherokee,12 M-B ML",,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — HEMI excluded
+Dodge,Durango,SUV,119.8,u,"r,4",2013,2025,,,FCA-WK2,platform,compiled,
+Dodge,Durango,SUV,119.8,u,"r,4",2013,2025,,,HEMI-57,engine-loop,compiled,5.7 V8
+Dodge,Durango,SUV,119.8,u,"r,4",2013,2025,,,HEMI-64,engine-loop,compiled,6.4 SRT
+Dodge,Durango,SUV,119.8,u,"r,4",2013,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Dodge,Dynasty,4d,104.3,u,f,1988,1993,New Yorker,,003350,structural,edc-flagged,
 Dodge,Grand Caravan,Van,121.2,u,f,2008,2012,"Town&Cntry, VW Routan",,003780,structural,edc,
+Dodge,Grand Caravan,Van,121.2,u,f,2008,2012,"Town&Cntry, VW Routan",,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar
+Dodge,Grand Caravan,Van,121.2,u,f,2013,2020,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Dodge,Intrepid,4d,113,u,f,1993,1997,"Concorde, Vision",,003460,structural,edc,
 Dodge,Intrepid,4d,113,u,f,1998,2004,Concorde,,003560,structural,edc,
 Dodge,Journey,SW,113.8,u,"f,4",2009,2012,"Sebring, Avenger",,003761,structural,edc,
+Dodge,Journey,SW,113.8,u,"f,4",2009,2012,"Sebring, Avenger",,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — 2.4 excluded
+Dodge,Journey,SUV,113.8,u,"f,4",2013,2020,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Dodge,Lancer,4d,103.3,u,f,1985,1989,LeBaron 4dr (Was GTS),Not LeBaron J,003250,structural,edc,
 Dodge,Magnum,SW,120,u,r,2005,2008,"Charger, 300",Basically a Charger Wagon,003710,structural,edc,
+Dodge,Magnum,SW,120,u,r,2005,2008,"Charger, 300",Basically a Charger Wagon,HEMI-57,engine-loop,compiled,5.7 HEMI R/T
 Dodge,Magnum XE,2d,115,u,r,1974,1979,Cordoba,Was Charger,000080,structural,edc,
 Dodge,Mirada,2d,112.7,u,r,1980,1983,Cordoba,,000390,structural,edc,
 Dodge,Monaco,"2d,4d,SW","115,117",u,r,1974,1978,Fury,Was Coronet,000100,structural,edc,
@@ -534,13 +837,18 @@ Dodge,Omni,5d,99.1,u,f,1978,1990,Horizon,,000230,structural,edc,
 Dodge,Omni 024,3d,96.7,u,f,1979,1987,Horizon TC3,Also Charger,000231,structural,edc,
 Dodge,Raider,SUV,92.5,f,4,1987,1989,Mistubishi Montero,,003280,structural,edc-flagged,
 Dodge,Ram 15/25/3500,Pickup,"120.5,140.5",f,"r,4",2002,2005,,,003630,structural,edc,
+Dodge,Ram 15/25/3500,Pickup,"120.5,140.5",f,"r,4",2002,2005,,,HEMI-57,engine-loop,compiled,5.7 HEMI — 3.7 / 4.7 excluded
 Dodge,Ram 15/25/3500,Pickup,"120,140,160",f,"r,4",2006,2008,,,003730,structural,edc,
+Dodge,Ram 15/25/3500,Pickup,"120,140,160",f,"r,4",2006,2008,,,HEMI-57,engine-loop,compiled,5.7 HEMI — 3.7 / 4.7 excluded
 Dodge,Ram 1500,Pickup,"120,140",f,"r,4",2009,2012,,,003800,structural,edc,
 Dodge,Ram HD 25/3500,Pickup,,f,"r,4",2003,2009,,Heavy Duty Chassis,003640,structural,edc,
+Dodge,Ram HD 25/3500,Pickup,,f,"r,4",2003,2009,,Heavy Duty Chassis,HEMI-57,engine-loop,compiled,5.7 HEMI — diesel and 4.7 excluded
 Dodge,Ram HD 25/3500,Pickup,,f,"r,4",2010,2012,,New Heavy Duty,003810,structural,edc,
+Dodge,Ram HD 25/3500,Pickup,,f,"r,4",2010,2012,,New Heavy Duty,HEMI-57,engine-loop,compiled,5.7 HEMI — diesel and 4.7 excluded
 Dodge,Ram Pickup,Pickup,"115,131",f,"r,4",1980,1993,"Old D,W-150/etc.",W=4WD. NOT Ram 50!,000440,structural,edc,
 Dodge,Ram Pickup,Pickup,"118.7,134.7",f,"r,4",1994,2001,,,003470,structural,edc,
 Dodge,Ram Pickup,Pickup,,f,"r,4",2002,2005,,New,003630,structural,edc,
+Dodge,Ram Pickup,Pickup,,f,"r,4",2002,2005,,New,HEMI-57,engine-loop,compiled,5.7 HEMI — 3.7 / 4.7 excluded
 Dodge,Ram Van/Ram Wagon,Van,"109.6,127.6",u,r,1980,1993,,,000460,structural,edc-flagged,
 Dodge,Ram Van/Ram Wagon,Van,"109.6,127.6",u,r,1994,2003,,,000461,structural,edc,
 Dodge,Ramcharger,SUV,106,f,"r,4",1980,1993,"Trailduster(old),P/U",,000441,structural,edc,
@@ -550,6 +858,7 @@ Dodge,Shadow,"3d,5d",97.2,u,f,1987,1994,Sundance,,003260,structural,edc,
 Dodge,Spirit,4d,103.3,u,f,1989,1994,"Acclaim,LeBaron",,003360,structural,edc,
 Dodge,Sprinter,Van,"144.3,170.3",u,r,2004,2006,Mercedes Sprinter,Was sold as Freightliner,003650,structural,edc,
 Dodge,Sprinter,Van,"144.3,170.3",u,r,2007,2012,Mercedes Sprinter,,003660,structural,edc,
+Dodge,Sprinter,Van,"144.3,170.3",u,r,2007,2012,Mercedes Sprinter,,OM642,engine-loop,compiled,3.0 V6 diesel
 Dodge,St Regis,4d,118.5,u,r,1979,1981,"Gran Fury,Newport/N Y",,000260,structural,edc,
 Dodge,Stealth,2d,97.2,u,f,1991,1996,Mitsubishi 3000GT,,003400,structural,edc,
 Dodge,Stratus,4d,108,u,f,1995,2000,"Cirrus,Breeze",,003500,structural,edc-flagged,
@@ -599,24 +908,49 @@ Ford,Aspire,"3d,5d","90.7,93.9",u,f,1994,1997,,,002700,structural,edc,
 Ford,Bronco,SUV,105,f,4,1980,1987,Fullsize Pickups(Fr),,000482,structural,edc,
 Ford,Bronco,SUV,105,f,4,1988,1991,Fullsize Pickups(Fr),,000483,structural,edc,
 Ford,Bronco,SUV,104.7,f,4,1992,1996,Fullsize Pickups(Fr),,002741,structural,edc,
+Ford,Bronco,SUV,116.1,f,4,2021,2025,,,EB-23,engine-loop,compiled,2.3 EcoBoost
+Ford,Bronco,SUV,116.1,f,4,2021,2025,,,EB-27,engine-loop,compiled,2.7 EcoBoost
+Ford,Bronco,SUV,116.1,f,4,2021,2025,,,FORD-T6,platform,compiled,
 Ford,Bronco II,SUV,94,f,"r,4",1984,1988,Ranger (Fr),,002801,structural,edc-flagged,
 Ford,Bronco II,SUV,94,f,"r,4",1989,1990,Ranger (Fr),,002801,structural,edc-flagged,
+Ford,Bronco Sport,SUV,105.1,u,4,2021,2025,,,EB-15,engine-loop,compiled,1.5 EcoBoost
+Ford,Bronco Sport,SUV,105.1,u,4,2021,2025,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Bronco Sport,SUV,105.1,u,4,2021,2025,,,FORD-C2,platform,compiled,
 Ford,Contour,4d,106.5,u,f,1995,2000,Mystique,,002720,structural,edc,
 Ford,Courier,Pickup,"106.9,112.8",f,r,1980,1982,Mazda B2000,,000490,structural,edc,
 Ford,Crown Victoria,4d,114.4,f,r,1992,1997,Grand Marquis,,002840,structural,edc-flagged,
 Ford,Crown Victoria,4d,114.7,f,r,1998,2002,Grand Marquis,,002841,structural,edc-flagged,
+Ford,Crown Victoria,4d,114.7,f,r,1998,2002,Grand Marquis,,MOD-46,engine-loop,compiled,4.6 2-valve
 Ford,Crown Victoria,4d,114.7,f,r,2003,2010,Grand Marquis,,002842,structural,edc,
+Ford,Crown Victoria,4d,114.7,f,r,2003,2010,Grand Marquis,,MOD-46,engine-loop,compiled,4.6 2-valve
 Ford,EXP,3d,94.0,u,f,1982,1986,LN7(82-83),,002882,structural,edc,
 Ford,EXP,3d,94.2,u,f,1987,1988,,Same front as Escort,002881,structural,edc,
 Ford,Econoline,Van,138,f,r,1992,2007,,,002890,structural,edc,
+Ford,Econoline,Van,138,f,r,1992,2007,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton
 Ford,Econoline,Van,138,f,r,2008,2012,,,002900,structural,edc,
+Ford,Econoline,Van,138,f,r,2008,2012,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton
 Ford,Econoline/ClubWagon,Van,"124,138",f,r,1980,1991,,E150/250/350,000500,structural,edc,
 Ford,Econoline/ClubWagon,Van,138,f,r,1992,2007,,,002890,structural,edc,
+Ford,Econoline/ClubWagon,Van,138,f,r,1992,2007,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton
 Ford,Edge,SW,111.2,u,"f,4",2007,2012,Lincoln MKX,Restyle,002960,structural,edc,
+Ford,Edge,SW,111.2,u,"f,4",2007,2012,Lincoln MKX,Restyle,CYCLONE-35,engine-loop,compiled,3.5 / 3.7 Duratec V6
+Ford,Edge,SUV,112.2,u,"f,4",2015,2024,,,CYCLONE-35,engine-loop,compiled,3.5 naturally aspirated V6 2015-2018
+Ford,Edge,SUV,112.2,u,"f,4",2015,2024,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Edge,SUV,112.2,u,"f,4",2015,2024,,,EB-27,engine-loop,compiled,2.7 EcoBoost Sport/ST
+Ford,Edge,SUV,112.2,u,"f,4",2015,2024,,,FORD-CD4,platform,compiled,
 Ford,Elite,2d,114,f,r,1974,1976,See Torino,"2.5"" more Front Overhang",000131,structural,edc,
 Ford,Escape,SW,103.1,u,"f,4",2001,2012,Tribute,,003061,structural,edc,
+Ford,Escape,SW,103.1,u,"f,4",2001,2012,Tribute,,DURATEC-25,engine-loop,compiled,2.5 Duratec 4-cyl
 Ford,Escape,SW,103.1,u,"f,4",2001,2012,"Mariner, Tribute",,003060,structural,edc,
+Ford,Escape,SW,103.1,u,"f,4",2001,2012,"Mariner, Tribute",,DURATEC-25,engine-loop,compiled,2.5 Duratec 4-cyl
 Ford,Escape,SUV,103.1,u,"f,4",2001,2012,Mazda Tribute,Based on Contour chassis,003060,structural,edc,
+Ford,Escape,SUV,103.1,u,"f,4",2001,2012,Mazda Tribute,Based on Contour chassis,DURATEC-25,engine-loop,compiled,2.5 Duratec 4-cyl
+Ford,Escape,SUV,105.9,u,"f,4",2013,2019,,,DURATEC-25,engine-loop,compiled,2.5 4-cyl
+Ford,Escape,SUV,105.9,u,"f,4",2013,2019,,,EB-15,engine-loop,compiled,1.5/1.6 EcoBoost
+Ford,Escape,SUV,105.9,u,"f,4",2013,2019,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Escape,SUV,106.7,u,"f,4",2020,2025,,,EB-15,engine-loop,compiled,1.5 EcoBoost
+Ford,Escape,SUV,106.7,u,"f,4",2020,2025,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Escape,SUV,106.7,u,"f,4",2020,2025,,,FORD-C2,platform,compiled,
 Ford,Escort,"3d,5d,SW",94.2,u,f,1981,1985,Lynx,,002880,structural,edc,
 Ford,Escort,"3d,5d,SW",94.2,u,f,1986,1990,Lynx(86-87),,002881,structural,edc,
 Ford,Escort,"3d,4d,SW",98.4,u,f,1991,1996,Tracer,,002930,structural,edc,
@@ -630,29 +964,73 @@ Ford,"Escort,ZX2","2d,4d",98.4,u,f,1997,2003,Tracer (to 99),,002940,structural,e
 Ford,"Escort,ZX2","2d,4d,SW",98.4,u,f,1997,2003,Tracer,,002940,structural,edc,
 Ford,Excursion,SUV,137.1,f,"r,4",2000,2005,Older SD Pickups,,002781,structural,edc,
 Ford,Expedition,SUV,119,f,4,1997,2002,Lincoln Navigator,,002751,structural,edc,
+Ford,Expedition,SUV,119,f,4,1997,2002,Lincoln Navigator,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton
 Ford,Expedition,SW,119,f,"r,4",2003,2012,Lincoln Navigator,,002761,structural,edc-flagged,
+Ford,Expedition,SW,119,f,"r,4",2003,2012,Lincoln Navigator,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton
 Ford,Expedition,SUV,119,f,"r,4",2003,2012,Lincoln Navigator,,002761,structural,edc-flagged,
+Ford,Expedition,SUV,119,f,"r,4",2003,2012,Lincoln Navigator,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton
+Ford,Expedition,SUV,119.0,f,"r,4",2013,2017,,,EB-35,engine-loop,compiled,3.5 EcoBoost — sole engine
+Ford,Expedition,SUV,122.5,f,"r,4",2018,2025,,,EB-35,engine-loop,compiled,3.5 EcoBoost — sole engine
+Ford,Expedition,SUV,122.5,f,"r,4",2018,2025,,,FORD-T3,platform,compiled,
 Ford,Expedition EL,SW,131,f,"r,4",2007,2012,Expedition,Just a longer Expedition,002761,structural,edc-flagged,
 Ford,Explorer,SUV,"102,111.9",f,"r,4",1991,1994,,,002811,structural,edc-flagged,
 Ford,Explorer,SUV,111.5,f,"r,4",1995,2001,Mountaineer,,002813,structural,edc,
 Ford,Explorer,SUV,114,f,"r,4",2002,2005,"Mountaineer, Aviator",,002820,structural,edc,
+Ford,Explorer,SUV,114,f,"r,4",2002,2005,"Mountaineer, Aviator",,MOD-46,engine-loop,compiled,4.6 V8 option only
 Ford,Explorer,SW,114,f,"r,4",2006,2012,Mountaineer,,002830,structural,edc,
+Ford,Explorer,SW,114,f,"r,4",2006,2012,Mountaineer,,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6
+Ford,Explorer,SW,114,f,"r,4",2006,2012,Mountaineer,,MOD-46,engine-loop,compiled,4.6 V8 option only
 Ford,Explorer,SUV,114,f,"r,4",2006,2012,Mountaineer,Restyle,002830,structural,edc,
+Ford,Explorer,SUV,114,f,"r,4",2006,2012,Mountaineer,Restyle,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6
+Ford,Explorer,SUV,114,f,"r,4",2006,2012,Mountaineer,Restyle,MOD-46,engine-loop,compiled,4.6 V8 option only
 Ford,Explorer,SW,112.6,u,"r,4",2011,2012,,Taurus chassis,007310,structural,edc,
+Ford,Explorer,SW,112.6,u,"r,4",2011,2012,,Taurus chassis,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6
+Ford,Explorer,SUV,112.6,u,"f,4",2013,2019,,,CYCLONE-35,engine-loop,compiled,3.5 naturally aspirated V6
+Ford,Explorer,SUV,112.6,u,"f,4",2013,2019,,,EB-20,engine-loop,compiled,2.0 EcoBoost 2013-2015
+Ford,Explorer,SUV,112.6,u,"f,4",2013,2019,,,EB-23,engine-loop,compiled,2.3 EcoBoost 2016-2019
+Ford,Explorer,SUV,112.6,u,"f,4",2013,2019,,,EB-35,engine-loop,compiled,3.5 EcoBoost Sport/Platinum
+Ford,Explorer,SUV,119.1,u,"r,4",2020,2025,,,EB-23,engine-loop,compiled,2.3 EcoBoost base
+Ford,Explorer,SUV,119.1,u,"r,4",2020,2025,,,EB-27,engine-loop,compiled,3.0 EcoBoost ST — 2.7 Nano family
+Ford,Explorer,SUV,119.1,u,"r,4",2020,2025,,,FORD-CD6,platform,compiled,
 Ford,Explorer Sport,SUV,101.8,f,"r,4",2001,2003,Explorer Sport Trac,NOT 02-03 Explorer. Watch out,002814,structural,edc,
 Ford,Explorer SportTrac,Pickup,125.9,f,"r,4",2001,2005,Explorer Sport(01-03),NOT 02+ Explorer. Watch out,002815,structural,edc,
 Ford,Explorer SportTrac,Pickup,125.9,f,"r,4",2001,2012,Explorer Sport,4d Expl Sport w/Pickup bed,002815,structural,edc,
 Ford,Explorer SportTrac,Pickup,125.9,f,"r,4",2007,2010,Explorer,Explorer w/Pickup bed,002831,structural,edc,
+Ford,F-150,Pickup,144.5,f,"r,4",2013,2014,,,COYOTE-50,engine-loop,compiled,5.0 V8
+Ford,F-150,Pickup,144.5,f,"r,4",2013,2014,,,CYCLONE-35,engine-loop,compiled,3.7 naturally aspirated V6
+Ford,F-150,Pickup,144.5,f,"r,4",2013,2014,,,EB-35,engine-loop,compiled,3.5 EcoBoost
+Ford,F-150,Pickup,144.5,f,"r,4",2013,2014,,,FORD-P415,platform,compiled,
+Ford,F-150,Pickup,145.0,f,"r,4",2015,2020,,,COYOTE-50,engine-loop,compiled,5.0 V8
+Ford,F-150,Pickup,145.0,f,"r,4",2015,2020,,,CYCLONE-35,engine-loop,compiled,3.5 naturally aspirated V6 2015-2017
+Ford,F-150,Pickup,145.0,f,"r,4",2015,2020,,,EB-27,engine-loop,compiled,2.7 EcoBoost
+Ford,F-150,Pickup,145.0,f,"r,4",2015,2020,,,EB-35,engine-loop,compiled,3.5 EcoBoost
+Ford,F-150,Pickup,145.0,f,"r,4",2015,2020,,,FORD-P552,platform,compiled,
+Ford,F-150,Pickup,145.0,f,"r,4",2021,2025,,,COYOTE-50,engine-loop,compiled,5.0 V8
+Ford,F-150,Pickup,145.0,f,"r,4",2021,2025,,,EB-27,engine-loop,compiled,2.7 EcoBoost
+Ford,F-150,Pickup,145.0,f,"r,4",2021,2025,,,EB-35,engine-loop,compiled,3.5 EcoBoost
+Ford,F-150,Pickup,145.0,f,"r,4",2021,2025,,,FORD-P552,platform,compiled,
 Ford,F100/150/250/350,Pickup,"117,133",f,"r,4",1980,1986,,,000480,structural,edc,
 Ford,F100/150/250/350,Pickup,"117,133",f,"r,4",1987,1991,,,000481,structural,edc,
 Ford,F100/150/250/350,Pickup,"116.8,133",f,"r,4",1992,1996,,,002740,structural,edc-flagged,
 Ford,F150,Pickup,"119.9,138.8",f,"r,4",1997,2004,,,002750,structural,edc-flagged,
+Ford,F150,Pickup,"119.9,138.8",f,"r,4",1997,2004,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton — 3-valve heads from 2004
 Ford,F150,Pickup,"126,139,145",f,"r,4",2004,2008,,,002760,structural,edc-flagged,
+Ford,F150,Pickup,"126,139,145",f,"r,4",2004,2008,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton — 3-valve heads from 2004
 Ford,F150,Pickup 126 to 157,,f,"r,4",2009,2012,,,002770,structural,edc,
+Ford,F150,Pickup 126 to 157,,f,"r,4",2009,2012,,,COYOTE-50,engine-loop,compiled,5.0 V8 option
+Ford,F150,Pickup 126 to 157,,f,"r,4",2009,2012,,,CYCLONE-35,engine-loop,compiled,3.7 Ti-VCT V6
+Ford,F150,Pickup 126 to 157,,f,"r,4",2009,2012,,,EB-35,engine-loop,compiled,3.5 EcoBoost twin-turbo
+Ford,F150,Pickup 126 to 157,,f,"r,4",2009,2012,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton — 3-valve heads from 2004
 Ford,F150/250,Pickup,"119.9,138.8",f,"r,4",1997,2012,F350 still old body,New,002750,structural,edc-flagged,
+Ford,F150/250,Pickup,"119.9,138.8",f,"r,4",1997,2012,F350 still old body,New,COYOTE-50,engine-loop,compiled,5.0 V8 option
+Ford,F150/250,Pickup,"119.9,138.8",f,"r,4",1997,2012,F350 still old body,New,CYCLONE-35,engine-loop,compiled,3.7 Ti-VCT V6
+Ford,F150/250,Pickup,"119.9,138.8",f,"r,4",1997,2012,F350 still old body,New,EB-35,engine-loop,compiled,3.5 EcoBoost twin-turbo
+Ford,F150/250,Pickup,"119.9,138.8",f,"r,4",1997,2012,F350 still old body,New,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton — 3-valve heads from 2004
 Ford,F150/250 Heritage,Pickup,"119.9,138.8",f,"r,4",1997,2004,,Same Old Truck,002740,structural,edc-flagged,
+Ford,F150/250 Heritage,Pickup,"119.9,138.8",f,"r,4",1997,2004,,Same Old Truck,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton — 3-valve heads from 2004
 Ford,F150/250/350,Pickup,"116.8,133",f,"r,4",1992,1996,,NOT New 97 model!,002740,structural,edc-flagged,
 Ford,F150/250/350,Pickup,"119.9,138.8",f,"r,4",1997,2004,,,002750,structural,edc-flagged,
+Ford,F150/250/350,Pickup,"119.9,138.8",f,"r,4",1997,2004,,,MOD-46,engine-loop,compiled,4.6 / 5.4 Triton — 3-valve heads from 2004
 Ford,F250/350,Pickup,"119.9,138.8",f,"r,4",1999,2004,,Super Duty,002780,structural,edc-flagged,
 Ford,F250/350,Pickup,,f,"r,4",2005,2008,,Super Duty,002790,structural,edc,
 Ford,Fairmont,"2d,4d,SW",105.5,u,r,1978,1983,Zephyr,Also Futura (Coupe/diff. roofl,000240,structural,edc,
@@ -660,6 +1038,10 @@ Ford,Festiva,3d,90.2,u,f,1988,1993,,Korean-made,003070,structural,edc,
 Ford,Fiesta,"3d,4d,5d",98.0,u,r,2011,2012,Mazda 2,,007320,structural,edc-flagged,
 Ford,Five Hundred,4d,112.9,u,"f,4",2005,2007,Montego,,003000,structural,edc-flagged,
 Ford,Flex,SW,117.9,u,"f,4",2009,2012,,,003100,structural,edc,
+Ford,Flex,SW,117.9,u,"f,4",2009,2012,,,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6 — EcoBoost excluded
+Ford,Flex,SW,117.9,u,"f,4",2009,2012,,,EB-35,engine-loop,compiled,3.5 EcoBoost option
+Ford,Flex,SW,117.9,u,"f,4",2013,2019,,,CYCLONE-35,engine-loop,compiled,3.5 naturally aspirated V6
+Ford,Flex,SW,117.9,u,"f,4",2013,2019,,,EB-35,engine-loop,compiled,3.5 EcoBoost
 Ford,Fmnt Futura,"2d,4d",105.5,u,r,1978,1983,Zephyr,,000240,structural,edc,
 Ford,Focus,"3,4,5,SW",103,u,f,2000,2012,,Restyle 2005,002991,structural,edc,
 Ford,Focus,"3,4,5,SW",103,u,f,2000,2012,,,002990,structural,edc,
@@ -669,6 +1051,12 @@ Ford,Freestar,Van,120.8,u,f,2004,2007,Monterey,,003110,structural,edc,
 Ford,Freestyle,SW,112.9,u,",4",2005,2009,,,003120,structural,edc,
 Ford,Fusion,4d,107.4,u,"f,4",2006,2009,"Milan, MKZ",,002970,structural,edc,
 Ford,Fusion,4d,107.4,u,"f,4",2010,2012,"Milan, MKZ",New Hybrid,002971,structural,edc,
+Ford,Fusion,4d,107.4,u,"f,4",2010,2012,"Milan, MKZ",New Hybrid,CYCLONE-35,engine-loop,compiled,3.5 V6 Sport only
+Ford,Fusion,4d,107.4,u,"f,4",2010,2012,"Milan, MKZ",New Hybrid,DURATEC-25,engine-loop,compiled,2.5 Duratec 4-cyl
+Ford,Fusion,4d,112.2,u,"f,4",2013,2020,,,DURATEC-25,engine-loop,compiled,2.5 4-cyl
+Ford,Fusion,4d,112.2,u,"f,4",2013,2020,,,EB-15,engine-loop,compiled,1.5 EcoBoost
+Ford,Fusion,4d,112.2,u,"f,4",2013,2020,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Fusion,4d,112.2,u,"f,4",2013,2020,,,FORD-CD4,platform,compiled,
 Ford,GT,2d,106.7,u,r,2005,2006,None!,,002850,structural,edc,
 Ford,Granada,"2d,4d",109.9,u,r,1975,1980,Monarch,,000180,structural,edc,
 Ford,Granada,"2d,4d,SW",105.5,u,r,1981,1982,"Cougar,Fairmont",Fairmont Restyle,000248,structural,edc,
@@ -680,11 +1068,26 @@ Ford,LTD Crown Vic,"2d,4d,SW",114.4,f,r,1979,1991,Grand Marquis,,000270,structur
 Ford,LTD Crown Victoria,"2d,4d,SW",114.4,f,r,1979,1991,Grand Marquis,NOT plain LTD (Watch out!),000270,structural,edc-flagged,
 Ford,LTD II,"2d,4d,SW","114,118",f,r,1977,1979,Cougar,,000132,structural,edc,
 Ford,Maverick,"2d,4d","103,109.9",u,r,1974,1977,Comet,,000150,structural,edc,
+Ford,Maverick,Pickup,121.1,u,"f,4",2022,2025,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Maverick,Pickup,121.1,u,"f,4",2022,2025,,,FORD-C2,platform,compiled,
 Ford,Mustang,"2d,3d",100.4,u,r,1979,1993,,,000242,structural,edc,
 Ford,Mustang,"2d,3d",100.4,u,r,1979,1993,Capri,,000241,structural,edc,
 Ford,Mustang,2d,101.3,u,r,1994,2004,,,000243,structural,edc,
+Ford,Mustang,2d,101.3,u,r,1994,2004,,,MOD-46,engine-loop,compiled,GT 4.6 2V/3V — V6 excluded
 Ford,Mustang,2d,107.1,u,r,2005,2009,,Also Shelby,002870,structural,edc,
+Ford,Mustang,2d,107.1,u,r,2005,2009,,Also Shelby,MOD-46,engine-loop,compiled,GT 4.6 2V/3V — V6 excluded
 Ford,Mustang,2d,107.1,u,r,2010,2012,,Also Shelby,002871,structural,edc,
+Ford,Mustang,2d,107.1,u,r,2010,2012,,Also Shelby,COYOTE-50,engine-loop,compiled,GT 5.0 — V6 excluded
+Ford,Mustang,2d,107.1,u,r,2010,2012,,Also Shelby,CYCLONE-35,engine-loop,compiled,3.7 Ti-VCT V6 — GT excluded
+Ford,Mustang,2d,107.1,u,r,2010,2012,,Also Shelby,MOD-46,engine-loop,compiled,GT 4.6 2V/3V — V6 excluded
+Ford,Mustang,2d,107.1,u,r,2013,2014,,,COYOTE-50,engine-loop,compiled,5.0 GT V8
+Ford,Mustang,2d,107.1,u,r,2013,2014,,,CYCLONE-35,engine-loop,compiled,3.7 V6
+Ford,Mustang,2d,107.1,u,r,2015,2023,,,COYOTE-50,engine-loop,compiled,5.0 GT V8
+Ford,Mustang,2d,107.1,u,r,2015,2023,,,EB-23,engine-loop,compiled,2.3 EcoBoost
+Ford,Mustang,2d,107.1,u,r,2015,2023,,,FORD-S550,platform,compiled,
+Ford,Mustang,2d,107.0,u,r,2024,2025,,,COYOTE-50,engine-loop,compiled,5.0 GT V8
+Ford,Mustang,2d,107.0,u,r,2024,2025,,,EB-23,engine-loop,compiled,2.3 EcoBoost
+Ford,Mustang,2d,107.0,u,r,2024,2025,,,FORD-S550,platform,compiled,
 Ford,MustangII,2d,96.2,u,r,1974,1978,,Based on Pinto,000161,structural,edc,
 Ford,Pinto,"2d,3d,SW",94.5,u,r,1974,1980,Bobcat,,000160,structural,edc,
 Ford,Probe,3d,99.0,u,f,1989,1992,,,003080,structural,edc,
@@ -694,18 +1097,39 @@ Ford,Ranger,Pickup,"108,114,125",f,"r,4",1983,1988,,,002800,structural,edc,
 Ford,Ranger,Pickup,"108,114,125",f,"r,4",1989,1992,,,002810,structural,edc,
 Ford,Ranger,Pickup,"108,114,125",f,"r,4",1993,1997,Mazda B-Series,,002811,structural,edc-flagged,
 Ford,Ranger,Pickup,"108,114,125",f,"r,4",1998,2011,Mazda B-Series,,002812,structural,edc,
+Ford,Ranger,Pickup,126.8,f,"r,4",2019,2023,,,EB-23,engine-loop,compiled,2.3 EcoBoost — sole engine
+Ford,Ranger,Pickup,126.8,f,"r,4",2019,2023,,,FORD-T6,platform,compiled,
+Ford,Ranger,Pickup,128.7,f,"r,4",2024,2025,,,EB-23,engine-loop,compiled,2.3 EcoBoost
+Ford,Ranger,Pickup,128.7,f,"r,4",2024,2025,,,EB-27,engine-loop,compiled,2.7 EcoBoost
+Ford,Ranger,Pickup,128.7,f,"r,4",2024,2025,,,FORD-T6,platform,compiled,
 Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",1998,2004,,,002780,structural,edc-flagged,
+Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",1998,2004,,,MOD-46,engine-loop,compiled,5.4 Triton — 6.8 V10 shares architecture
 Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",1999,2004,,New,002780,structural,edc-flagged,
+Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",1999,2004,,New,MOD-46,engine-loop,compiled,5.4 Triton — 6.8 V10 shares architecture
 Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",2005,2012,,,002780,structural,edc-flagged,
+Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",2005,2012,,,MOD-46,engine-loop,compiled,5.4 Triton — 6.8 V10 shares architecture
 Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",2005,2012,,New,002790,structural,edc,
+Ford,Super Duty 250/350,Pickup,"119.9,138.8",f,"r,4",2005,2012,,New,MOD-46,engine-loop,compiled,5.4 Triton — 6.8 V10 shares architecture
+Ford,Super Duty F-250,Pickup,160.0,f,"r,4",2013,2016,,,PSD-67,engine-loop,compiled,6.7 Power Stroke diesel
+Ford,Super Duty F-250,Pickup,160.0,f,"r,4",2017,2025,,,GODZILLA-73,engine-loop,compiled,7.3 gas V8 from 2020
+Ford,Super Duty F-250,Pickup,160.0,f,"r,4",2017,2025,,,PSD-67,engine-loop,compiled,6.7 Power Stroke diesel
+Ford,Super Duty F-350,Pickup,164.0,f,"r,4",2017,2025,,,GODZILLA-73,engine-loop,compiled,7.3 gas V8 from 2020
+Ford,Super Duty F-350,Pickup,164.0,f,"r,4",2017,2025,,,PSD-67,engine-loop,compiled,6.7 Power Stroke diesel
 Ford,Taurus,"4d,SW",106,u,f,1986,1991,Sable,,002910,structural,edc,
 Ford,Taurus,"4d,SW",106,u,f,1992,1995,Sable,,002911,structural,edc,
 Ford,Taurus,"4d,SW",108.5,u,f,1996,1999,Sable,,002920,structural,edc,
 Ford,Taurus,4d,108.5,u,f,2000,2007,Sable (older),,002921,structural,edc,
 Ford,Taurus,"4d,SW",108.5,u,f,2000,2007,Sable,,002921,structural,edc,
 Ford,Taurus,4d,112.9,u,"f,4",2008,2009,Sable,,003000,structural,edc-flagged,
+Ford,Taurus,4d,112.9,u,"f,4",2008,2009,Sable,,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6 — SHO EcoBoost excluded
 Ford,Taurus,4d,112.9,u,"f,4",2010,2012,,Also SHO,003170,structural,edc,
+Ford,Taurus,4d,112.9,u,"f,4",2010,2012,,Also SHO,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6 — SHO EcoBoost excluded
+Ford,Taurus,4d,112.9,u,"f,4",2010,2012,,Also SHO,EB-35,engine-loop,compiled,SHO 3.5 EcoBoost only
+Ford,Taurus,4d,112.9,u,"f,4",2013,2019,,,CYCLONE-35,engine-loop,compiled,3.5 naturally aspirated V6
+Ford,Taurus,4d,112.9,u,"f,4",2013,2019,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Ford,Taurus,4d,112.9,u,"f,4",2013,2019,,,EB-35,engine-loop,compiled,3.5 EcoBoost SHO
 Ford,Taurus X,SW,112.9,u,",4",2005,2009,,Was Freestyle,003120,structural,edc,
+Ford,Taurus X,SW,112.9,u,",4",2005,2009,,Was Freestyle,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6
 Ford,Tempo,"2d,4d",99.9,u,f,1984,1994,Topaz,,003040,structural,edc,
 Ford,Thunderbird,2d,120.4,f,r,1974,1976,Mark IV,,000170,structural,edc,
 Ford,Thunderbird,2d,114,f,r,1977,1979,"Cougar XR7,LTD II",T'Bird now Torino-based,000132,structural,edc,
@@ -715,18 +1139,33 @@ Ford,Thunderbird,2d,104,u,r,1987,1988,Cougar XR7,,000246,structural,edc,
 Ford,Thunderbird,2d,113,u,r,1989,1997,Cougar,,003050,structural,edc,
 Ford,Thunderbird,Conv,107.2,u,r,2002,2005,Lincoln LS? (frontal),Shortened LS Chassis,002861,structural,edc,
 Ford,Torino,"2d,4d,SW","114,118",f,r,1974,1976,Montego/CougarXR7,Also Gran Torino,000130,structural,edc,
+Ford,Transit,Van,129.9,u,"r,4",2015,2025,,,CYCLONE-35,engine-loop,compiled,3.7 naturally aspirated V6 2015-2019
+Ford,Transit,Van,129.9,u,"r,4",2015,2025,,,EB-35,engine-loop,compiled,3.5 EcoBoost 2015-2019
 Ford,Transit Connect,Van,114.6,u,f,2010,2012,,,003180,structural,edc,
 Ford,Windstar,MiniVan,120.7,u,f,1994,1998,,,002980,structural,edc,
 Ford,Windstar,MiniVan,120.7,u,f,1999,2003,,,002981,structural,edc,
 GMC,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2001,2007,Silverado HD,,002070,structural,edc,
+GMC,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2001,2007,Silverado HD,,DMAX-66,engine-loop,compiled,6.6 Duramax diesel only
+GMC,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2001,2007,Silverado HD,,LS-GEN4,engine-loop,compiled,6.0 L96 gas V8 only
 GMC,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2008,2012,Silverado HD,,002080,structural,edc,
+GMC,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2008,2012,Silverado HD,,DMAX-66,engine-loop,compiled,6.6 Duramax diesel only
+GMC,"2500HD, 3500HD",Pickup,"119,133",f,"r,4",2008,2012,Silverado HD,,LS-GEN4,engine-loop,compiled,6.0 L96 gas V8 only
 GMC,Acadia,SW,118.9,u,"f,4",2007,2012,"Enclave, Outlook",,002170,structural,edc,
+GMC,Acadia,SW,118.9,u,"f,4",2007,2012,"Enclave, Outlook",,HFV6-36,engine-loop,compiled,3.6 LLT / LFX V6
+GMC,Acadia,SUV,112.5,u,"f,4",2017,2023,,,GM-C1XX,platform,compiled,
+GMC,Acadia,SUV,112.5,u,"f,4",2017,2023,,,HFV6-36,engine-loop,compiled,3.6 LGX V6
+GMC,Acadia,SUV,112.5,u,"f,4",2017,2023,,,LTG-20T,engine-loop,compiled,2.0 turbo 2018-2019
 GMC,"C,K-15/25/35",Pickup,"117.5,131.5",f,"r,4",1980,1980,"C,K-10/20/30",K=4WD,000360,structural,edc,
 GMC,"C,K-15/25/35",Pickup,"117.5,131.5",f,"r,4",1981,1987,"C,K-10/20/30",,002030,structural,edc,
 GMC,Caballero/Diablo,Car/Pckup,117,f,r,1980,1988,El Camino,Also Malibu (Front Only),000222,structural,edc,
 GMC,Canyon,Pickup,"111.3,125.9",f,"r,4",2004,2012,Colorado,,002440,structural,edc-flagged,
+GMC,Canyon,Pickup,128.3,f,"r,4",2015,2022,,,GM-31XX,platform,compiled,
+GMC,Canyon,Pickup,128.3,f,"r,4",2015,2022,,,HFV6-36,engine-loop,compiled,3.6 LGZ V6
+GMC,Canyon,Pickup,131.4,f,"r,4",2023,2025,,2.7 L3B turbo only,GM-31XX,platform,compiled,
 GMC,Envoy,SUV,113,f,"r,4",2002,2012,TrailBlazer,,002110,structural,edc-flagged,
+GMC,Envoy,SUV,113,f,"r,4",2002,2012,TrailBlazer,,LS-GEN4,engine-loop,compiled,Denali 5.3 only — 4.2 I6 excluded
 GMC,"Envoy, Envoy XL",SUV,"113,129",f,"r,4",2002,2009,TrailBlazer,Also Denali,002110,structural,edc-flagged,
+GMC,"Envoy, Envoy XL",SUV,"113,129",f,"r,4",2002,2009,TrailBlazer,Also Denali,LS-GEN4,engine-loop,compiled,Denali 5.3 only — 4.2 I6 excluded
 GMC,Jimmy,SUV,106.5,f,"r,4",1980,1980,K-5 Blazer,,000361,structural,edc,
 GMC,Jimmy,SUV,106.5,f,"r,4",1981,1991,K-5 Blazer(pre-88),,002032,structural,edc,
 GMC,Jimmy,SUV,100.5,f,"r,4",1983,1994,S10/T10 Blazer,Extra year on old body style,002091,structural,edc-flagged,
@@ -739,11 +1178,25 @@ GMC,S15/T15 Jimmy,SUV,100.5,f,"r,4",1983,1994,S10/T10 Blazer,,002091,structural,
 GMC,Safari,MiniVan,111,f,"r,4",1986,2005,Astro,,002120,structural,edc,
 GMC,Savana,Van,"135,155",u,r,1996,2002,Chev Express,,002130,structural,edc,
 GMC,Savana,Van,"135,155",u,r,2003,2012,Chev Express,,002140,structural,edc,
+GMC,Savana,Van,"135,155",u,r,2003,2012,Chev Express,,LS-GEN4,engine-loop,compiled,4.8 / 5.3 / 6.0 V8
+GMC,Savana,Van,135.0,f,"r,4",2013,2025,,,LS-GEN4,engine-loop,compiled,4.8 / 6.0 V8 through 2019
 GMC,Sierra,Pickup,"117.5,131.5",f,"r,4",1988,1999,Chev C/K,(Some 99's were old body),002040,structural,edc,
+GMC,Sierra,Pickup,"117.5,131.5",f,"r,4",1988,1999,Chev C/K,(Some 99's were old body),LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
 GMC,Sierra,Pickup,"119,133",f,"r,4",1999,2006,Chev Silverado,Also Denali,002050,structural,edc,
+GMC,Sierra,Pickup,"119,133",f,"r,4",1999,2006,Chev Silverado,Also Denali,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
 GMC,Sierra,Pickup,"133.9,143.5",f,"r,4",2007,2012,Chev Silverado,,002060,structural,edc,
+GMC,Sierra,Pickup,"133.9,143.5",f,"r,4",2007,2012,Chev Silverado,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
 GMC,Sierra 15/25/3500,Pickup,"117.5,131.5",f,"r,4",1988,1999,"C,K-15/25/3500",,002040,structural,edc,
+GMC,Sierra 15/25/3500,Pickup,"117.5,131.5",f,"r,4",1988,1999,"C,K-15/25/3500",,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
+GMC,Sierra 1500,Pickup,143.5,f,"r,4",2014,2018,,,GM-K2XX,platform,compiled,
+GMC,Sierra 1500,Pickup,143.5,f,"r,4",2014,2018,,,LT-GEN5,engine-loop,compiled,5.3 L83 / 6.2 L86
+GMC,Sierra 1500,Pickup,147.4,f,"r,4",2019,2025,,,GM-T1XX,platform,compiled,
+GMC,Sierra 1500,Pickup,147.4,f,"r,4",2019,2025,,,LT-GEN5,engine-loop,compiled,5.3 L84 / 6.2 L87
+GMC,Sierra 2500HD,Pickup,158.9,f,"r,4",2015,2019,,,DMAX-66,engine-loop,compiled,6.6 Duramax diesel
+GMC,Sierra 2500HD,Pickup,158.9,f,"r,4",2015,2019,,,GM-K2XX,platform,compiled,
+GMC,Sierra 2500HD,Pickup,158.9,f,"r,4",2015,2019,,,LS-GEN4,engine-loop,compiled,6.0 L96 gas V8
 GMC,Sierra Classic,Pickup,"119,143.5",f,"r,4",1999,2007,Silverado Classic,Continuation model,002050,structural,edc,
+GMC,Sierra Classic,Pickup,"119,143.5",f,"r,4",1999,2007,Silverado Classic,Continuation model,LS-GEN4,engine-loop,compiled,5.3 / 6.0 / 6.2 V8 — 4.3 V6 excluded
 GMC,Sonoma,Pickup,"108,118,123",f,"r,4",1982,1993,S10/T10,,002090,structural,edc,
 GMC,Sonoma,Pickup,,f,"r,4",1994,2004,S10/T10,Old model crew cab still sold,002100,structural,edc,
 GMC,Suburban,SW,129.5,f,"r,4",1980,1980,Fullsize Pickups(Fr),Including GMC,000362,structural,edc,
@@ -751,12 +1204,33 @@ GMC,Suburban,SW,129.5,f,"r,4",1981,1991,Fullsize Pickups(Fr),,002031,structural,
 GMC,Suburban,SW,129.5,f,"r,4",1992,1999,Fullsize Pickups(Fr),Old truck body still,002041,structural,edc-flagged,
 GMC,Suburban,SW,129.5,f,"r,4",1992,2012,Fullsize Pickups(Fr),Based on 88-on P/U,002041,structural,edc-flagged,
 GMC,Terrain,SUV,112.5,u,"f,4",2010,2012,"Equinox, SRX?",,003160,structural,edc,
+GMC,Terrain,SUV,112.5,u,"f,4",2010,2012,"Equinox, SRX?",,ECOTEC-24,engine-loop,compiled,2.4 LAF / LEA — 3.6 V6 excluded
+GMC,Terrain,SUV,112.5,u,"f,4",2010,2012,"Equinox, SRX?",,HFV6-36,engine-loop,compiled,3.6 LFX V6 — 2.4 excluded
+GMC,Terrain,SUV,112.5,u,"f,4",2013,2017,,,ECOTEC-24,engine-loop,compiled,2.4 LEA 4-cyl
+GMC,Terrain,SUV,112.5,u,"f,4",2013,2017,,,HFV6-36,engine-loop,compiled,3.6 LFX V6
+GMC,Terrain,SUV,107.3,u,"f,4",2018,2024,,,GM-D2XX,platform,compiled,
+GMC,Terrain,SUV,107.3,u,"f,4",2018,2024,,,LFV-15T,engine-loop,compiled,1.5 turbo LFV
+GMC,Terrain,SUV,107.3,u,"f,4",2018,2024,,,LTG-20T,engine-loop,compiled,2.0 turbo LTG 2018-2019
 GMC,Vandura/Rally,Van,"110,125",u,r,1980,1995,Chev Sportvan,,000380,structural,edc-flagged,
 GMC,Yukon,SUV,111.5,f,"r,4",1992,1999,"Tahoe, Escalade",Also Denali (Old truck body),002042,structural,edc,
 GMC,Yukon,SUV,116,f,"r,4",2000,2006,Tahoe,Also Denali,002052,structural,edc-flagged,
+GMC,Yukon,SUV,116,f,"r,4",2000,2006,Tahoe,Also Denali,LS-GEN4,engine-loop,compiled,4.8 / 5.3 / 6.2 V8
 GMC,Yukon,SUV,116,f,"r,4",2007,2012,Tahoe,,002062,structural,edc,
+GMC,Yukon,SUV,116,f,"r,4",2007,2012,Tahoe,,LS-GEN4,engine-loop,compiled,4.8 / 5.3 / 6.2 V8
+GMC,Yukon,SUV,116.0,f,"r,4",2015,2020,,,GM-K2XX,platform,compiled,
+GMC,Yukon,SUV,116.0,f,"r,4",2015,2020,,,LT-GEN5,engine-loop,compiled,5.3 L83 / 6.2 L86
+GMC,Yukon,SUV,120.9,f,"r,4",2021,2025,,,GM-T1XX,platform,compiled,
+GMC,Yukon,SUV,120.9,f,"r,4",2021,2025,,,LT-GEN5,engine-loop,compiled,5.3 L84 / 6.2 L87
 GMC,Yukon XL,SW,130,f,"r,4",2000,2006,Suburban,,002051,structural,edc,
+GMC,Yukon XL,SW,130,f,"r,4",2000,2006,Suburban,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8
 GMC,Yukon XL,SW,130,f,"r,4",2007,2012,Suburban,,002061,structural,edc,
+GMC,Yukon XL,SW,130,f,"r,4",2007,2012,Suburban,,LS-GEN4,engine-loop,compiled,5.3 / 6.0 V8
+GMC,Yukon XL,SUV,130.0,f,"r,4",2015,2020,,,GM-K2XX,platform,compiled,
+GMC,Yukon XL,SUV,130.0,f,"r,4",2015,2020,,,LT-GEN5,engine-loop,compiled,5.3 L83 / 6.2 L86
+GMC,Yukon XL,SUV,134.1,f,"r,4",2021,2025,,,GM-T1XX,platform,compiled,
+GMC,Yukon XL,SUV,134.1,f,"r,4",2021,2025,,,LT-GEN5,engine-loop,compiled,5.3 L84 / 6.2 L87
+Genesis,G80,4d,118.5,u,"r,4",2017,2020,,,LAMBDA2-33,engine-loop,compiled,3.3 twin-turbo V6
+Genesis,G80,4d,118.5,u,"r,4",2017,2020,,,LAMBDA2-38,engine-loop,compiled,3.8 V6
 Geo,Metro,"3d,5d","89.2,93.1",u,r,1989,1994,Suzuki Swift,,002620,structural,edc-flagged,
 Geo,Metro,"3d,4d",93.1,u,r,1995,1997,Suzuki Swift,,002630,structural,edc-flagged,
 Geo,Prizm,"4d,5d",95.7,u,f,1989,1992,Toyota Corolla,,001240,structural,edc,
@@ -774,9 +1248,27 @@ Honda,Accord,"2d,4d,SW",106.9,u,f,1994,1997,,V6 has extended nose,000670,structu
 Honda,Accord,"2d,4d","105.1,106.9",u,f,1998,2002,,,000680,structural,edc,
 Honda,Accord,"2d,4d","105.1,107.9",u,f,2003,2007,,,000690,structural,edc,
 Honda,Accord,"2d,4d",110.2,u,f,2008,2012,,,000700,structural,edc,
+Honda,Accord,"2d,4d",110.2,u,f,2008,2012,,,J35Z,engine-loop,compiled,3.5 V6 — 2.4 4-cyl excluded
+Honda,Accord,"2d,4d",110.2,u,f,2008,2012,,,K24Z,engine-loop,compiled,2.4 4-cyl — V6 excluded
+Honda,Accord,4d,109.3,u,f,2013,2017,,,HONDA-ACC9,platform,compiled,
+Honda,Accord,4d,109.3,u,f,2013,2017,,,J35Y,engine-loop,compiled,3.5 V6
+Honda,Accord,4d,109.3,u,f,2013,2017,,,K24W,engine-loop,compiled,2.4 4-cyl
+Honda,Accord,4d,111.4,u,f,2018,2022,,,HONDA-CGP,platform,compiled,
+Honda,Accord,4d,111.4,u,f,2018,2022,,,K20C,engine-loop,compiled,2.0 turbo Sport/Touring
+Honda,Accord,4d,111.4,u,f,2018,2022,,,L15B7,engine-loop,compiled,1.5 turbo base
+Honda,Accord,4d,111.4,u,f,2023,2025,,,HONDA-CGP,platform,compiled,
+Honda,Accord,4d,111.4,u,f,2023,2025,,,L15B7,engine-loop,compiled,1.5 turbo LX/EX
 Honda,CR-V,SW,103.2,u,"f,4",1997,2001,,,001770,structural,edc,
 Honda,CR-V,SW,103.1,u,"f,4",2002,2006,,,001780,structural,edc,
 Honda,CR-V,SW,103.1,u,"f,4",2007,2012,,,001790,structural,edc,
+Honda,CR-V,SW,103.1,u,"f,4",2007,2012,,,K24Z,engine-loop,compiled,2.4 4-cyl — sole engine
+Honda,CR-V,SUV,103.1,u,"f,4",2013,2014,,,K24Z,engine-loop,compiled,2.4 4-cyl
+Honda,CR-V,SUV,103.1,u,"f,4",2015,2016,,,K24W,engine-loop,compiled,2.4 Earth Dreams 4-cyl
+Honda,CR-V,SUV,104.7,u,"f,4",2017,2022,,,HONDA-CGP,platform,compiled,
+Honda,CR-V,SUV,104.7,u,"f,4",2017,2022,,,K24W,engine-loop,compiled,2.4 LX 2017-2019
+Honda,CR-V,SUV,104.7,u,"f,4",2017,2022,,,L15B7,engine-loop,compiled,1.5 turbo
+Honda,CR-V,SUV,106.3,u,"f,4",2023,2025,,,HONDA-CGP,platform,compiled,
+Honda,CR-V,SUV,106.3,u,"f,4",2023,2025,,,L15B7,engine-loop,compiled,1.5 turbo
 Honda,CR-Z,3d,95.9,u,f,2011,2012,,,007330,structural,edc,
 Honda,Civic,"3d,SW","86.6,89.8",u,f,1980,1983,,,000520,structural,edc,
 Honda,Civic,"3d,4d,SW","86.6,89.8",u,f,1980,1983,,New 4d,000520,structural,edc,
@@ -787,33 +1279,63 @@ Honda,Civic,"3d,4d,SW",101.3,u,f,1992,1995,,,000730,structural,edc,
 Honda,Civic,"2d,3d,4d",103.2,u,f,1996,2000,,,000740,structural,edc,
 Honda,Civic,"2d,4d",103.2,u,f,2001,2005,,,000750,structural,edc,
 Honda,Civic,"2d,4d","104.3,106.3",u,f,2006,2011,,,000760,structural,edc,
+Honda,Civic,"2d,4d","104.3,106.3",u,f,2006,2011,,,R18,engine-loop,compiled,1.8 4-cyl — Si 2.0/2.4 excluded
 Honda,Civic,"2d,4d",105.1,u,f,2012,2012,,Restyle,000761,structural,edc,
+Honda,Civic,"2d,4d",105.1,u,f,2012,2012,,Restyle,K24Z,engine-loop,compiled,Si 2.4 only — 1.8 excluded
+Honda,Civic,"2d,4d",105.1,u,f,2012,2012,,Restyle,R18,engine-loop,compiled,1.8 4-cyl — Si 2.0/2.4 excluded
+Honda,Civic,4d,106.3,u,f,2013,2015,,,K24Z,engine-loop,compiled,2.4 Si
+Honda,Civic,4d,106.3,u,f,2013,2015,,,R18,engine-loop,compiled,1.8 LX/EX
+Honda,Civic,4d,106.3,u,f,2016,2021,,,HONDA-CGP,platform,compiled,
+Honda,Civic,4d,106.3,u,f,2016,2021,,,K20C,engine-loop,compiled,2.0 turbo Type R
+Honda,Civic,4d,106.3,u,f,2016,2021,,,L15B7,engine-loop,compiled,1.5 turbo EX/Touring
+Honda,Civic,5d,106.3,u,f,2017,2021,,,HONDA-CGP,platform,compiled,
+Honda,Civic,5d,106.3,u,f,2017,2021,,,L15B7,engine-loop,compiled,1.5 turbo — sole engine
+Honda,Civic,4d,107.7,u,f,2022,2025,,,HONDA-CGP,platform,compiled,
+Honda,Civic,4d,107.7,u,f,2022,2025,,,K20C,engine-loop,compiled,2.0 turbo Type R
+Honda,Civic,4d,107.7,u,f,2022,2025,,,L15B7,engine-loop,compiled,1.5 turbo EX/Touring
 Honda,Civic CRX,3d,86.6,u,f,1984,1987,,,000711,structural,edc,
 Honda,Civic CRX,3d,90.6,u,f,1988,1991,,,000721,structural,edc-flagged,
 Honda,Civic Del Sol,2d,93.3,u,f,1993,1997,,Based on Civic,000731,structural,edc-flagged,
 Honda,Crosstour,5d,110.1,u,"f,4",2010,2012,ZDX?,Pilot/Accord based,000701,structural,edc,
+Honda,Crosstour,5d,110.1,u,"f,4",2010,2012,ZDX?,Pilot/Accord based,J35Z,engine-loop,compiled,3.5 V6
 Honda,Element,SW,101.5,u,4,2003,2011,,,001800,structural,edc,
+Honda,Element,SW,101.5,u,4,2003,2011,,,K24Z,engine-loop,compiled,2.4 4-cyl — sole engine
 Honda,FCX Clarity,4d,,u,f,2009,2012,,,001820,structural,edc,
 Honda,Fit,SW,96.5,u,f,2007,2008,,,001830,structural,edc,
 Honda,Fit,SW,98.4,u,f,2009,2012,,,001840,structural,edc,
+Honda,Fit,5d,99.6,u,f,2015,2020,,1.5 L15B naturally aspirated,,,,
+Honda,HR-V,SUV,102.8,u,"f,4",2016,2022,,,R18,engine-loop,compiled,1.8 4-cyl
+Honda,HR-V,SUV,104.5,u,"f,4",2023,2025,,2.0 naturally aspirated,HONDA-CGP,platform,compiled,
 Honda,Hummer H2,SUV,122.8,f,4,2003,2009,,Based on Suburban,002550,structural,edc,
 Honda,Hummer H3,SUV,111.9,f,4,2006,2009,,New.Based on Colorado,002560,structural,edc,
 Honda,Insight,2d,94.5,u,f,2000,2006,,,001850,structural,edc,
 Honda,Insight,5d,100.4,u,f,2010,2012,,,007180,structural,edc,
 Honda,Odyssey,Van,111.4,u,f,1995,1998,Isuzu Oasis,,001730,structural,edc,
-Honda,Odyssey,Van,111.4,u,f,1995,1998,Isuzu Oasis,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Odyssey,Van,111.4,u,f,1995,1998,Isuzu Oasis,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
 Honda,Odyssey,Van,111.4,u,f,1999,2004,,,001740,structural,edc,
-Honda,Odyssey,Van,111.4,u,f,1999,2004,,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Odyssey,Van,111.4,u,f,1999,2004,,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
 Honda,Odyssey,Van,118.1,u,f,2005,2010,,,001750,structural,edc,
-Honda,Odyssey,Van,118.1,u,f,2005,2010,,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Odyssey,Van,118.1,u,f,2005,2010,,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
+Honda,Odyssey,Van,118.1,u,f,2005,2010,,,J35Z,engine-loop,compiled,3.5 V6
 Honda,Odyssey,Van,118.1,u,f,2011,2012,,,007340,structural,edc,
-Honda,Odyssey,Van,118.1,u,f,2011,2012,,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Odyssey,Van,118.1,u,f,2011,2012,,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
+Honda,Odyssey,Van,118.1,u,f,2011,2012,,,J35Z,engine-loop,compiled,3.5 V6
+Honda,Odyssey,Van,118.1,u,f,2011,2017,,,J35Z,engine-loop,compiled,3.5 V6
+Honda,Odyssey,Van,118.1,u,f,2018,2025,,,HONDA-LGP,platform,compiled,
+Honda,Odyssey,Van,118.1,u,f,2018,2025,,,J35Y,engine-loop,compiled,3.5 V6
 Honda,Passport,SW,108.7,f,4,1994,1997,Isuzu Rodeo,,001691,structural,edc,
 Honda,Passport,SW,106.4,f,4,1998,2002,Isuzu Rodeo,,001692,structural,edc,
+Honda,Passport,SUV,110.9,u,"f,4",2019,2025,,,HONDA-LGP,platform,compiled,
+Honda,Passport,SUV,110.9,u,"f,4",2019,2025,,,J35Y,engine-loop,compiled,3.5 V6
 Honda,Pilot,SW,106.3,u,"f,4",2003,2008,,,001671,structural,edc,
-Honda,Pilot,SW,106.3,u,"f,4",2003,2008,,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Pilot,SW,106.3,u,"f,4",2003,2008,,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
 Honda,Pilot,SW,109.2,u,"f,4",2009,2012,,,001680,structural,edc,
-Honda,Pilot,SW,109.2,u,"f,4",2009,2012,,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Pilot,SW,109.2,u,"f,4",2009,2012,,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
+Honda,Pilot,SW,109.2,u,"f,4",2009,2012,,,J35Z,engine-loop,compiled,3.5 V6
+Honda,Pilot,SUV,111.0,u,"f,4",2016,2022,,,HONDA-LGP,platform,compiled,
+Honda,Pilot,SUV,111.0,u,"f,4",2016,2022,,,J35Y,engine-loop,compiled,3.5 V6
+Honda,Pilot,SUV,113.8,u,"f,4",2023,2025,,,HONDA-LGP,platform,compiled,
+Honda,Pilot,SUV,113.8,u,"f,4",2023,2025,,,J35Y,engine-loop,compiled,3.5 V6
 Honda,Prelude,2d,91.3,u,f,1980,1982,,,000530,structural,edc,
 Honda,Prelude,2d,96.5,u,f,1983,1987,,,000770,structural,edc,
 Honda,Prelude,2d,96.5,u,f,1983,1986,,,000770,structural,edc,
@@ -821,10 +1343,15 @@ Honda,Prelude,2d,101,u,f,1988,1991,,,000780,structural,edc,
 Honda,Prelude,2d,100.4,u,f,1992,1996,,,000790,structural,edc,
 Honda,Prelude,2d,101.8,u,f,1997,2001,,,000800,structural,edc,
 Honda,Ridgeline,Pickup,122,u,4,2006,2012,,,001672,structural,edc,
-Honda,Ridgeline,Pickup,122,u,4,2006,2012,,,J35-ADJ,engine-loop-partial,curated,3.5L variant � structural accessories only
+Honda,Ridgeline,Pickup,122,u,4,2006,2012,,,J35-ADJ,engine-loop-partial,curated,3.5L variant — structural accessories only
+Honda,Ridgeline,Pickup,122,u,4,2006,2012,,,J35Z,engine-loop,compiled,3.5 V6
+Honda,Ridgeline,Pickup,125.2,u,"f,4",2017,2025,,,HONDA-LGP,platform,compiled,
+Honda,Ridgeline,Pickup,125.2,u,"f,4",2017,2025,,,J35Y,engine-loop,compiled,3.5 V6
 Honda,S2000,Conv,94.5,u,r,2000,2009,,,001760,structural,edc,
 Hummer,Hummer H2,SUV,122.8,f,4,2003,2009,,Based on Suburban,002550,structural,edc,
+Hummer,Hummer H2,SUV,122.8,f,4,2003,2009,,Based on Suburban,LS-GEN4,engine-loop,compiled,6.0 / 6.2 V8
 Hummer,Hummer H3,SUV,111.9,f,4,2006,2009,,Based on Colorado,002560,structural,edc,
+Hummer,Hummer H3,SUV,111.9,f,4,2006,2009,,Based on Colorado,LS-GEN4,engine-loop,compiled,Alpha 5.3 only — 3.7 I5 excluded
 Hyundai,Accent,"3d,4d",94.5,u,f,1995,1997,,,005450,structural,edc-flagged,
 Hyundai,Accent,"3d,4d",94.5,u,f,1998,1999,,,005450,structural,edc-flagged,
 Hyundai,Accent,"3d,4d",96.1,u,f,2000,2005,,,005950,structural,edc,
@@ -832,63 +1359,122 @@ Hyundai,Accent,"3d,4d",98.4,u,f,2006,2011,Rio,,006630,structural,edc,
 Hyundai,Accent,"4d,5d",101.2,u,f,2012,2012,Rio,New,007600,structural,edc,
 Hyundai,Azera,4d,109.4,u,f,2006,2011,,,005471,structural,edc,
 Hyundai,Azera,4d,112,u,f,2012,2012,,New. Modified Sonata Chassis,007610,structural,edc,
+Hyundai,Azera,4d,112,u,f,2012,2012,,New. Modified Sonata Chassis,LAMBDA2-33,engine-loop,compiled,3.3 V6
+Hyundai,Azera,4d,110.0,u,f,2013,2017,,,LAMBDA2-33,engine-loop,compiled,3.3 V6
 Hyundai,Elantra,4d,98.4,u,f,1992,1995,,,005060,structural,edc,
 Hyundai,Elantra,"4d,SW",100.4,u,f,1996,2000,,,005070,structural,edc,
 Hyundai,Elantra,"4d,5d,SW",102.7,u,f,2001,2006,,,005080,structural,edc,
 Hyundai,Elantra,"4d,SW",102.7,u,f,2001,2006,,New,005080,structural,edc,
 Hyundai,Elantra,4d,102.7,u,f,2007,2010,,,005090,structural,edc,
 Hyundai,Elantra,4d,106.3,u,f,2011,2012,,,007350,structural,edc,
+Hyundai,Elantra,4d,106.3,u,f,2011,2012,,,NU-20,engine-loop,compiled,1.8 Nu — 2.0 Nu shares the architecture
+Hyundai,Elantra,4d,106.3,u,f,2017,2020,,,HMG-COMPACT,platform,compiled,
+Hyundai,Elantra,4d,106.3,u,f,2017,2020,,,NU-20,engine-loop,compiled,2.0 4-cyl
+Hyundai,Elantra,4d,107.1,u,f,2021,2025,,2.0 Smartstream,HMG-COMPACT,platform,compiled,
 Hyundai,Elantra Touring,SW,106.3,u,f,2009,2012,NOT Elantra,European i30,007020,structural,edc,
 Hyundai,Entourage,Van,118.9,u,f,2007,2012,Kia Sedona,,006620,structural,edc,
 Hyundai,Equus,4d,119.9,u,r,2011,2012,,,007360,structural,edc,
 Hyundai,Excel,"3d,4d,5d",93.7,u,f,1986,1989,,,004440,structural,edc,
 Hyundai,Excel,"3d,4d,5d",93.8,u,f,1990,1994,,,004441,structural,edc,
 Hyundai,Genesis,4d,115.6,u,r,2009,2012,,,007010,structural,edc,
+Hyundai,Genesis,4d,115.6,u,r,2009,2012,,,LAMBDA2-38,engine-loop,compiled,3.8 V6 — 4.6 V8 excluded
+Hyundai,Genesis,4d,118.5,u,r,2015,2016,,,LAMBDA2-38,engine-loop,compiled,3.8 V6
 Hyundai,Genesis Coupe,2d,111,u,r,2010,2012,Genesis Sedan,,007011,structural,edc,
+Hyundai,Genesis Coupe,2d,111,u,r,2010,2012,Genesis Sedan,,LAMBDA2-38,engine-loop,compiled,3.8 V6 — 2.0 turbo excluded
+Hyundai,Kona,SUV,102.4,u,"f,4",2018,2023,,,GAMMA-16T,engine-loop,compiled,1.6 turbo
+Hyundai,Kona,SUV,102.4,u,"f,4",2018,2023,,,HMG-COMPACT,platform,compiled,
+Hyundai,Palisade,SUV,114.2,u,"f,4",2020,2025,,,HMG-LARGE-CUV,platform,compiled,
+Hyundai,Palisade,SUV,114.2,u,"f,4",2020,2025,,,LAMBDA2-38,engine-loop,compiled,3.8 V6
 Hyundai,Santa Fe,SW,103.1,u,"f,4",2001,2006,,,006070,structural,edc,
 Hyundai,Santa Fe,SW,106.3,u,"f,4",2007,2012,,,006710,structural,edc,
+Hyundai,Santa Fe,SW,106.3,u,"f,4",2007,2012,,,THETA2-24,engine-loop,compiled,2.4 GDI
+Hyundai,Santa Fe,SUV,110.2,u,"f,4",2019,2023,,,HMG-MIDSIZE,platform,compiled,
+Hyundai,Santa Fe,SUV,110.2,u,"f,4",2019,2023,,,SMARTSTREAM-25,engine-loop,compiled,2.5 4-cyl 2021-2023
+Hyundai,Santa Fe,SUV,110.2,u,"f,4",2019,2023,,,THETA2-24,engine-loop,compiled,2.4 GDI 2019-2020
+Hyundai,Santa Fe Sport,SUV,106.3,u,"f,4",2013,2018,,,HMG-MIDSIZE,platform,compiled,
+Hyundai,Santa Fe Sport,SUV,106.3,u,"f,4",2013,2018,,,THETA2-20T,engine-loop,compiled,2.0 turbo
+Hyundai,Santa Fe Sport,SUV,106.3,u,"f,4",2013,2018,,,THETA2-24,engine-loop,compiled,2.4 GDI
 Hyundai,Scoupe,2d,93.8,u,f,1991,1995,Excel,,004441,structural,edc,
 Hyundai,Sonata,4d,104.3,u,f,1989,1994,,,004680,structural,edc,
 Hyundai,Sonata,4d,106.3,u,f,1995,1998,,,005440,structural,edc-flagged,
 Hyundai,Sonata,4d,106.3,u,f,1999,2005,Kia Optima,,005460,structural,edc,
 Hyundai,Sonata,4d,106.3,u,f,1999,2005,,,005440,structural,edc-flagged,
 Hyundai,Sonata,4d,107.4,u,f,2006,2012,,,005470,structural,edc,
+Hyundai,Sonata,4d,107.4,u,f,2006,2012,,,THETA2-20T,engine-loop,compiled,2.0 turbo GDI
+Hyundai,Sonata,4d,107.4,u,f,2006,2012,,,THETA2-24,engine-loop,compiled,2.4 GDI — subject of rod-bearing campaigns
 Hyundai,Sonata,4d,110.0,u,f,2011,2012,Optima,,007370,structural,edc,
+Hyundai,Sonata,4d,110.0,u,f,2011,2012,Optima,,THETA2-20T,engine-loop,compiled,2.0 turbo GDI
+Hyundai,Sonata,4d,110.0,u,f,2011,2012,Optima,,THETA2-24,engine-loop,compiled,2.4 GDI — subject of rod-bearing campaigns
+Hyundai,Sonata,4d,110.4,u,f,2015,2019,,,HMG-MIDSIZE,platform,compiled,
+Hyundai,Sonata,4d,110.4,u,f,2015,2019,,,THETA2-20T,engine-loop,compiled,2.0 turbo
+Hyundai,Sonata,4d,110.4,u,f,2015,2019,,,THETA2-24,engine-loop,compiled,2.4 GDI
+Hyundai,Sonata,4d,111.8,u,f,2020,2025,,,HMG-MIDSIZE,platform,compiled,
+Hyundai,Sonata,4d,111.8,u,f,2020,2025,,,SMARTSTREAM-25,engine-loop,compiled,2.5 4-cyl
 Hyundai,Tiburon,2d,97.4,u,f,1997,2001,,,005680,structural,edc,
 Hyundai,Tiburon,2d,99.6,u,f,2003,2008,,,005690,structural,edc,
 Hyundai,Tucson,SW,103.5,u,"f,4",2005,2009,,,006490,structural,edc,
 Hyundai,Tucson,SW,103.9,u,"f,4",2010,2012,Sportage,,007170,structural,edc,
+Hyundai,Tucson,SW,103.9,u,"f,4",2010,2012,Sportage,,THETA2-24,engine-loop,compiled,2.4 GDI
+Hyundai,Tucson,SUV,105.1,u,"f,4",2016,2021,,,GAMMA-16T,engine-loop,compiled,1.6 turbo
+Hyundai,Tucson,SUV,105.1,u,"f,4",2016,2021,,,HMG-COMPACT,platform,compiled,
+Hyundai,Tucson,SUV,105.1,u,"f,4",2016,2021,,,THETA2-24,engine-loop,compiled,2.4 GDI
+Hyundai,Tucson,SUV,108.5,u,"f,4",2022,2025,,,HMG-COMPACT,platform,compiled,
+Hyundai,Tucson,SUV,108.5,u,"f,4",2022,2025,,,SMARTSTREAM-25,engine-loop,compiled,2.5 4-cyl
 Hyundai,Veloster,3d,104.3,u,f,2012,2012,,New,007620,structural,edc,
+Hyundai,Veloster,3d,104.3,u,f,2013,2022,,,GAMMA-16T,engine-loop,compiled,1.6 turbo
 Hyundai,Veracruz,SW,110.4,u,"f,4",2007,2012,,,006910,structural,edc,
+Hyundai,Veracruz,SW,110.4,u,"f,4",2007,2012,,,LAMBDA2-38,engine-loop,compiled,3.8 V6
 Hyundai,XG300,4d,108.3,u,f,2001,2005,,New,006060,structural,edc,
 Hyundai,XG350,4d,108.3,u,f,2001,2005,,Was XG300.,006060,structural,edc,
 Infiniti,EX35,SW,110.2,u,4,2008,2012,G37,,006214,structural,edc,
 Infiniti,"FX35,45",SW,112.2,u,4,2003,2012,,,006280,structural,edc,
+Infiniti,"FX35,45",SW,112.2,u,4,2003,2012,,,VQ35DE,engine-loop,compiled,3.5 VQ35DE — FX45 V8 and later HR variant excluded
 Infiniti,"FX35,50",SW,113.6,u,4,2009,2012,,,006281,structural,edc,
 Infiniti,G20,4d,100.4,u,r,1991,1996,,,004920,structural,edc,
 Infiniti,G20,4d,102.4,u,r,1999,2012,Primera(Japan/Europe),,005850,structural,edc,
 Infiniti,G20,4d,102.4,u,r,1999,2002,Primera(Japan/Europe),New,005850,structural,edc,
 Infiniti,"G25,G37",4d,112.2,u,r,2007,2012,EX35,,006213,structural,edc,
+Infiniti,"G25,G37",4d,112.2,u,r,2007,2012,EX35,,VQ37VHR,engine-loop,compiled,G37 3.7 V6 — G25 2.5 excluded
 Infiniti,G35,2d,112.2,u,r,2003,2007,350Z,Coupe not restyled yet,006211,structural,edc,
+Infiniti,G35,2d,112.2,u,r,2003,2007,350Z,Coupe not restyled yet,VQ35DE,engine-loop,compiled,3.5 VQ35DE — 2007+ is the HR variant
 Infiniti,G35,"2d,4d",112.2,u,r,2003,2006,Nissan 350Z,,006211,structural,edc,
+Infiniti,G35,"2d,4d",112.2,u,r,2003,2006,Nissan 350Z,,VQ35DE,engine-loop,compiled,3.5 VQ35DE — 2007+ is the HR variant
 Infiniti,G35,4d,112.2,u,r,2007,2012,"350Z, EX35",,006213,structural,edc,
 Infiniti,G37,4d,112.2,u,r,2007,2012,EX35,,006213,structural,edc,
+Infiniti,G37,4d,112.2,u,r,2007,2012,EX35,,VQ37VHR,engine-loop,compiled,3.7 V6
 Infiniti,G37,"2d, Conv",112.2,u,r,2008,2012,EX35,,006213,structural,edc,
+Infiniti,G37,"2d, Conv",112.2,u,r,2008,2012,EX35,,VQ37VHR,engine-loop,compiled,3.7 V6
 Infiniti,G37,2d,112.2,u,r,2008,2012,EX35,,006213,structural,edc,
+Infiniti,G37,2d,112.2,u,r,2008,2012,EX35,,VQ37VHR,engine-loop,compiled,3.7 V6
 Infiniti,I30,4d,106.3,u,f,1995,1999,Nissan Maxima,,003931,structural,edc,
 Infiniti,I30,4d,108.3,u,f,2000,2004,Nissan Maxima,,003933,structural,edc,
 Infiniti,I35,4d,108.3,u,f,2000,2004,Nissan Maxima,,003933,structural,edc,
+Infiniti,I35,4d,108.3,u,f,2000,2004,Nissan Maxima,,VQ35DE,engine-loop,compiled,3.5 V6
 Infiniti,J30,2d,108.7,u,r,1993,1997,,,005330,structural,edc,
 Infiniti,M30,2d,103.0,u,r,1990,1992,Nissan Leopard(Japan),,004830,structural,edc,
 Infiniti,"M35,45",4d,114.2,u,r,2006,2010,,,006212,structural,edc,
 Infiniti,"M37,M56",4d,114.2,u,"r,4",2011,2012,,New Hybrid M35h,007380,structural,edc,
+Infiniti,"M37,M56",4d,114.2,u,"r,4",2011,2012,,New Hybrid M35h,VQ37VHR,engine-loop,compiled,3.7 V6 — M56 V8 excluded
 Infiniti,M45,4d,110.2,u,r,2003,2004,Nissan Gloria (Japan),,006270,structural,edc,
 Infiniti,Q45,4d,113.2,u,r,1990,1996,,,004820,structural,edc,
 Infiniti,Q45,4d,111.4,u,r,1997,2001,,,004840,structural,edc,
 Infiniti,Q45,4d,113,u,r,2002,2007,,,004850,structural,edc,
+Infiniti,Q50,4d,112.2,u,"r,4",2014,2025,,,NISSAN-FM,platform,compiled,
+Infiniti,Q50,4d,112.2,u,"r,4",2014,2025,,,VQ37VHR,engine-loop,compiled,3.7 V6 2014-2015
+Infiniti,Q50,4d,112.2,u,"r,4",2014,2025,,,VR30DDTT,engine-loop,compiled,3.0 twin-turbo V6 2016-2025
+Infiniti,Q60,2d,112.2,u,"r,4",2017,2022,,,NISSAN-FM,platform,compiled,
+Infiniti,Q60,2d,112.2,u,"r,4",2017,2022,,,VR30DDTT,engine-loop,compiled,3.0 twin-turbo V6
 Infiniti,QX4,SW,106.3,u,4,1997,2003,Nissan Pathfinder,,005550,structural,edc,
 Infiniti,QX56,SW,123.2,u,4,2004,2012,Nissan Armada,,006341,structural,edc,
+Infiniti,QX56,SW,123.2,u,4,2004,2012,Nissan Armada,,VK56,engine-loop,compiled,5.6 V8
 Infiniti,QX56,SW,121.1,f,4,2011,2012,Nissan Patrol(Not US),,007390,structural,edc,
+Infiniti,QX56,SW,121.1,f,4,2011,2012,Nissan Patrol(Not US),,VK56,engine-loop,compiled,5.6 V8
+Infiniti,QX60,SUV,114.2,u,"f,4",2014,2020,,,NISSAN-D,platform,compiled,
+Infiniti,QX60,SUV,114.2,u,"f,4",2014,2020,,,VQ35DE,engine-loop,compiled,3.5 V6
+Infiniti,QX60,SUV,114.2,u,"f,4",2022,2025,,,NISSAN-D,platform,compiled,
+Infiniti,QX60,SUV,114.2,u,"f,4",2022,2025,,,VQ35DD,engine-loop,compiled,3.5 V6 direct injection
+Infiniti,QX80,SUV,121.1,f,"r,4",2014,2024,,,NISSAN-FALPHA,platform,compiled,
+Infiniti,QX80,SUV,121.1,f,"r,4",2014,2024,,,VK56,engine-loop,compiled,5.6 V8
 Isuzu,Amigo,SUV,91.7,f,"r,4",1989,1994,"P/U, Rodeo",,001694,structural,edc,
 Isuzu,Amigo,SUV,,f,"r,4",1998,2012,Rodeo (Front),,001693,structural,edc,
 Isuzu,Ascender,SUV,107,f,4,2003,2008,"TrailBlazer, etc.",,002110,structural,edc-flagged,
@@ -933,33 +1519,82 @@ Jeep,"CJ-5,CJ-7",SUV,"83.5,93.5",f,4,1980,1986,Scrambler,,000570,structural,edc-
 Jeep,CJ-7,SUV,93.5,f,4,1980,1986,Scrambler,,000570,structural,edc-flagged,
 Jeep,Cherokee,SUV,109,f,4,1980,1983,"Wagoneer,Pickup",,000560,structural,edc,
 Jeep,Cherokee,SUV,101,f,"r,4",1984,2001,,,003230,structural,edc,
+Jeep,Cherokee,SUV,106.5,u,"f,4",2014,2023,,3.2 V6 is a Pentastar derivative,FCA-CUSW,platform,compiled,
+Jeep,Cherokee,SUV,106.5,u,"f,4",2014,2023,,3.2 V6 is a Pentastar derivative,GME-T4,engine-loop,compiled,2.0 turbo 2019-2023
+Jeep,Cherokee,SUV,106.5,u,"f,4",2014,2023,,3.2 V6 is a Pentastar derivative,TIGERSHARK-24,engine-loop,compiled,2.4 4-cyl
 Jeep,Comanche,Pickup,"113,120",f,"r,4",1986,1992,"Cherokee, Wagoneer",,003231,structural,edc,
 Jeep,Commander,SUV,109.5,u,"r,4",2006,2010,,Stretch Gr Cherokee Chassis,003720,structural,edc,
+Jeep,Commander,SUV,109.5,u,"r,4",2006,2010,,Stretch Gr Cherokee Chassis,HEMI-57,engine-loop,compiled,5.7 HEMI
 Jeep,Compass,5d,103.7,u,f,2007,2012,"Caliber, Patriot",,003750,structural,edc,
+Jeep,Compass,SUV,103.8,u,"f,4",2017,2025,,,FCA-CUSW,platform,compiled,
+Jeep,Compass,SUV,103.8,u,"f,4",2017,2025,,,TIGERSHARK-24,engine-loop,compiled,2.4 4-cyl
+Jeep,Gladiator,Pickup,137.3,f,4,2020,2025,,,ECODIESEL-30,engine-loop,compiled,3.0 EcoDiesel 2021-2023
+Jeep,Gladiator,Pickup,137.3,f,4,2020,2025,,,FCA-JL,platform,compiled,
+Jeep,Gladiator,Pickup,137.3,f,4,2020,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Jeep,Grand Cherokee,SUV,105.9,f,4,1993,1998,,,003450,structural,edc,
 Jeep,Grand Cherokee,SW,105.9,f,4,1993,1998,,New,003450,structural,edc,
 Jeep,Grand Cherokee,SUV,105.9,u,4,1999,2004,,,003570,structural,edc,
 Jeep,Grand Cherokee,SUV,105.9,u,"r,4",2005,2010,,,003700,structural,edc,
+Jeep,Grand Cherokee,SUV,105.9,u,"r,4",2005,2010,,,HEMI-57,engine-loop,compiled,5.7 HEMI
 Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2011,2012,"Durango,M-B ML",,007280,structural,edc,
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2011,2012,"Durango,M-B ML",,HEMI-57,engine-loop,compiled,5.7 HEMI
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2011,2012,"Durango,M-B ML",,HEMI-64,engine-loop,compiled,6.4 SRT8
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2011,2012,"Durango,M-B ML",,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar — HEMI excluded
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2013,2021,,,ECODIESEL-30,engine-loop,compiled,3.0 EcoDiesel 2014-2019
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2013,2021,,,FCA-WK2,platform,compiled,
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2013,2021,,,HEMI-57,engine-loop,compiled,5.7 V8
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2013,2021,,,HEMI-64,engine-loop,compiled,6.4 SRT
+Jeep,Grand Cherokee,SUV,114.8,u,"r,4",2013,2021,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Jeep,Grand Cherokee,SUV,116.7,u,"r,4",2022,2025,,,FCA-WL,platform,compiled,
+Jeep,Grand Cherokee,SUV,116.7,u,"r,4",2022,2025,,,HEMI-57,engine-loop,compiled,5.7 V8 2022-2023
+Jeep,Grand Cherokee,SUV,116.7,u,"r,4",2022,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Jeep,Grand Cherokee L,SUV,121.7,u,"r,4",2021,2025,,,FCA-WL,platform,compiled,
+Jeep,Grand Cherokee L,SUV,121.7,u,"r,4",2021,2025,,,HEMI-57,engine-loop,compiled,5.7 V8 2021-2023
+Jeep,Grand Cherokee L,SUV,121.7,u,"r,4",2021,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Jeep,Grand Wagoneer,SW,109,f,4,1980,1991,Older Models,,000560,structural,edc,
 Jeep,J Pickup,Pickup,131,f,4,1980,1988,"Grand Wagoneer,older",,000561,structural,edc,
 Jeep,Libery,SUV,104.3,f,"r,4",2002,2007,,,003620,structural,edc,
 Jeep,Libery,SUV,104.3,f,"r,4",2008,2012,Nitro (Older),,003770,structural,edc-flagged,
 Jeep,Patriot,5d,103.7,u,f,2007,2012,"Caliber, Compass",,003750,structural,edc,
+Jeep,Renegade,SUV,101.2,u,"f,4",2015,2023,,,FCA-CUSW,platform,compiled,
+Jeep,Renegade,SUV,101.2,u,"f,4",2015,2023,,,TIGERSHARK-24,engine-loop,compiled,2.4 4-cyl
 Jeep,Scrambler,SUV,103.5,f,4,1981,1985,,,000571,structural,edc,
 Jeep,Wagoneer,SW,109,f,4,1980,1983,"Cherokee,Pickup",Also later Grand Wagoneer,000560,structural,edc,
 Jeep,Wagoneer,SW,101,f,4,1984,1992,"Cherokee,Comanche",,003230,structural,edc,
 Jeep,Wrangler,SUV,93.4,f,4,1987,1995,"No 96 Mdl, 97 is new",,,,,
 Jeep,Wrangler,SUV,93.4,f,4,1987,1995,,,003270,structural,edc,
 Jeep,Wrangler,SUV,93.4,f,4,1997,2006,,,003530,structural,edc,
+Jeep,Wrangler,SUV,95.4,f,4,2013,2018,,,FCA-JK,platform,compiled,
+Jeep,Wrangler,SUV,95.4,f,4,2013,2018,,,PENTASTAR-36,engine-loop,compiled,3.6 V6 — sole engine
+Jeep,Wrangler,SUV,96.8,f,4,2018,2025,,,FCA-JL,platform,compiled,
+Jeep,Wrangler,SUV,96.8,f,4,2018,2025,,,GME-T4,engine-loop,compiled,2.0 turbo
+Jeep,Wrangler,SUV,96.8,f,4,2018,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Jeep,Wrangler Unlimited,SUV,116.0,f,4,2013,2018,,,FCA-JK,platform,compiled,
+Jeep,Wrangler Unlimited,SUV,116.0,f,4,2013,2018,,,PENTASTAR-36,engine-loop,compiled,3.6 V6 — sole engine
+Jeep,Wrangler Unlimited,SUV,118.4,f,4,2018,2025,,,FCA-JL,platform,compiled,
+Jeep,Wrangler Unlimited,SUV,118.4,f,4,2018,2025,,,GME-T4,engine-loop,compiled,2.0 turbo
+Jeep,Wrangler Unlimited,SUV,118.4,f,4,2018,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Jeep,"Wrangler,Unlimited","2d,4d","93.4,116",f,4,2007,2012,,,003740,structural,edc,
+Jeep,"Wrangler,Unlimited","2d,4d","93.4,116",f,4,2007,2012,,,PENTASTAR-36,engine-loop,compiled,3.6 Pentastar
 Kia,Amanti,4d,110.2,u,f,2004,2009,,,006061,structural,edc,
 Kia,Borrego,SUV,114,f,"r,4",2009,2012,,,007000,structural,edc,
+Kia,Cadenza,4d,112.0,u,f,2014,2020,,,LAMBDA2-33,engine-loop,compiled,3.3 V6
 Kia,Forte,"2d,4d,5d","104,104.3",u,f,2010,2012,,2d is Koupe,007150,structural,edc,
+Kia,Forte,"2d,4d,5d","104,104.3",u,f,2010,2012,,2d is Koupe,NU-20,engine-loop,compiled,2.0 Nu
 Kia,Forte,"2d,4d","104,104.3",u,f,2010,2012,,New. 2d is Koupe,007150,structural,edc,
+Kia,Forte,"2d,4d","104,104.3",u,f,2010,2012,,New. 2d is Koupe,NU-20,engine-loop,compiled,2.0 Nu
+Kia,Forte,4d,106.3,u,f,2019,2024,,,HMG-COMPACT,platform,compiled,
+Kia,Forte,4d,106.3,u,f,2019,2024,,,NU-20,engine-loop,compiled,2.0 4-cyl
+Kia,K5,4d,112.2,u,"f,4",2021,2025,,,HMG-MIDSIZE,platform,compiled,
+Kia,K5,4d,112.2,u,"f,4",2021,2025,,,SMARTSTREAM-25,engine-loop,compiled,2.5 4-cyl
 Kia,Optima,4d,106.3,u,f,2001,2006,Older Sonata,,005460,structural,edc,
 Kia,Optima,4d,106.3,u,f,2007,2010,,,006900,structural,edc,
 Kia,Optima,4d,110.0,u,f,2011,2012,Sonata,,007370,structural,edc,
+Kia,Optima,4d,110.0,u,f,2011,2012,Sonata,,THETA2-20T,engine-loop,compiled,2.0 turbo GDI
+Kia,Optima,4d,110.0,u,f,2011,2012,Sonata,,THETA2-24,engine-loop,compiled,2.4 GDI
+Kia,Optima,4d,110.4,u,f,2016,2020,,,HMG-MIDSIZE,platform,compiled,
+Kia,Optima,4d,110.4,u,f,2016,2020,,,THETA2-20T,engine-loop,compiled,2.0 turbo
+Kia,Optima,4d,110.4,u,f,2016,2020,,,THETA2-24,engine-loop,compiled,2.4 GDI
 Kia,Rio,"4d,SW",100.8,u,f,2001,2005,,Wagon is Cinco,006050,structural,edc,
 Kia,Rio,4d,100.8,u,f,2001,2005,,,006050,structural,edc,
 Kia,"Rio,Rio5","4d,SW",98.4,u,f,2006,2011,Accent,,006630,structural,edc,
@@ -967,17 +1602,39 @@ Kia,"Rio,Rio5","4d,SW",,u,f,2012,2012,Accent,New,007600,structural,edc,
 Kia,Rondo,SW,106.3,u,f,2007,2012,,,006890,structural,edc,
 Kia,Sedona,Van,114.6,u,f,2002,2005,,,006150,structural,edc,
 Kia,Sedona,Van,118.9,u,f,2006,2012,,,006620,structural,edc,
+Kia,Sedona,Van,120.5,u,f,2015,2021,,,LAMBDA2-33,engine-loop,compiled,3.3 V6
+Kia,Seltos,SUV,103.5,u,"f,4",2021,2025,,,GAMMA-16T,engine-loop,compiled,1.6 turbo
+Kia,Seltos,SUV,103.5,u,"f,4",2021,2025,,,HMG-COMPACT,platform,compiled,
 Kia,Sephia,4d,98.4,u,f,1994,1997,,,002932,structural,edc,
 Kia,Sephia,4d,100.8,u,f,1998,2001,Spectra,2002 becomes Spectra,005800,structural,edc,
 Kia,Sorento,SW,106.7,u,",4",2003,2009,,,006260,structural,edc,
 Kia,Sorento,SW,106.3,u,",4",2011,2012,,,007210,structural,edc,
+Kia,Sorento,SW,106.3,u,",4",2011,2012,,,THETA2-24,engine-loop,compiled,2.4 GDI
+Kia,Sorento,SUV,106.3,u,"f,4",2016,2020,,,HMG-MIDSIZE,platform,compiled,
+Kia,Sorento,SUV,106.3,u,"f,4",2016,2020,,,LAMBDA2-33,engine-loop,compiled,3.3 V6
+Kia,Sorento,SUV,106.3,u,"f,4",2016,2020,,,THETA2-24,engine-loop,compiled,2.4 GDI
+Kia,Sorento,SUV,110.8,u,"f,4",2021,2025,,,HMG-MIDSIZE,platform,compiled,
+Kia,Sorento,SUV,110.8,u,"f,4",2021,2025,,,SMARTSTREAM-25,engine-loop,compiled,2.5 4-cyl
 Kia,Soul,SW,100.4,u,f,2010,2012,,,007400,structural,edc,
+Kia,Soul,SW,100.4,u,f,2010,2012,,,NU-20,engine-loop,compiled,2.0 Nu
+Kia,Soul,5d,102.4,u,f,2014,2019,,,GAMMA-16T,engine-loop,compiled,1.6 turbo
+Kia,Soul,5d,102.4,u,f,2014,2019,,,NU-20,engine-loop,compiled,2.0 4-cyl
 Kia,Spectra,5d,100.8,u,f,2000,2003,Sephia,Same chassis as Sephia,005800,structural,edc,
 Kia,Spectra,"4d,5d",100.8,u,f,2001,2003,,,005800,structural,edc,
 Kia,Spectra,"4d,5d",100.8,u,f,2004,2009,,,006390,structural,edc,
 Kia,Sportage,"2d,4d","92.9,104.3",u,",4",1995,2003,,,005430,structural,edc,
 Kia,Sportage,SW,103.5,u,",4",2005,2010,Tucson (to 2009),,006490,structural,edc,
 Kia,Sportage,SW,103.9,u,",4",2011,2012,Tucson,,007170,structural,edc,
+Kia,Sportage,SW,103.9,u,",4",2011,2012,Tucson,,THETA2-20T,engine-loop,compiled,2.0 turbo GDI
+Kia,Sportage,SW,103.9,u,",4",2011,2012,Tucson,,THETA2-24,engine-loop,compiled,2.4 GDI
+Kia,Sportage,SUV,105.1,u,"f,4",2017,2022,,,GAMMA-16T,engine-loop,compiled,1.6 turbo
+Kia,Sportage,SUV,105.1,u,"f,4",2017,2022,,,HMG-COMPACT,platform,compiled,
+Kia,Sportage,SUV,105.1,u,"f,4",2017,2022,,,THETA2-24,engine-loop,compiled,2.4 GDI
+Kia,Sportage,SUV,108.5,u,"f,4",2023,2025,,,HMG-COMPACT,platform,compiled,
+Kia,Sportage,SUV,108.5,u,"f,4",2023,2025,,,SMARTSTREAM-25,engine-loop,compiled,2.5 4-cyl
+Kia,Stinger,4d,114.4,u,"r,4",2018,2023,,,LAMBDA2-33,engine-loop,compiled,3.3 twin-turbo V6
+Kia,Telluride,SUV,114.2,u,"f,4",2020,2025,,,HMG-LARGE-CUV,platform,compiled,
+Kia,Telluride,SUV,114.2,u,"f,4",2020,2025,,,LAMBDA2-38,engine-loop,compiled,3.8 V6
 Lamborghin,Aventador,2d,106.3,u,r,2012,2012,,Chassis part carbon fiber,007630,structural,edc,
 Lamborghin,Diablo,2d,104.3,u,r,1990,2002,,,005590,structural,edc,
 Lamborghin,Gallardo,"2d, Conv",100.7,u,r,2004,2012,,,001990,structural,edc,
@@ -996,23 +1653,41 @@ Land Rover,Range Rover 4.0SE,SUV,108.1,f,4,1996,2002,,,004570,structural,edc,
 Land Rover,Range Rover Evoque,"SW(3d,5d)",104.8,u,4,2012,2012,,New. Based on LR2,007640,structural,edc,
 Land Rover,Range Rvr Sport,SUV,113.5,f,4,2006,2012,,,006481,structural,edc,
 Lexus,CT200h,5d,102.4,u,f,2011,2012,,,007410,structural,edc,
+Lexus,ES,4d,111.0,u,f,2013,2018,,,2GR-FE,engine-loop,compiled,ES 350 3.5 V6
+Lexus,ES,4d,111.0,u,f,2013,2018,,,TOYOTA-K-PRE,platform,compiled,
+Lexus,ES,4d,113.0,u,f,2019,2025,,,2GR-FKS,engine-loop,compiled,ES 350 3.5 V6
+Lexus,ES,4d,113.0,u,f,2019,2025,,,A25A-FKS,engine-loop,compiled,ES 250 2.5
+Lexus,ES,4d,113.0,u,f,2019,2025,,,TNGA-K,platform,compiled,
 Lexus,ES250,4d,102.4,u,f,1990,1991,,,004161,structural,edc,
 Lexus,ES300,4d,103.1,u,f,1992,1996,Toyota Camry,,004881,structural,edc-flagged,
 Lexus,ES300,4d,105.1,u,f,1997,2001,Toyota Camry,,004891,structural,edc,
 Lexus,ES300,4d,107.1,u,f,2002,2006,Toyota Camry,,004901,structural,edc,
 Lexus,ES330,4d,107.1,u,f,2002,2006,Toyota Camry,Was ES300,004901,structural,edc,
 Lexus,ES350,4d,107.1,u,f,2007,2012,Toyota Camry,,004911,structural,edc,
+Lexus,ES350,4d,107.1,u,f,2007,2012,Toyota Camry,,2GR-FE,engine-loop,compiled,3.5 V6
 Lexus,GS,4d,,u,r,2013,2013,,New,007650,structural,edc,
+Lexus,GS,4d,112.2,u,"r,4",2013,2020,,,2GR-FKS,engine-loop,compiled,GS 350 3.5 V6
+Lexus,GS,4d,112.2,u,"r,4",2013,2020,,,8AR-FTS,engine-loop,compiled,GS 200t/GS 300 2.0 turbo
 Lexus,GS300,4d,109.4,u,r,1993,1997,Toyota Aristo (Japan),,005300,structural,edc,
 Lexus,"GS300,GS400",4d,110.2,u,r,1998,2005,,,005310,structural,edc,
 Lexus,"GS300,GS430",4d,110.2,u,r,1998,2005,,,005310,structural,edc,
 Lexus,"GS300,GS430",4d,112.2,u,r,2006,2011,,,005320,structural,edc,
 Lexus,GS350/450h/460,4d,112.2,u,r,2006,2011,,,005320,structural,edc,
+Lexus,GS350/450h/460,4d,112.2,u,r,2006,2011,,,2GR-FE,engine-loop,compiled,3.5 V6
+Lexus,GX,SUV,109.8,f,4,2010,2023,,,1UR-FE,engine-loop,compiled,4.6 V8
+Lexus,GX,SUV,109.8,f,4,2010,2023,,,TOYOTA-N280,platform,compiled,
+Lexus,GX,SUV,112.2,f,4,2024,2025,,,TNGA-F,platform,compiled,
+Lexus,GX,SUV,112.2,f,4,2024,2025,,,V35A-FTS,engine-loop,compiled,3.4 twin-turbo V6
 Lexus,GX460,SW,109.8,f,4,2010,2012,Toyota 4Runner,,007050,structural,edc,
+Lexus,GX460,SW,109.8,f,4,2010,2012,Toyota 4Runner,,1UR-FE,engine-loop,compiled,4.6 V8
 Lexus,GX470,SW,109.8,f,4,2003,2009,Toyota 4Runner,,006180,structural,edc,
 Lexus,HS250h,4d,106.3,u,f,2010,2012,Toyota Avensis (Eur.),,007140,structural,edc,
+Lexus,IS,4d,110.2,u,"r,4",2014,2025,,,2GR-FKS,engine-loop,compiled,IS 350 3.5 V6
+Lexus,IS,4d,110.2,u,"r,4",2014,2025,,,8AR-FTS,engine-loop,compiled,IS 200t/IS 300 2.0 turbo
 Lexus,"IS250,350","4d, Conv",105.1,u,r,2006,2012,,Also IS-F,006040,structural,edc,
+Lexus,"IS250,350","4d, Conv",105.1,u,r,2006,2012,,Also IS-F,2GR-FE,engine-loop,compiled,IS 350 3.5 V6 — IS 250 2.5 excluded
 Lexus,"IS250,350",4d,105.1,u,r,2006,2012,,Also IS-F,006040,structural,edc,
+Lexus,"IS250,350",4d,105.1,u,r,2006,2012,,Also IS-F,2GR-FE,engine-loop,compiled,IS 350 3.5 V6 — IS 250 2.5 excluded
 Lexus,IS300,"4d, 5d",109.4,u,r,2001,2005,,5d is Sportcross,006030,structural,edc-flagged,
 Lexus,IS300,4d,105.1,u,r,2001,2005,,New,006030,structural,edc-flagged,
 Lexus,LS400,4d,110.8,u,r,1990,1994,,,004780,structural,edc,
@@ -1020,17 +1695,37 @@ Lexus,LS400,4d,112.2,u,r,1995,2000,,,004790,structural,edc,
 Lexus,LS430,4d,115.2,u,r,2001,2006,,,004800,structural,edc,
 Lexus,"LS460, 460L",4d,"116.9,121.7",u,r,2007,2012,,New. L is stretched WB,004810,structural,edc,
 Lexus,"LS460,600hL",4d,"116.9,121.7",u,r,2007,2012,,L is streched WB,004810,structural,edc,
+Lexus,LX,SUV,112.2,f,4,2013,2021,,,3UR-FE,engine-loop,compiled,5.7 V8
+Lexus,LX,SUV,112.2,f,4,2013,2021,,,TOYOTA-XK50,platform,compiled,
+Lexus,LX,SUV,112.2,f,4,2022,2025,,,TNGA-F,platform,compiled,
+Lexus,LX,SUV,112.2,f,4,2022,2025,,,V35A-FTS,engine-loop,compiled,3.4 twin-turbo V6
 Lexus,LX450,SW,112.2,f,4,1996,1997,Toyota Land Cruiser,,001290,structural,edc,
 Lexus,LX470,SW,112.2,f,4,1998,2007,Toyota Land Cruiser,,001300,structural,edc,
 Lexus,LX570,SW,112.2,f,4,2008,2012,Toyota Land Cruiser,,001310,structural,edc,
+Lexus,LX570,SW,112.2,f,4,2008,2012,Toyota Land Cruiser,,3UR-FE,engine-loop,compiled,5.7 V8
+Lexus,NX,SUV,104.7,u,"f,4",2015,2021,,,8AR-FTS,engine-loop,compiled,NX 200t/NX 300 2.0 turbo
+Lexus,NX,SUV,104.7,u,"f,4",2015,2021,,,TOYOTA-MC,platform,compiled,
+Lexus,NX,SUV,105.9,u,"f,4",2022,2025,,,A25A-FKS,engine-loop,compiled,NX 250 2.5
+Lexus,NX,SUV,105.9,u,"f,4",2022,2025,,,TNGA-K,platform,compiled,
+Lexus,RX,SUV,107.9,u,"f,4",2013,2015,,,2GR-FE,engine-loop,compiled,RX 350 3.5 V6
+Lexus,RX,SUV,107.9,u,"f,4",2013,2015,,,TOYOTA-K-PRE,platform,compiled,
+Lexus,RX,SUV,109.8,u,"f,4",2016,2022,,,2GR-FKS,engine-loop,compiled,RX 350 3.5 V6
+Lexus,RX,SUV,109.8,u,"f,4",2016,2022,,,TOYOTA-K-PRE,platform,compiled,
+Lexus,RX,SUV,112.2,u,"f,4",2023,2025,,2.4T and hybrid only,TNGA-K,platform,compiled,
 Lexus,RX300,SW,103,u,"f,4",1999,2003,,,005830,structural,edc,
 Lexus,RX330,SW,106.9,u,"f,4",2004,2009,Highlander,,006021,structural,edc,
 Lexus,RX330/400h,SW,106.9,u,"f,4",2004,2009,Highlander,,006021,structural,edc,
 Lexus,RX350/400h,SW,106.9,u,"f,4",2004,2009,Highlander,,006021,structural,edc,
+Lexus,RX350/400h,SW,106.9,u,"f,4",2004,2009,Highlander,,2GR-FE,engine-loop,compiled,3.5 V6
 Lexus,RX350/400h,SW,107.9,u,"f,4",2010,2012,,,007130,structural,edc,
+Lexus,RX350/400h,SW,107.9,u,"f,4",2010,2012,,,2GR-FE,engine-loop,compiled,3.5 V6
 Lexus,"SC300, SC400",2d,105.9,u,r,1992,2000,,,005040,structural,edc,
 Lexus,SC430,Conv,103.1,u,r,2002,2010,,,005050,structural,edc,
+Lexus,UX,SUV,103.9,u,"f,4",2019,2025,,,M20A-FKS,engine-loop,compiled,UX 200 2.0
+Lexus,UX,SUV,103.9,u,"f,4",2019,2025,,,TNGA-C,platform,compiled,
 Lincoln,Aviator,SUV,114,f,"r,4",2002,2005,"Mountaineer, Explorer",,002820,structural,edc,
+Lincoln,Aviator,SUV,119.1,u,"r,4",2020,2025,,,EB-27,engine-loop,compiled,3.0 EcoBoost — 2.7 Nano family
+Lincoln,Aviator,SUV,119.1,u,"r,4",2020,2025,,,FORD-CD6,platform,compiled,
 Lincoln,Blackwood,Pickup,138.5,f,"r,4",2002,2002,F-Series Crew cab,One-year wonder,002750,structural,edc-flagged,
 Lincoln,Continental,"2d,4d",127.2,f,r,1974,1979,,,000141,structural,edc,
 Lincoln,Continental,"2d,4d",117.3,f,r,1980,1989,"LTD,Marquis",New.Based LTD (Note WB),000270,structural,edc-flagged,
@@ -1038,26 +1733,48 @@ Lincoln,Continental,4d,108.5,u,r,1983,1987,,Also see Mark VII,003010,structural,
 Lincoln,Continental,4d,109,u,f,1988,1994,Taurus?,,003020,structural,edc,
 Lincoln,Continental,4d,109,u,f,1995,1997,Taurus?,,003030,structural,edc,
 Lincoln,Continental,4d,109,u,f,1998,2002,Taurus?,,003031,structural,edc,
+Lincoln,Corsair,SUV,106.7,u,"f,4",2020,2025,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Lincoln,Corsair,SUV,106.7,u,"f,4",2020,2025,,,FORD-C2,platform,compiled,
 Lincoln,LS,4d,114.5,u,r,2000,2006,Jaguar S type,,002860,structural,edc,
 Lincoln,LS,4d,114.5,u,r,2000,2012,Jaguar S type,New,002860,structural,edc,
 Lincoln,MKS,4d,112.9,u,"f,4",2009,2012,Taurus?,,003130,structural,edc,
+Lincoln,MKS,4d,112.9,u,"f,4",2009,2012,Taurus?,,CYCLONE-35,engine-loop,compiled,3.7 Duratec V6 — EcoBoost excluded
+Lincoln,MKS,4d,112.9,u,"f,4",2009,2012,Taurus?,,EB-35,engine-loop,compiled,3.5 EcoBoost option
 Lincoln,MKT,SW,117.9,u,"f,4",2010,2012,Flex,,003100,structural,edc,
+Lincoln,MKT,SW,117.9,u,"f,4",2010,2012,Flex,,CYCLONE-35,engine-loop,compiled,3.7 Duratec V6 — EcoBoost excluded
+Lincoln,MKT,SW,117.9,u,"f,4",2010,2012,Flex,,EB-35,engine-loop,compiled,3.5 EcoBoost option
 Lincoln,MKX,SW,111.2,u,"f,4",2007,2012,Edge,,002960,structural,edc,
+Lincoln,MKX,SW,111.2,u,"f,4",2007,2012,Edge,,CYCLONE-35,engine-loop,compiled,3.5 / 3.7 Duratec V6
 Lincoln,MKZ,4d,107.4,u,"f,4",2006,2012,Fusion,,002970,structural,edc,
+Lincoln,MKZ,4d,107.4,u,"f,4",2006,2012,Fusion,,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6
+Lincoln,MKZ,4d,112.2,u,"f,4",2013,2020,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Lincoln,MKZ,4d,112.2,u,"f,4",2013,2020,,,EB-27,engine-loop,compiled,3.0 EcoBoost 2017-2020
+Lincoln,MKZ,4d,112.2,u,"f,4",2013,2020,,,FORD-CD4,platform,compiled,
 Lincoln,Mark IV,2d,120.4,f,r,1974,1976,Thunderbird,,000170,structural,edc,
 Lincoln,Mark LT,Pickup,"138.5,150.5",f,"r,4",2006,2008,F150,,002760,structural,edc-flagged,
+Lincoln,Mark LT,Pickup,"138.5,150.5",f,"r,4",2006,2008,F150,,MOD-46,engine-loop,compiled,5.4 Triton
 Lincoln,Mark V,2d,120.4,f,r,1977,1979,Mark IV?,,000171,structural,edc,
 Lincoln,Mark VI,"2d,4d",114.3,f,r,1980,1983,"Crown Vic,GR Marquis",Also see Town Car,000271,structural,edc,
 Lincoln,Mark VII,2d,108.5,u,r,1984,1992,,,003011,structural,edc,
 Lincoln,Mark VIII,2d,113,u,r,1993,1998,Older Thunderbird,,003050,structural,edc,
+Lincoln,Nautilus,SUV,112.2,u,"f,4",2019,2023,,,EB-20,engine-loop,compiled,2.0 EcoBoost
+Lincoln,Nautilus,SUV,112.2,u,"f,4",2019,2023,,,EB-27,engine-loop,compiled,2.7 EcoBoost
+Lincoln,Nautilus,SUV,112.2,u,"f,4",2019,2023,,,FORD-CD4,platform,compiled,
 Lincoln,Navigator,SUV,119.1,f,4,1998,2012,Ford Expedition,,002751,structural,edc,
+Lincoln,Navigator,SUV,119.1,f,4,1998,2012,Ford Expedition,,MOD-46,engine-loop,compiled,5.4 Triton
 Lincoln,Navigator,SW,119.1,f,4,2003,2012,Ford Expedition,,002761,structural,edc-flagged,
+Lincoln,Navigator,SW,119.1,f,4,2003,2012,Ford Expedition,,MOD-46,engine-loop,compiled,5.4 Triton
 Lincoln,Navigator,SUV,119.1,f,4,2003,2012,Ford Expedition,,002761,structural,edc-flagged,
+Lincoln,Navigator,SUV,119.1,f,4,2003,2012,Ford Expedition,,MOD-46,engine-loop,compiled,5.4 Triton
+Lincoln,Navigator,SUV,122.5,f,"r,4",2018,2025,,,EB-35,engine-loop,compiled,3.5 EcoBoost
+Lincoln,Navigator,SUV,122.5,f,"r,4",2018,2025,,,FORD-T3,platform,compiled,
 Lincoln,Navigator L,SW,131,f,4,2007,2012,Ford Expedition EL,,002761,structural,edc-flagged,
+Lincoln,Navigator L,SW,131,f,4,2007,2012,Ford Expedition EL,,MOD-46,engine-loop,compiled,5.4 Triton
 Lincoln,Town Car,4d,117.3,f,r,1980,1989,"Crown Vic,GR Marquis",,000270,structural,edc-flagged,
 Lincoln,Town Car,"2d,4d",117.3,f,r,1980,1989,"LTD,Marquis",Note WB.Was Continental,000270,structural,edc-flagged,
 Lincoln,Town Car,4d,117.4,f,r,1990,1997,"Crown Vic,GR Marquis?",,002840,structural,edc-flagged,
 Lincoln,Town Car,4d,117.4,f,r,1998,2011,"Old Cr Vic, Gr Marq",,002841,structural,edc-flagged,
+Lincoln,Town Car,4d,117.4,f,r,1998,2011,"Old Cr Vic, Gr Marq",,MOD-46,engine-loop,compiled,4.6 2-valve
 Lincoln,Versailles,4d,109.9,u,r,1977,1980,Granada/Monarch,,000180,structural,edc,
 Lincoln,Zephyr,4d,107.4,u,f,2006,2010,"Fusion, Milan",New. Based on Mazda6,002970,structural,edc,
 Lotus,Elise,2d,,u,r,2005,2011,,,006470,structural,edc,
@@ -1074,6 +1791,7 @@ Maybach,"57,62",4d,"133.5,151",u,r,2003,2009,,Also 57S,006240,structural,edc,
 Mazda,2,5d,98.0,u,f,2011,2012,Ford Fiesta,,007320,structural,edc-flagged,
 Mazda,3,"4d, 5d",103.9,u,f,2004,2009,,Also Mazdaspeed3,006370,structural,edc,
 Mazda,3,"4d, 5d",103.9,u,f,2010,2012,,Also Mazdaspeed3,007110,structural,edc,
+Mazda,3,"4d, 5d",103.9,u,f,2010,2012,,Also Mazdaspeed3,SKY-G20,engine-loop,compiled,2.0 Skyactiv-G — 2.5 MZR excluded
 Mazda,323,"3d,4d,SW",94.5,u,f,1986,1989,,,002950,structural,edc,
 Mazda,323,"3d,4d",94.5,u,f,1986,1989,,New,002950,structural,edc,
 Mazda,323/Protege,"3d,4d","96.5,98.4",u,f,1990,1994,Escort/Tracer,,002931,structural,edc,
@@ -1097,9 +1815,24 @@ Mazda,B2000,Pickup,"106.9,112.8",f,r,1980,1984,Ford Courier(Older),,000490,struc
 Mazda,B2000,Pickup,"108.7,117.5",f,r,1986,1993,,New (Early intro-no '85 model),004430,structural,edc,
 Mazda,B2000/2200/2600,Pickup,"109,118",f,"r,4",1986,1993,,,004430,structural,edc,
 Mazda,B2200/2600,Pickup,"109,118",f,"r,4",1986,1993,,,004430,structural,edc,
+Mazda,CX-30,SUV,104.4,u,"f,4",2020,2025,,,MAZDA-SKY-S,platform,compiled,
+Mazda,CX-30,SUV,104.4,u,"f,4",2020,2025,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,CX-30,SUV,104.4,u,"f,4",2020,2025,,,SKY-G25T,engine-loop,compiled,2.5 turbo
 Mazda,CX-5,SW,106.3,u,"f,4",2013,2013,,New,007660,structural,edc,
+Mazda,CX-5,SW,106.3,u,"f,4",2013,2013,,New,SKY-G20,engine-loop,compiled,2.0 Skyactiv-G
+Mazda,CX-5,SUV,106.3,u,"f,4",2013,2016,,,MAZDA-SKY-S,platform,compiled,
+Mazda,CX-5,SUV,106.3,u,"f,4",2013,2016,,,SKY-G20,engine-loop,compiled,2.0 Skyactiv-G
+Mazda,CX-5,SUV,106.3,u,"f,4",2013,2016,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,CX-5,SUV,106.2,u,"f,4",2017,2025,,,MAZDA-SKY-S,platform,compiled,
+Mazda,CX-5,SUV,106.2,u,"f,4",2017,2025,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,CX-5,SUV,106.2,u,"f,4",2017,2025,,,SKY-G25T,engine-loop,compiled,2.5 turbo
+Mazda,CX-50,SUV,110.8,u,4,2023,2025,,,MAZDA-SKY-S,platform,compiled,
+Mazda,CX-50,SUV,110.8,u,4,2023,2025,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,CX-50,SUV,110.8,u,4,2023,2025,,,SKY-G25T,engine-loop,compiled,2.5 turbo
 Mazda,CX-7,SW,108.3,u,"f,4",2007,2012,,"Based on Mazda 5,3",006880,structural,edc,
 Mazda,CX-9,SW,113.2,u,"f,4",2007,2012,"Edge, MKX",,002961,structural,edc,
+Mazda,CX-9,SUV,115.3,u,"f,4",2016,2023,,,MAZDA-SKY-L,platform,compiled,
+Mazda,CX-9,SUV,115.3,u,"f,4",2016,2023,,,SKY-G25T,engine-loop,compiled,2.5 turbo — sole engine
 Mazda,GLC,"3d,5d,SW",91,u,r,1980,1980,,Old RWD car,000590,structural,edc,
 Mazda,GLC,"3d,4d",91,u,f,1981,1985,,,003980,structural,edc,
 Mazda,GLC,"3d,5d,SW",91,u,f,1981,1985,,,003980,structural,edc,
@@ -1107,8 +1840,18 @@ Mazda,MPV,Van,110.4,u,r,1989,1999,,,004660,structural,edc,
 Mazda,MPV,Van,111.8,u,r,2000,2006,,,004670,structural,edc,
 Mazda,MX-3,2d,96.3,u,f,1992,1995,,,005030,structural,edc,
 Mazda,MX-5 Miata,2d,89.2,u,r,1990,1997,,,004760,structural,edc,
+Mazda,MX-5 Miata,Conv,90.9,u,r,2016,2025,,,SKY-G20,engine-loop,compiled,2.0 Skyactiv-G
 Mazda,MX-6,2d,99,u,f,1988,1992,Ford Probe,,003080,structural,edc,
 Mazda,MX-6,2d,102.8,u,f,1993,1997,Ford Probe,,003090,structural,edc,
+Mazda,Mazda3,4d,106.3,u,f,2014,2018,,,MAZDA-SKY-S,platform,compiled,
+Mazda,Mazda3,4d,106.3,u,f,2014,2018,,,SKY-G20,engine-loop,compiled,2.0 Skyactiv-G
+Mazda,Mazda3,4d,106.3,u,f,2014,2018,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,Mazda3,4d,107.3,u,"f,4",2019,2025,,,MAZDA-SKY-S,platform,compiled,
+Mazda,Mazda3,4d,107.3,u,"f,4",2019,2025,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,Mazda3,4d,107.3,u,"f,4",2019,2025,,,SKY-G25T,engine-loop,compiled,2.5 turbo
+Mazda,Mazda6,4d,111.4,u,f,2014,2021,,,MAZDA-SKY-L,platform,compiled,
+Mazda,Mazda6,4d,111.4,u,f,2014,2021,,,SKY-G25,engine-loop,compiled,2.5 Skyactiv-G
+Mazda,Mazda6,4d,111.4,u,f,2014,2021,,,SKY-G25T,engine-loop,compiled,2.5 turbo 2018-2021
 Mazda,Miata,2d,89.2,u,r,1990,1997,,,004760,structural,edc,
 Mazda,Miata,2d,89.2,u,r,1999,2005,,,004761,structural,edc,
 Mazda,Miata MX-5,2d,91.7,u,r,2006,2012,,,004770,structural,edc,
@@ -1156,17 +1899,25 @@ Mercedes,"560SEL,SEC",4d,"120.9,112",u,r,1982,1991,,,004130,structural,edc-flagg
 Mercedes,560SL,2d,96.7,u,r,1980,1989,,,000630,structural,edc,
 Mercedes,C-Class,"2d,4d",108.7,u,"r,4",2008,2012,,Mild restyle. New 2d,006800,structural,edc,
 Mercedes,C-Class,4d,108.7,u,"r,4",2008,2012,,,006800,structural,edc,
+Mercedes,C-Class C300,4d,111.8,u,"r,4",2015,2021,,,M274,engine-loop,compiled,2.0 turbo I4
+Mercedes,C-Class C300,4d,111.8,u,"r,4",2015,2021,,,MB-MRA,platform,compiled,
+Mercedes,C-Class C400 C43,4d,111.8,u,"r,4",2015,2021,,,M276,engine-loop,compiled,3.0 twin-turbo V6
+Mercedes,C-Class C400 C43,4d,111.8,u,"r,4",2015,2021,,,MB-MRA,platform,compiled,
 Mercedes,"C220,280",4d,105.9,u,r,1994,2000,,,005340,structural,edc,
 Mercedes,"C230,240,320","3d,4d, SW",106.9,u,"r,4",2001,2007,,Restyle.Also C55AMG,005350,structural,edc,
 Mercedes,"C230,240,350","3d,4d, SW",106.9,u,"r,4",2001,2007,,,005350,structural,edc,
 Mercedes,"C230,280",4d,105.9,u,r,1994,2000,,,005340,structural,edc,
 Mercedes,"C240,320",4d,106.9,u,r,2001,2007,,New,005350,structural,edc,
 Mercedes,"C300, 350",4d,108.7,u,"r,4",2008,2012,,Also C63AMG,006800,structural,edc,
+Mercedes,"C300, 350",4d,108.7,u,"r,4",2008,2012,,Also C63AMG,M276,engine-loop,compiled,3.5 V6
 Mercedes,CL-Class,2d,116.3,u,r,2007,2012,,,006700,structural,edc-flagged,
 Mercedes,CL500,2d,113.6,u,r,2000,2006,,New,005940,structural,edc-flagged,
 Mercedes,"CL500, 600",2d,113.6,u,r,2000,2006,,Also CL65AMG,005940,structural,edc-flagged,
 Mercedes,"CL500,600",2d,115.9,u,r,1992,1999,,,005020,structural,edc-flagged,
 Mercedes,"CL550, 600",2d,116.3,u,4,2007,2012,,Also CL63AMG,006700,structural,edc-flagged,
+Mercedes,"CL550, 600",2d,116.3,u,4,2007,2012,,Also CL63AMG,M278,engine-loop,compiled,4.7 twin-turbo V8
+Mercedes,CLA250,4d,106.3,u,"f,4",2014,2025,,,M274,engine-loop,compiled,2.0 turbo I4
+Mercedes,CLA250,4d,106.3,u,"f,4",2014,2025,,,MB-MFA,platform,compiled,
 Mercedes,CLK 320,2d,105.9,u,r,1998,2002,,New. Based on C-class,005341,structural,edc,
 Mercedes,"CLK 320, 430","2d,Cnv",105.9,u,r,1998,2002,,Also CLK55AMG,005341,structural,edc,
 Mercedes,"CLK 320, 500","2d,Cnv",105.9,u,r,2003,2009,,Also CLK55AMG,005351,structural,edc,
@@ -1179,8 +1930,16 @@ Mercedes,CLS-Class,4d,113.1,u,r,2012,2012,,New,007101,structural,edc,
 Mercedes,CLS500,4d,112.4,u,r,2006,2011,,New.Also CLS55AMG,005571,structural,edc,
 Mercedes,CLS550,4d,112.4,u,r,2006,2011,,Also CLS63AMG,005571,structural,edc,
 Mercedes,E-Class,"2d,Cnv",108.7,u,"r,4",2010,2012,C-Class,,006801,structural,edc,
+Mercedes,E-Class,"2d,Cnv",108.7,u,"r,4",2010,2012,C-Class,,M276,engine-loop,compiled,E350 3.5 V6
 Mercedes,E-Class,4d,113.1,u,"r,4",2010,2012,,,007100,structural,edc-flagged,
+Mercedes,E-Class,4d,113.1,u,"r,4",2010,2012,,,M276,engine-loop,compiled,E350 3.5 V6
 Mercedes,E-Class,"2d,4d,Cnv","108.7,113.1",u,"r,4",2010,2012,,New,007100,structural,edc-flagged,
+Mercedes,E-Class,"2d,4d,Cnv","108.7,113.1",u,"r,4",2010,2012,,New,M276,engine-loop,compiled,E350 3.5 V6
+Mercedes,E-Class E300,4d,115.7,u,"r,4",2017,2023,,,M274,engine-loop,compiled,2.0 turbo I4
+Mercedes,E-Class E300,4d,115.7,u,"r,4",2017,2023,,,MB-MRA,platform,compiled,
+Mercedes,E-Class E350,4d,113.1,u,"r,4",2012,2016,,,M276,engine-loop,compiled,3.5 V6
+Mercedes,E-Class E450,4d,115.7,u,"r,4",2019,2023,,,M256,engine-loop,compiled,3.0 turbo I6
+Mercedes,E-Class E450,4d,115.7,u,"r,4",2019,2023,,,MB-MRA,platform,compiled,
 Mercedes,"E300,320,420",4d,111.5,u,r,1996,2002,,,005560,structural,edc,
 Mercedes,"E300,320,430","4d, SW",111.5,u,r,1996,2002,,Also E55AMG,005560,structural,edc,
 Mercedes,E320,"2d,Cnv",106.9,u,r,1988,1995,,,004420,structural,edc-flagged,
@@ -1190,22 +1949,41 @@ Mercedes,"E320,430","4d, SW",111.5,u,r,1996,2002,,Also E55AMG,005560,structural,
 Mercedes,"E320,500","4d,SW","112.4,111.5",u,r,2003,2009,,Also E55AMG,005570,structural,edc,
 Mercedes,G500,SW,112.2,f,4,2002,2012,,,006120,structural,edc,
 Mercedes,GL-Class,SW,121.1,f,4,2007,2012,,Mostly an ML,006870,structural,edc,
+Mercedes,GL-Class,SW,121.1,f,4,2007,2012,,Mostly an ML,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
 Mercedes,"GL320,450,550",SW,121.1,f,4,2007,2012,,Mostly an ML,006870,structural,edc,
+Mercedes,"GL320,450,550",SW,121.1,f,4,2007,2012,,Mostly an ML,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
 Mercedes,GL450,SW,121.1,f,4,2007,2012,ML?,New. Mostly an ML,006870,structural,edc,
+Mercedes,GL450,SW,121.1,f,4,2007,2012,ML?,New. Mostly an ML,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
+Mercedes,GL450 GL550,SUV,121.1,u,4,2013,2016,,,M278,engine-loop,compiled,4.7 twin-turbo V8
+Mercedes,GLA250,SUV,106.3,u,"f,4",2015,2025,,,M274,engine-loop,compiled,2.0 turbo I4
+Mercedes,GLA250,SUV,106.3,u,"f,4",2015,2025,,,MB-MFA,platform,compiled,
+Mercedes,GLC300,SUV,113.1,u,"r,4",2016,2022,,,M274,engine-loop,compiled,2.0 turbo I4
+Mercedes,GLC300,SUV,113.1,u,"r,4",2016,2022,,,MB-MRA,platform,compiled,
+Mercedes,GLE350,SUV,114.8,u,"r,4",2016,2019,,,M276,engine-loop,compiled,3.5 V6
+Mercedes,GLE450,SUV,117.9,u,4,2020,2025,,,M256,engine-loop,compiled,3.0 turbo I6
 Mercedes,GLK-Class,SUV,108.5,u,"r,4",2010,2012,,C-class chassis,007090,structural,edc,
+Mercedes,GLK-Class,SUV,108.5,u,"r,4",2010,2012,,C-class chassis,M276,engine-loop,compiled,GLK350 3.5 V6
+Mercedes,GLK-Class,SUV,108.5,u,"r,4",2010,2012,,C-class chassis,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
 Mercedes,ML-Class,SW,114.7,u,4,2006,2011,,,006600,structural,edc,
+Mercedes,ML-Class,SW,114.7,u,4,2006,2011,,,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
 Mercedes,ML-Class,SW,114.8,u,4,2012,2012,"Gr Cherokee, Durango",New,007280,structural,edc,
+Mercedes,ML-Class,SW,114.8,u,4,2012,2012,"Gr Cherokee, Durango",New,M276,engine-loop,compiled,ML350 3.5 V6
+Mercedes,ML-Class,SW,114.8,u,4,2012,2012,"Gr Cherokee, Durango",New,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
 Mercedes,ML320,SW,111,u,4,1998,2005,,New,005790,structural,edc,
 Mercedes,"ML320, 430",SW,111,u,4,1998,2005,,Also ML55,005790,structural,edc,
 Mercedes,"ML320, 500",SW,111,u,4,1998,2005,,Also ML55,005790,structural,edc,
 Mercedes,"ML320, 500",SW,114.7,u,4,2006,2011,GL?,,006600,structural,edc,
 Mercedes,"ML320, 550",SW,114.7,u,4,2006,2011,,,006600,structural,edc,
 Mercedes,"ML320,350, 500",SW,111,u,4,1998,2005,,Also ML55,005790,structural,edc,
+Mercedes,ML350,SUV,114.8,u,"r,4",2012,2015,,,M276,engine-loop,compiled,3.5 V6
+Mercedes,ML350,SUV,114.8,u,"r,4",2012,2015,,,OM642,engine-loop,compiled,3.0 BlueTEC diesel
 Mercedes,"ML350, 500",SW,111,u,4,1998,2005,,Also ML55,005790,structural,edc,
 Mercedes,R-Class,SW,126.6,u,"r,4",2006,2012,,,006590,structural,edc,
+Mercedes,R-Class,SW,126.6,u,"r,4",2006,2012,,,OM642,engine-loop,compiled,BlueTEC 3.0 V6 diesel only
 Mercedes,R350,SW,126.6,u,"r,4",2006,2012,,,006590,structural,edc,
 Mercedes,"R350, 500",SW,126.6,u,4,2006,2012,,Also R63AMG,006590,structural,edc,
 Mercedes,S-Class,4d,124.6,u,r,2007,2012,,,006700,structural,edc-flagged,
+Mercedes,S-Class,4d,124.6,u,r,2007,2012,,,M278,engine-loop,compiled,S550 4.7 twin-turbo V8
 Mercedes,"S320,350",4d,119.7,u,r,1992,1999,,,005020,structural,edc-flagged,
 Mercedes,"S320,420,500",4d,"119.2,123.6",u,r,1992,1999,,,005020,structural,edc-flagged,
 Mercedes,"S320,420,500","2d,4d","115.9,123.6",u,r,1992,1999,,,005020,structural,edc-flagged,
@@ -1229,10 +2007,13 @@ Mercedes,"SLK 280,350",Conv,94.5,u,r,2005,2011,,Also SLK55AMG,005640,structural,
 Mercedes,"SLK 300,350",Conv,94.5,u,r,2005,2011,,Also SLK55AMG,005640,structural,edc,
 Mercedes,SLK-Class,Conv,94.5,u,r,2005,2011,,,005640,structural,edc,
 Mercedes,SLK-Class,Conv,95.7,u,r,2012,2012,,New,007680,structural,edc,
+Mercedes,SLK-Class,Conv,95.7,u,r,2012,2012,,New,M276,engine-loop,compiled,SLK350 3.5 V6
 Mercedes,SLR McLaren,2d,106.3,u,r,2005,2010,None,,006460,structural,edc,
 Mercedes,SLS,"2d, Conv",105.5,u,r,2011,2012,,New Conv,007430,structural,edc,
 Mercedes,SLS,2d,,u,r,2011,2012,,New,007430,structural,edc,
 Mercedes,Sprinter,Van,"144.3,170.3",u,r,2007,2012,,,003660,structural,edc,
+Mercedes,Sprinter,Van,"144.3,170.3",u,r,2007,2012,,,OM642,engine-loop,compiled,3.0 V6 diesel
+Mercedes,Sprinter,Van,144.3,f,"r,4",2013,2018,,,OM642,engine-loop,compiled,3.0 V6 diesel
 Mercury,Bobcat,"3d,SW",94.2,u,r,1975,1980,Pinto,,000160,structural,edc,
 Mercury,Bobcat,"2d,SW",94.2,u,r,1975,1980,Pinto,,000160,structural,edc,
 Mercury,Capri,3d,100.4,u,r,1979,1986,Mustang,,000241,structural,edc,
@@ -1251,7 +2032,9 @@ Mercury,Cougar XR7,2d,113,u,r,1989,1997,Thunderbird,,003050,structural,edc,
 Mercury,Grand Marquis,"2d,4d,SW",114.4,f,r,1979,1991,LTD Crown Victoria,,000270,structural,edc-flagged,
 Mercury,Grand Marquis,4d,114.4,f,r,1992,1997,Crown Victoria,,002840,structural,edc-flagged,
 Mercury,Grand Marquis,4d,114.7,f,r,1998,2002,Crown Victoria,,002841,structural,edc-flagged,
+Mercury,Grand Marquis,4d,114.7,f,r,1998,2002,Crown Victoria,,MOD-46,engine-loop,compiled,4.6 2-valve
 Mercury,Grand Marquis,4d,114.7,f,r,2003,2010,Crown Victoria,,002842,structural,edc,
+Mercury,Grand Marquis,4d,114.7,f,r,2003,2010,Crown Victoria,,MOD-46,engine-loop,compiled,4.6 2-valve
 Mercury,LN7,3d,94.0,u,f,1982,1983,EXP,Based on Escort,002882,structural,edc,
 Mercury,Lynx,"3d,5d,SW",94.2,u,f,1981,1987,Escort,,002880,structural,edc,
 Mercury,Mariner,SW,103.1,u,"f,4",2001,2010,"Escape, Tribute",,003061,structural,edc,
@@ -1260,19 +2043,23 @@ Mercury,Marquis,"2d,4d,SW 124,121(S",,f,r,1974,1978,Custom/Galaxie/LTD,Also Gran
 Mercury,Marquis,"2d,4d,SW",114.4,f,r,1979,1991,LTD,Also Grand Marquis,000270,structural,edc-flagged,
 Mercury,Marquis,"4d,SW",105.5,u,r,1983,1986,LTD,NOT Grand Marquis,000247,structural,edc,
 Mercury,Milan,4d,107.4,u,"f,4",2006,2010,"Fusion, MKZ",,002970,structural,edc,
+Mercury,Milan,4d,107.4,u,"f,4",2006,2010,"Fusion, MKZ",,DURATEC-25,engine-loop,compiled,2.5 Duratec 4-cyl
 Mercury,Monarch,"2d,4d",109.9,u,r,1975,1980,Granada,,000180,structural,edc,
 Mercury,Montego,"2d,4d","114,118",f,r,1974,1976,"Torino,Gran Torino",,000130,structural,edc,
 Mercury,Montego,4d,112.9,u,"f,4",2005,2007,Five Hundred,,003000,structural,edc-flagged,
 Mercury,Monterey,Van,120.8,u,f,2004,2007,Freestar,,003110,structural,edc,
 Mercury,Mountaineer,SUV,111.5,f,"r,4",1996,2001,Ford Explorer,,002813,structural,edc,
 Mercury,Mountaineer,SUV,114,f,"r,4",2002,2005,Ford Explorer,,002820,structural,edc,
+Mercury,Mountaineer,SUV,114,f,"r,4",2002,2005,Ford Explorer,,MOD-46,engine-loop,compiled,4.6 V8 option only
 Mercury,Mountaineer,SUV,114,f,"r,4",2006,2010,Ford Explorer,,002830,structural,edc,
+Mercury,Mountaineer,SUV,114,f,"r,4",2006,2010,Ford Explorer,,MOD-46,engine-loop,compiled,4.6 V8 option only
 Mercury,Mystique,4d,106.5,u,f,1995,2000,Contour,,002720,structural,edc,
 Mercury,Sable,"4d,SW",106,u,f,1986,1991,Taurus,,002910,structural,edc,
 Mercury,Sable,"4d,SW",106,u,f,1992,1995,Taurus,,002911,structural,edc,
 Mercury,Sable,"4d,SW",108.5,u,f,1996,1999,Taurus,,002920,structural,edc,
 Mercury,Sable,"4d,SW",108.5,u,f,2000,2005,Taurus,,002921,structural,edc,
 Mercury,Sable,4d,112.9,u,"f,4",2008,2009,Taurus,,003000,structural,edc-flagged,
+Mercury,Sable,4d,112.9,u,"f,4",2008,2009,Taurus,,CYCLONE-35,engine-loop,compiled,3.5 Duratec V6
 Mercury,Topaz,"2d,4d",99.9,u,f,1984,1994,Tempo,,003040,structural,edc,
 Mercury,Tracer,"2d,4d,SW",94.2,u,f,1988,1989,Mazda 323?,Mazda 323-Based,002951,structural,edc,
 Mercury,Tracer,"4d,SW",98.4,u,f,1991,1996,Escort,,002930,structural,edc,
@@ -1287,6 +2074,8 @@ Mini,Cooper,2d,97.1,u,f,2002,2006,,,006110,structural,edc,
 Mini,Cooper,"2d, Conv",97,u,f,2007,2012,,,006860,structural,edc-flagged,
 Mini,Cooper,2d,97,u,f,2007,2012,,New,006860,structural,edc-flagged,
 Mini,Cooper Coupe,2d,97.1,u,f,2012,2012,,New,006860,structural,edc-flagged,
+Mini,Cooper S,3d,98.2,u,f,2014,2025,,,B48,engine-loop,compiled,2.0 turbo I4
+Mini,Cooper S,3d,98.2,u,f,2014,2025,,,BMW-UKL2,platform,compiled,
 Mini,Countryman,2d,97,u,"f,4",2011,2012,,,006860,structural,edc-flagged,
 Mitsubishi,3000GT,"2d,Conv",97.2,u,f,1991,1999,,,003400,structural,edc,
 Mitsubishi,3000GT,2d,97.2,u,f,1991,1999,Dodge Stealth,,003400,structural,edc,
@@ -1351,8 +2140,13 @@ Nissan,"300ZX,2+2","3d,Conv","96.5,101.2",u,r,1990,1996,,,004280,structural,edc,
 Nissan,"300ZX,2+2",3d,"96.5,101.2",u,r,1990,1996,,,004280,structural,edc,
 Nissan,310,"2d,3d,4d",94.3,u,f,1980,1982,,,000860,structural,edc,
 Nissan,350Z,"2d, Conv",104.3,u,r,2003,2008,,,006210,structural,edc,
+Nissan,350Z,"2d, Conv",104.3,u,r,2003,2008,,,VQ35DE,engine-loop,compiled,3.5 VQ35DE — 2007+ is the HR variant
 Nissan,350Z,2d,104.3,u,r,2003,2008,,New,006210,structural,edc,
+Nissan,350Z,2d,104.3,u,r,2003,2008,,New,VQ35DE,engine-loop,compiled,3.5 VQ35DE — 2007+ is the HR variant
 Nissan,370Z,"2d, Conv",100.4,u,r,2009,2012,,,006215,structural,edc,
+Nissan,370Z,"2d, Conv",100.4,u,r,2009,2012,,,VQ37VHR,engine-loop,compiled,3.7 V6
+Nissan,370Z,2d,100.4,u,r,2013,2020,,,NISSAN-FM,platform,compiled,
+Nissan,370Z,2d,100.4,u,r,2013,2020,,,VQ37VHR,engine-loop,compiled,3.7 V6
 Nissan,510,"2d,4d,SW",94.5,u,r,1980,1981,,,000870,structural,edc,
 Nissan,510,"2d,5d,SW",94.5,u,r,1980,1981,,,000870,structural,edc,
 Nissan,720,Pickup,"104,111",f,"r,4",1981,1986,,Continues to 86-1/2,004020,structural,edc-flagged,
@@ -1360,13 +2154,28 @@ Nissan,810,"2d,4d,SW",104.3,u,r,1980,1980,,,000880,structural,edc,
 Nissan,Altima,4d,103.1,u,f,1993,1997,,,005260,structural,edc,
 Nissan,Altima,4d,103.1,u,f,1998,2001,,,005270,structural,edc,
 Nissan,Altima,4d,110.2,u,f,2002,2006,,,005280,structural,edc,
+Nissan,Altima,4d,110.2,u,f,2002,2006,,,QR25DE,engine-loop,compiled,2.5 4-cyl — 3.5 V6 excluded
+Nissan,Altima,4d,110.2,u,f,2002,2006,,,VQ35DE,engine-loop,compiled,3.5 V6 — QR25 4-cyl excluded
 Nissan,Altima,"2d,4d",109.3,u,f,2007,2012,,,005290,structural,edc,
+Nissan,Altima,"2d,4d",109.3,u,f,2007,2012,,,QR25DE,engine-loop,compiled,2.5 4-cyl — 3.5 V6 excluded
+Nissan,Altima,"2d,4d",109.3,u,f,2007,2012,,,VQ35DE,engine-loop,compiled,3.5 V6 — QR25 4-cyl excluded
+Nissan,Altima,4d,109.3,u,f,2013,2018,,,NISSAN-D,platform,compiled,
+Nissan,Altima,4d,109.3,u,f,2013,2018,,,QR25DE,engine-loop,compiled,2.5 4-cyl
+Nissan,Altima,4d,109.3,u,f,2013,2018,,,VQ35DE,engine-loop,compiled,3.5 V6
+Nissan,Altima,4d,111.2,u,"f,4",2019,2025,,,NISSAN-D,platform,compiled,
+Nissan,Altima,4d,111.2,u,"f,4",2019,2025,,,PR25DD,engine-loop,compiled,2.5 4-cyl
 Nissan,Armada,SUV,123.2,u,"r,4",2004,2012,,,006341,structural,edc,
+Nissan,Armada,SUV,123.2,u,"r,4",2004,2012,,,VK56,engine-loop,compiled,5.6 V8
+Nissan,Armada,SUV,121.1,f,"r,4",2013,2025,,,NISSAN-FALPHA,platform,compiled,
+Nissan,Armada,SUV,121.1,f,"r,4",2013,2025,,,VK56,engine-loop,compiled,5.6 V8
 Nissan,Axxess,Van,102.8,u,f,1989,1990,,,004630,structural,edc,
 Nissan,Cross Cabriolet,Conv SUV,111.2,u,"f,4",2011,2012,Murano,,006971,structural,edc,
 Nissan,Cube,SW,99.6,u,f,2010,2012,,,007440,structural,edc,
 Nissan,Frontier,Pickup,"104.3,116.1",f,"r,4",1998,2004,,,005780,structural,edc,
 Nissan,Frontier,Pickup,"116.1,129.9",f,"r,4",2005,2012,,,006450,structural,edc,
+Nissan,Frontier,Pickup,"116.1,129.9",f,"r,4",2005,2012,,,QR25DE,engine-loop,compiled,2.5 4-cyl only
+Nissan,Frontier,Pickup,"116.1,129.9",f,"r,4",2005,2012,,,VQ40DE,engine-loop,compiled,4.0 V6 — 2.5 4-cyl excluded
+Nissan,Frontier,Pickup,125.9,f,"r,4",2013,2019,,,VQ40DE,engine-loop,compiled,4.0 V6
 Nissan,GTR,2d,109.5,u,r,2009,2012,,,006980,structural,edc,
 Nissan,Hardbody,Pickup,"104.3,116.1",f,"r,4",1986,1997,,,004541,structural,edc,
 Nissan,Juke,SW,99.6,u,f,2011,2012,,Based on Versa,007441,structural,edc,
@@ -1377,16 +2186,33 @@ Nissan,Maxima,"2d,4d,SW",104.3,u,f,1986,1988,,,003910,structural,edc,
 Nissan,Maxima,4d,104.3,u,f,1989,1994,,,003920,structural,edc,
 Nissan,Maxima,4d,106.3,u,f,1995,1999,,,003930,structural,edc,
 Nissan,Maxima,4d,108.3,u,f,2000,2003,,,003932,structural,edc,
+Nissan,Maxima,4d,108.3,u,f,2000,2003,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,Maxima,4d,111.2,u,f,2004,2008,,,005281,structural,edc,
+Nissan,Maxima,4d,111.2,u,f,2004,2008,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,Maxima,4d,109.3,u,f,2009,2012,,Altima Chassis,005291,structural,edc,
+Nissan,Maxima,4d,109.3,u,f,2009,2012,,Altima Chassis,VQ35DE,engine-loop,compiled,3.5 V6
+Nissan,Maxima,4d,109.3,u,f,2016,2023,,,NISSAN-D,platform,compiled,
+Nissan,Maxima,4d,109.3,u,f,2016,2023,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,Maxima/810,"4d,SW",104.3,u,r,1981,1984,,New.Also 810 or 810 Maxim,003900,structural,edc,
 Nissan,Murano,SUV,111.2,u,"f,4",2003,2007,,,006200,structural,edc,
+Nissan,Murano,SUV,111.2,u,"f,4",2003,2007,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,Murano,SUV,111.2,u,"f,4",2009,2012,,,006970,structural,edc,
+Nissan,Murano,SUV,111.2,u,"f,4",2009,2012,,,VQ35DE,engine-loop,compiled,3.5 V6
+Nissan,Murano,SUV,111.2,u,"f,4",2015,2024,,,NISSAN-D,platform,compiled,
+Nissan,Murano,SUV,111.2,u,"f,4",2015,2024,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,NX,3d,95.7,u,f,1991,1993,,,004870,structural,edc,
 Nissan,Pathfinder,SUV,104.3,f,"r,4",1987,1995,Pickups(Fr),,004540,structural,edc,
 Nissan,Pathfinder,SUV,106.3,u,"r,4",1996,2004,,,005550,structural,edc,
 Nissan,Pathfinder,SUV,106.3,f,"r,4",2004,2012,Frontier (frontal),,006452,structural,edc,
+Nissan,Pathfinder,SUV,106.3,f,"r,4",2004,2012,Frontier (frontal),,VK56,engine-loop,compiled,5.6 V8 option only
+Nissan,Pathfinder,SUV,106.3,f,"r,4",2004,2012,Frontier (frontal),,VQ40DE,engine-loop,compiled,4.0 V6 — 5.6 V8 excluded
 Nissan,Pathfinder,SUV,106.3,f,"r,4",2005,2012,Frontier(Frontal),New.Back to frame/body,006452,structural,edc,
+Nissan,Pathfinder,SUV,106.3,f,"r,4",2005,2012,Frontier(Frontal),New.Back to frame/body,VK56,engine-loop,compiled,5.6 V8 option only
+Nissan,Pathfinder,SUV,106.3,f,"r,4",2005,2012,Frontier(Frontal),New.Back to frame/body,VQ40DE,engine-loop,compiled,4.0 V6 — 5.6 V8 excluded
+Nissan,Pathfinder,SUV,114.2,u,"f,4",2013,2020,,,NISSAN-D,platform,compiled,
+Nissan,Pathfinder,SUV,114.2,u,"f,4",2013,2020,,,VQ35DE,engine-loop,compiled,3.5 V6
+Nissan,Pathfinder,SUV,114.2,u,"f,4",2022,2025,,,NISSAN-D,platform,compiled,
+Nissan,Pathfinder,SUV,114.2,u,"f,4",2022,2025,,,VQ35DD,engine-loop,compiled,3.5 V6 direct injection
 Nissan,Pickup,Pickup,"104.3,116.1",f,"r,4",1986,1997,,,004541,structural,edc,
 Nissan,Pulsar,"2d,3d,5d",94.3,u,f,1983,1986,,,000900,structural,edc-flagged,
 Nissan,Pulsar,"2d,3d,4d",94.3,u,f,1983,1982,,New,000900,structural,edc-flagged,
@@ -1394,14 +2220,23 @@ Nissan,Pulsar,3d,95.7,u,f,1987,1990,,,000910,structural,edc,
 Nissan,Quest,MiniVan,112.2,u,f,1993,1998,Mercury Villager,,003140,structural,edc,
 Nissan,Quest,MiniVan,112.2,u,f,1999,2003,Mercury Villager,,003141,structural,edc,
 Nissan,Quest,Van,124,u,f,2004,2010,,,006350,structural,edc,
+Nissan,Quest,Van,124,u,f,2004,2010,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,Quest,Van,118.1,u,f,2011,2012,,,007460,structural,edc,
+Nissan,Quest,Van,118.1,u,f,2011,2012,,,VQ35DE,engine-loop,compiled,3.5 V6
 Nissan,Rogue,SW,105.9,u,4,2008,2012,Sentra,,006780,structural,edc,
+Nissan,Rogue,SW,105.9,u,4,2008,2012,Sentra,,QR25DE,engine-loop,compiled,2.5 4-cyl — sole engine
+Nissan,Rogue,SUV,106.5,u,"f,4",2014,2020,,,NISSAN-CMF-CD,platform,compiled,
+Nissan,Rogue,SUV,106.5,u,"f,4",2014,2020,,,QR25DE,engine-loop,compiled,2.5 4-cyl
+Nissan,Rogue,SUV,106.5,u,"f,4",2021,2025,,1.5 3-cyl turbo from 2022,NISSAN-CMF-CD,platform,compiled,
+Nissan,Rogue,SUV,106.5,u,"f,4",2021,2025,,1.5 3-cyl turbo from 2022,PR25DD,engine-loop,compiled,2.5 4-cyl — 2021 only
 Nissan,Sentra,"2,3,4,SW",99.5,u,f,1982,1986,,,004070,structural,edc,
 Nissan,Sentra,"2,3,4,SW",95.7,u,f,1987,1990,,,004080,structural,edc,
 Nissan,Sentra,"2d,4d",95.7,u,f,1991,1994,,,004090,structural,edc-flagged,
 Nissan,Sentra,4d,99.8,u,f,1995,1999,,,004090,structural,edc-flagged,
 Nissan,Sentra,4d,99.8,u,f,2000,2006,,,004100,structural,edc,
 Nissan,Sentra,4d,105.7,u,f,2007,2012,,,004110,structural,edc,
+Nissan,Sentra,4d,105.7,u,f,2007,2012,,,QR25DE,engine-loop,compiled,2.5 SE-R only
+Nissan,Sentra,4d,106.3,u,f,2013,2019,,,MRA8DE,engine-loop,compiled,1.8 4-cyl
 Nissan,"Sentra, 200SX","4d,2d",99.8,u,f,1995,1999,,,004120,structural,edc,
 Nissan,Stanza,4d,97.2,u,f,1982,1986,,,004060,structural,edc,
 Nissan,Stanza,"3d,5d,SW","97.2,99",u,f,1982,1986,,New Wagon,004060,structural,edc,
@@ -1410,12 +2245,16 @@ Nissan,Stanza,4d,100.4,u,f,1987,1989,,,004520,structural,edc,
 Nissan,Stanza,4d,100.4,u,f,1990,1992,,,004530,structural,edc,
 Nissan,Stanza S/W,S/W,99,u,f,1986,1989,,,004410,structural,edc,
 Nissan,Titan,Pickup,123.2,f,"r,4",2004,2012,,,006340,structural,edc,
+Nissan,Titan,Pickup,123.2,f,"r,4",2004,2012,,,VK56,engine-loop,compiled,5.6 V8
+Nissan,Titan,Pickup,139.8,f,"r,4",2013,2024,,,NISSAN-FALPHA,platform,compiled,
+Nissan,Titan,Pickup,139.8,f,"r,4",2013,2024,,,VK56,engine-loop,compiled,5.6 V8
 Nissan,Van,Van,92.5,u,r,1987,1990,,,004510,structural,edc,
 Nissan,Versa,5d,102.4,u,f,2007,2012,,5d stays on old body,006680,structural,edc,
 Nissan,Versa,"4d,5d",102.4,u,f,2007,2012,,,006680,structural,edc,
 Nissan,Versa,4d,102.4,u,f,2012,2012,,New,007690,structural,edc,
 Nissan,Xterra,SUV,104.3,f,"r,4",2000,2004,Frontier (frontal),,005781,structural,edc,
 Nissan,Xterra,SUV,106.3,f,"r,4",2005,2012,Frontier (frontal),,006451,structural,edc,
+Nissan,Xterra,SUV,106.3,f,"r,4",2005,2012,Frontier (frontal),,VQ40DE,engine-loop,compiled,4.0 V6
 Oldsmobile,"88, LSS",4d,110.8,u,f,1992,1999,"LeSabre,Bonneville",,002304,structural,edc,
 Oldsmobile,98,"2d,4d",127,f,r,1974,1976,GM Fullsize(Watch WB),,000030,structural,edc-flagged,
 Oldsmobile,98,"2d,4d",119,f,r,1977,1984,Electra,Also see Delta 88,000200,structural,edc-flagged,
@@ -1534,7 +2373,9 @@ Pontiac,G5,2d,103.3,u,f,2007,2009,Cobalt,,002260,structural,edc,
 Pontiac,G6,"2d,4d,cnv",112.3,u,f,2005,2009,"Malibu, 9-3, Aura",,002370,structural,edc-flagged,
 Pontiac,G6,4d,112.3,u,f,2005,2009,"Malibu, 9-3",New,002370,structural,edc-flagged,
 Pontiac,G8,4d,114.8,u,r,2008,2009,Holden Commodore,,002470,structural,edc,
+Pontiac,G8,4d,114.8,u,r,2008,2009,Holden Commodore,,LS-GEN4,engine-loop,compiled,GT 6.0 L76 — V6 excluded
 Pontiac,GTO,2d,109.8,u,r,2004,2006,Holden Monaro,Australian Import,002570,structural,edc,
+Pontiac,GTO,2d,109.8,u,r,2004,2006,Holden Monaro,Australian Import,LS-GEN4,engine-loop,compiled,5.7 LS1 / 6.0 LS2
 Pontiac,Grand Prix,2d,116,f,r,1974,1977,Monte Carlo,,000021,structural,edc,
 Pontiac,Grand Prix,2d,108,f,r,1978,1987,"Monte Carlo,Malibu",,000221,structural,edc,
 Pontiac,Grand Prix,"2d,4d",107.5,u,f,1988,1996,"Cutl Sup,Regal,Lumina",,002500,structural,edc-flagged,
@@ -1598,11 +2439,27 @@ Porsche,"Carrera 2/4,911Turb",2d,94.5,u,r,1990,1994,Older 911,Restyle,000951,str
 Porsche,Carrera GT,Conv,107.5,u,r,2004,2006,,,006330,structural,edc,
 Porsche,Cayenne,SW,112.4,u,"r,4",2003,2010,"VW Toureg, Audi Q7",,001970,structural,edc,
 Porsche,Cayenne,SW,114.0,u,"r,4",2011,2012,,,007470,structural,edc,
+Porsche,Cayenne,SUV,114.0,u,4,2019,2025,,,EA839-30T,engine-loop,compiled,3.0 turbo V6 base
+Porsche,Cayenne,SUV,114.0,u,4,2019,2025,,,VW-MLB-EVO,platform,compiled,
 Porsche,Cayman,2d,95.1,u,r,2006,2012,,,005602,structural,edc,
 Porsche,Panamera,4d,115,u,"r,4",2010,2012,,,007080,structural,edc,
 Ram,1500,Pickup,"120,140",f,"r,4",2009,2012,,,003800,structural,edc,
+Ram,1500,Pickup,"120,140",f,"r,4",2009,2012,,,HEMI-57,engine-loop,compiled,5.7 HEMI — 3.7 / 4.7 excluded
+Ram,1500,Pickup,140.5,f,"r,4",2013,2018,,,ECODIESEL-30,engine-loop,compiled,3.0 EcoDiesel
+Ram,1500,Pickup,140.5,f,"r,4",2013,2018,,,FCA-DS,platform,compiled,
+Ram,1500,Pickup,140.5,f,"r,4",2013,2018,,,HEMI-57,engine-loop,compiled,5.7 V8
+Ram,1500,Pickup,140.5,f,"r,4",2013,2018,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Ram,1500,Pickup,144.5,f,"r,4",2019,2025,,,ECODIESEL-30,engine-loop,compiled,3.0 EcoDiesel 2020-2023
+Ram,1500,Pickup,144.5,f,"r,4",2019,2025,,,FCA-DT,platform,compiled,
+Ram,1500,Pickup,144.5,f,"r,4",2019,2025,,,HEMI-57,engine-loop,compiled,5.7 V8
+Ram,1500,Pickup,144.5,f,"r,4",2019,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
+Ram,2500,Pickup,149.0,f,"r,4",2014,2025,,,CUMMINS-67,engine-loop,compiled,6.7 Cummins diesel
+Ram,2500,Pickup,149.0,f,"r,4",2014,2025,,,HEMI-64,engine-loop,compiled,6.4 gas V8 from 2014
+Ram,3500,Pickup,167.5,f,"r,4",2014,2025,,,CUMMINS-67,engine-loop,compiled,6.7 Cummins diesel
+Ram,3500,Pickup,167.5,f,"r,4",2014,2025,,,HEMI-64,engine-loop,compiled,6.4 gas V8 from 2014
 Ram,Cargo Van,Van,121.2,u,f,2012,2012,"Town&Cntry, VW Routan",Cargo version of Caravan,003780,structural,edc,
 Ram,HD 25/3500,Pickup,,f,"r,4",2010,2012,,Heavy Duty,003810,structural,edc,
+Ram,ProMaster,Van,136.0,u,f,2014,2025,,,PENTASTAR-36,engine-loop,compiled,3.6 V6
 Renault,18i,"4d,SW",96,u,f,1981,1986,,,003880,structural,edc,
 Renault,Alliance,4d,97.8,u,f,1983,1985,R9 in Europe,,004170,structural,edc,
 Renault,"Alliance,Encore","3d,4d,5d",97.8,u,f,1983,1985,R9 in Europe,,004170,structural,edc,
@@ -1648,11 +2505,13 @@ Saab,"SL,SW","4d,SW",102.4,u,f,1996,2002,Saturn SC,,002601,structural,edc,
 Saab,"SL1,SL2","4d,SW",102.4,u,f,1996,2002,Saturn SC's,,002601,structural,edc,
 Saturn,Astra,"3d,5d",,u,f,2008,2010,Opel Astra,,002390,structural,edc,
 Saturn,Aura,4d,112.3,u,f,2007,2010,"G6, 9-3, Malibu",Stretched Opel Vectra,002371,structural,edc-flagged,
+Saturn,Aura,4d,112.3,u,f,2007,2010,"G6, 9-3, Malibu",Stretched Opel Vectra,HFV6-36,engine-loop,compiled,3.6 LY7 V6 option
 Saturn,Ion,"2d,4d",103.2,u,f,2003,2007,"Cobalt, G5",,002260,structural,edc,
 Saturn,"L100,200,300","4d, SW",106.5,u,f,2000,2005,,,002590,structural,edc,
 Saturn,"L200,300","4d, SW",106.5,u,f,2000,2005,,Mild Restyle,002590,structural,edc,
 Saturn,L300,"4d, SW",106.5,u,f,2000,2005,,,002590,structural,edc,
 Saturn,Outlook,SW,118.9,u,"f,4",2007,2010,GMC Acadia,,002170,structural,edc,
+Saturn,Outlook,SW,118.9,u,"f,4",2007,2010,GMC Acadia,,HFV6-36,engine-loop,compiled,3.6 LLT V6
 Saturn,Relay,Van,121.1,u,"f,4",2005,2007,"Uplander,Terraza",,002162,structural,edc,
 Saturn,SC,2d,102.4,u,f,1997,2002,Saturn SL,,002601,structural,edc,
 Saturn,"SC1,SC2",2d,99.2,u,f,1991,1996,,Same old body,002600,structural,edc-flagged,
@@ -1664,48 +2523,108 @@ Saturn,Sky,Conv,95,u,r,2006,2010,Solstice,,002610,structural,edc,
 Saturn,Sport Coupe,2d,99.2,u,f,1991,1996,,,002600,structural,edc-flagged,
 Saturn,Sport Sedan,4d,102.4,u,f,1991,1995,,,002600,structural,edc-flagged,
 Saturn,Vue,SW,106.6,u,"f,4",2002,2010,"Equinox, Torrent",,002181,structural,edc,
+Saturn,Vue,SW,106.6,u,"f,4",2002,2010,"Equinox, Torrent",,HFV6-36,engine-loop,compiled,3.6 LY7 V6 option
 Scion,FR-S,2d,101.2,u,r,2013,2013,,New,007710,structural,edc,
+Scion,FR-S,2d,101.2,u,r,2013,2016,,,FA20D,engine-loop,compiled,2.0 H4 — shared with BRZ
+Scion,FR-S,2d,101.2,u,r,2013,2016,,,TOYOTA-86,platform,compiled,
 Scion,iQ,3d,78.7,u,f,2011,2012,,,007490,structural,edc,
 Scion,tC,2d,106.3,u,f,2005,2010,,,006440,structural,edc-flagged,
 Scion,tC,2d,106.3,u,f,2011,2012,,,006440,structural,edc-flagged,
+Scion,tC,2d,106.3,u,f,2011,2012,,,2AR-FE,engine-loop,compiled,2.5 4-cyl
 Scion,xA,SW,93.3,u,f,2004,2007,,,006310,structural,edc,
 Scion,xB,SW,98,u,f,2004,2007,,,006300,structural,edc,
 Scion,xB,SW,102.4,u,f,2008,2012,,,006770,structural,edc,
 Scion,xD,SW,96.9,u,f,2008,2012,,,006760,structural,edc,
+Scion,xD,SW,96.9,u,f,2008,2012,,,2ZR-FE,engine-loop,compiled,1.8 4-cyl
 Smart,ForTwo,2d,,u,r,2008,2012,,,006750,structural,edc,
 Sterling,825,4d,108.6,u,f,1987,1991,Acura Legend,,004470,structural,edc-flagged,
 Sterling,827,4d,108.6,u,f,1987,1991,Acura Legend(86-90),,004470,structural,edc-flagged,
+Subaru,Ascent,SUV,113.8,u,4,2019,2025,,,FA24F,engine-loop,compiled,2.4 turbo H4 — sole engine
+Subaru,Ascent,SUV,113.8,u,4,2019,2025,,,SGP,platform,compiled,
 Subaru,B9 Tribeca,SUV,108.2,u,4,2006,2012,,,006570,structural,edc,
 Subaru,BRZ,2d,101.2,u,r,2013,2013,,New,007710,structural,edc,
+Subaru,BRZ,2d,101.2,u,r,2013,2013,,New,FA20D,engine-loop,compiled,2.0 H4 — shared with FR-S
+Subaru,BRZ,2d,101.2,u,r,2014,2020,,,FA20D,engine-loop,compiled,2.0 H4
+Subaru,BRZ,2d,101.2,u,r,2014,2020,,,TOYOTA-86,platform,compiled,
+Subaru,BRZ,2d,101.4,u,r,2022,2025,,,FA24D,engine-loop,compiled,2.4 H4
+Subaru,BRZ,2d,101.4,u,r,2022,2025,,,TOYOTA-86,platform,compiled,
 Subaru,Baja,Car/Pckup,104.3,u,4,2003,2006,Legacy,Legacy w/Pickup bed,005381,structural,edc,
 Subaru,Brat,Car/Pckup,96.5,u,4,1980,1987,Older Subaru cars(Fr),,001031,structural,edc,
+Subaru,Crosstrek,SUV,103.7,u,4,2013,2017,,,FB20,engine-loop,compiled,2.0 naturally aspirated H4
+Subaru,Crosstrek,SUV,103.7,u,4,2013,2017,,,SUBARU-IMP3,platform,compiled,
+Subaru,Crosstrek,SUV,104.9,u,4,2018,2025,,,FB20,engine-loop,compiled,2.0 naturally aspirated H4
+Subaru,Crosstrek,SUV,104.9,u,4,2018,2025,,,FB25,engine-loop,compiled,2.5 Sport/Limited
+Subaru,Crosstrek,SUV,104.9,u,4,2018,2025,,,SGP,platform,compiled,
 Subaru,"DL,GL","3d,SW","96.9,96.7",u,f,1980,1984,,,001030,structural,edc,
 Subaru,"DL,GL","3d,4d","96.9,96.7",u,f,1980,1984,,New,001030,structural,edc,
 Subaru,"DL,GL","3d,4d,SW",97,u,f,1985,1989,,,001060,structural,edc,
 Subaru,"DL,GL","4d,SW",97,u,f,1985,1989,,New,001060,structural,edc,
 Subaru,FE,3d,96.5,u,f,1980,1980,,,001040,structural,edc,
 Subaru,Forester,SW,99.4,u,4,1998,2002,,,005750,structural,edc,
+Subaru,Forester,SW,99.4,u,4,1998,2002,,,EJ25,engine-loop,compiled,2.5 naturally aspirated — FB25 from 2011
 Subaru,Forester,SW,99.4,u,4,2003,2008,,,005760,structural,edc,
+Subaru,Forester,SW,99.4,u,4,2003,2008,,,EJ25,engine-loop,compiled,2.5 naturally aspirated — FB25 from 2011
+Subaru,Forester,SW,99.4,u,4,2003,2008,,,EJ25T,engine-loop,compiled,XT turbo only
 Subaru,Forester,SW,103,u,4,2009,2012,,,005770,structural,edc,
+Subaru,Forester,SW,103,u,4,2009,2012,,,EJ25,engine-loop,compiled,2.5 naturally aspirated — FB25 from 2011
+Subaru,Forester,SW,103,u,4,2009,2012,,,EJ25T,engine-loop,compiled,XT turbo only
+Subaru,Forester,SW,103,u,4,2009,2012,,,FB25,engine-loop,compiled,2.5 FB — chain drive replaces EJ belt
+Subaru,Forester,SUV,103.9,u,4,2014,2018,,,FA20F,engine-loop,compiled,2.0 turbo XT
+Subaru,Forester,SUV,103.9,u,4,2014,2018,,,FB25,engine-loop,compiled,2.5 naturally aspirated H4
+Subaru,Forester,SUV,103.9,u,4,2014,2018,,,SUBARU-IMP3,platform,compiled,
+Subaru,Forester,SUV,105.1,u,4,2019,2025,,,FB25,engine-loop,compiled,2.5 naturally aspirated H4 — sole engine
+Subaru,Forester,SUV,105.1,u,4,2019,2025,,,SGP,platform,compiled,
 Subaru,Impreza,"2d,4d,SW",99.2,u,f,1993,2001,,"Also Outback Sport,RS",005150,structural,edc,
 Subaru,Impreza,"4d,SW",99.1,u,f,1993,2001,,New.Shortened Legacy chassis.,005150,structural,edc,
 Subaru,Impreza,"4d,SW",99.4,u,4,2002,2007,Saab 9-2X(older),"Also Outback Sport,WRX",006090,structural,edc,
 Subaru,Impreza,"2d,4d,SW",99.4,u,4,2002,2007,,"New.Also Outback Sport,WRX",006090,structural,edc,
 Subaru,Impreza,"4d,5d",99.4,u,4,2008,2012,,"Also WRX, Sti",006740,structural,edc,
+Subaru,Impreza,"4d,5d",99.4,u,4,2008,2012,,"Also WRX, Sti",EJ25,engine-loop,compiled,2.5 naturally aspirated — WRX excluded
+Subaru,Impreza,"4d,5d",99.4,u,4,2008,2012,,"Also WRX, Sti",FB20,engine-loop,compiled,2.0 FB
 Subaru,Impreza,"4d,5d",104.1,u,4,2012,2012,,New,007720,structural,edc,
+Subaru,Impreza,"4d,5d",104.1,u,4,2012,2012,,New,FB20,engine-loop,compiled,2.0 FB
+Subaru,Impreza,4d,104.1,u,4,2013,2016,,,FB20,engine-loop,compiled,2.0 naturally aspirated H4
+Subaru,Impreza,4d,104.1,u,4,2013,2016,,,SUBARU-IMP3,platform,compiled,
+Subaru,Impreza,5d,105.1,u,4,2017,2025,,,FB20,engine-loop,compiled,2.0 naturally aspirated H4
+Subaru,Impreza,5d,105.1,u,4,2017,2025,,,SGP,platform,compiled,
 Subaru,Impreza WRX/Sti,"4d,5d",99.4,u,4,2008,2012,,,006740,structural,edc,
+Subaru,Impreza WRX/Sti,"4d,5d",99.4,u,4,2008,2012,,,EJ25T,engine-loop,compiled,EJ255 / EJ257 turbo
 Subaru,Justy,3d,90,u,f,1987,1994,,,004500,structural,edc,
 Subaru,Legacy,"4d,SW",101.6,u,f,1990,1994,,,004730,structural,edc,
 Subaru,Legacy,"4d,SW",103.5,u,f,1995,1999,,Also Outback,005380,structural,edc,
 Subaru,Legacy,"4d,SW",104.3,u,4,2000,2004,,Also Outback,005381,structural,edc,
+Subaru,Legacy,"4d,SW",104.3,u,4,2000,2004,,Also Outback,EJ25,engine-loop,compiled,2.5 naturally aspirated — GT turbo excluded
 Subaru,Legacy,"4d,SW",105.1,u,4,2005,2009,Outback,,006430,structural,edc,
+Subaru,Legacy,"4d,SW",105.1,u,4,2005,2009,Outback,,EJ25,engine-loop,compiled,2.5 naturally aspirated — GT turbo excluded
+Subaru,Legacy,"4d,SW",105.1,u,4,2005,2009,Outback,,EJ25T,engine-loop,compiled,GT turbo only
 Subaru,Legacy,"4d,SW",108.3,u,4,2010,2012,Outback,,007070,structural,edc,
+Subaru,Legacy,"4d,SW",108.3,u,4,2010,2012,Outback,,EJ25,engine-loop,compiled,2.5 naturally aspirated — GT turbo excluded
+Subaru,Legacy,"4d,SW",108.3,u,4,2010,2012,Outback,,EJ25T,engine-loop,compiled,GT turbo only
+Subaru,Legacy,4d,108.3,u,4,2013,2019,,,FB25,engine-loop,compiled,2.5 naturally aspirated H4
+Subaru,Legacy,4d,108.3,u,4,2013,2019,,,SUBARU-IMP3,platform,compiled,
+Subaru,Legacy,4d,108.3,u,4,2020,2025,,,FA24F,engine-loop,compiled,2.4 turbo XT
+Subaru,Legacy,4d,108.3,u,4,2020,2025,,,FB25,engine-loop,compiled,2.5 naturally aspirated H4
+Subaru,Legacy,4d,108.3,u,4,2020,2025,,,SGP,platform,compiled,
 Subaru,Loyale,SW,97.2,u,a,1990,1994,,,004720,structural,edc-flagged,
 Subaru,Loyale,"4d,SW",97.2,u,f,1990,1994,,,004720,structural,edc-flagged,
 Subaru,Outback,SW,105.1,u,4,2005,2009,Legacy,,006430,structural,edc,
+Subaru,Outback,SW,105.1,u,4,2005,2009,Legacy,,EJ25,engine-loop,compiled,2.5 naturally aspirated — 3.0/3.6 H6 excluded
+Subaru,Outback,SW,105.1,u,4,2005,2009,Legacy,,EJ25T,engine-loop,compiled,XT turbo only
 Subaru,Outback,SW,107.9,u,4,2010,2012,Legacy,,007070,structural,edc,
+Subaru,Outback,SW,107.9,u,4,2010,2012,Legacy,,EJ25,engine-loop,compiled,2.5 naturally aspirated — 3.0/3.6 H6 excluded
+Subaru,Outback,SW,108.7,u,4,2013,2019,,3.6R uses EZ36,FB25,engine-loop,compiled,2.5 naturally aspirated H4
+Subaru,Outback,SW,108.7,u,4,2013,2019,,3.6R uses EZ36,SUBARU-IMP3,platform,compiled,
+Subaru,Outback,SW,108.1,u,4,2020,2025,,,FA24F,engine-loop,compiled,2.4 turbo XT
+Subaru,Outback,SW,108.1,u,4,2020,2025,,,FB25,engine-loop,compiled,2.5 naturally aspirated H4
+Subaru,Outback,SW,108.1,u,4,2020,2025,,,SGP,platform,compiled,
 Subaru,SVX,2d,102.8,u,4,1992,1997,,,004970,structural,edc,
 Subaru,Standard,3d,96.9,u,f,1980,1988,,,001030,structural,edc,
+Subaru,WRX,4d,104.3,u,4,2015,2021,,,FA20F,engine-loop,compiled,2.0 turbo H4
+Subaru,WRX,4d,104.3,u,4,2015,2021,,,SUBARU-IMP3,platform,compiled,
+Subaru,WRX,4d,105.2,u,4,2022,2025,,,FA24F,engine-loop,compiled,2.4 turbo H4
+Subaru,WRX,4d,105.2,u,4,2022,2025,,,SGP,platform,compiled,
+Subaru,WRX STI,4d,104.3,u,4,2015,2021,,,EJ25T,engine-loop,compiled,2.5 turbo EJ257
+Subaru,WRX STI,4d,104.3,u,4,2015,2021,,,SUBARU-IMP3,platform,compiled,
 Subaru,XT Coupe,2d,97,u,f,1985,1991,,,001020,structural,edc,
 Suzuki,Aerio,4d,97.6,u,f,2002,2007,,,006080,structural,edc,
 Suzuki,Aerio,"4d,SW",97.6,u,f,2002,2007,,,006080,structural,edc,
@@ -1737,10 +2656,22 @@ Toyota,4Runner,SUV,103,f,4,1984,1988,Pickup(Fr),,001321,structural,edc,
 Toyota,4Runner,SUV,103,f,4,1990,1995,Pickup(Fr),,001331,structural,edc,
 Toyota,4Runner,SUV,105.3,f,"r,4",1996,2002,,,004260,structural,edc,
 Toyota,4Runner,SUV,109.8,f,"r,4",2003,2009,Lexus GX470,,006180,structural,edc,
+Toyota,4Runner,SUV,109.8,f,"r,4",2003,2009,Lexus GX470,,1GR-FE,engine-loop,compiled,4.0 V6
 Toyota,4Runner,SUV,,f,"r,4",2010,2012,Lexus GX470,,007050,structural,edc,
+Toyota,4Runner,SUV,,f,"r,4",2010,2012,Lexus GX470,,1GR-FE,engine-loop,compiled,4.0 V6
+Toyota,4Runner,SUV,109.8,f,"r,4",2013,2024,,N280 body-on-frame,1GR-FE,engine-loop,compiled,4.0 V6 — sole US engine
+Toyota,4Runner,SUV,109.8,f,"r,4",2013,2024,,N280 body-on-frame,TOYOTA-N280,platform,compiled,
+Toyota,86,2d,101.2,u,r,2017,2020,,,FA20D,engine-loop,compiled,2.0 H4 — shared with BRZ
+Toyota,86,2d,101.2,u,r,2017,2020,,,TOYOTA-86,platform,compiled,
 Toyota,Avalon,4d,107.1,u,f,1995,1999,Camry?,,004881,structural,edc-flagged,
 Toyota,Avalon,4d,107.1,u,f,2000,2004,Camry?,,004893,structural,edc,
 Toyota,Avalon,4d,111.0,u,f,2005,2012,,,004903,structural,edc,
+Toyota,Avalon,4d,111.0,u,f,2005,2012,,,2GR-FE,engine-loop,compiled,3.5 V6
+Toyota,Avalon,4d,111.0,u,f,2013,2018,,,2GR-FE,engine-loop,compiled,3.5 V6
+Toyota,Avalon,4d,111.0,u,f,2013,2018,,,TOYOTA-K-PRE,platform,compiled,
+Toyota,Avalon,4d,113.0,u,f,2019,2022,,,2GR-FKS,engine-loop,compiled,3.5 V6 — hybrid uses A25A
+Toyota,Avalon,4d,113.0,u,f,2019,2022,,,TNGA-K,platform,compiled,
+Toyota,C-HR,SUV,103.9,u,f,2018,2022,,,TNGA-C,platform,compiled,
 Toyota,Camry,"4d,5d",102.4,u,f,1983,1987,,,004150,structural,edc,
 Toyota,Camry,"4d,5d",102.4,u,f,1987,1991,,,004160,structural,edc,
 Toyota,Camry,"2d,4d,SW",103.1,u,f,1992,1996,Lexus ES300,,004880,structural,edc,
@@ -1749,10 +2680,23 @@ Toyota,Camry,4d,105.2,u,f,1997,2001,Lexus ES300,,004890,structural,edc,
 Toyota,Camry,"2d,4d",105.2,u,f,1997,2001,Lexus ES300,,004890,structural,edc,
 Toyota,Camry,4d,107.1,u,f,2002,2006,Lexus ES330,,004900,structural,edc,
 Toyota,Camry,4d,109.3,u,f,2007,2011,Lexus ES350,,004910,structural,edc,
+Toyota,Camry,4d,109.3,u,f,2007,2011,Lexus ES350,,2AR-FE,engine-loop,compiled,2.5 4-cyl — V6 excluded
+Toyota,Camry,4d,109.3,u,f,2007,2011,Lexus ES350,,2GR-FE,engine-loop,compiled,3.5 V6 — 2.4 / 2.5 4-cyl excluded
 Toyota,Camry,4d,109.3,u,f,2012,2012,Lexus ES350,Restyle,004913,structural,edc,
+Toyota,Camry,4d,109.3,u,f,2012,2012,Lexus ES350,Restyle,2AR-FE,engine-loop,compiled,2.5 4-cyl — V6 excluded
+Toyota,Camry,4d,109.3,u,f,2012,2012,Lexus ES350,Restyle,2GR-FE,engine-loop,compiled,3.5 V6 — 2.4 / 2.5 4-cyl excluded
+Toyota,Camry,4d,109.3,u,f,2013,2017,,,2AR-FE,engine-loop,compiled,2.5 4-cyl
+Toyota,Camry,4d,109.3,u,f,2013,2017,,,2GR-FE,engine-loop,compiled,3.5 V6 SE/XLE V6
+Toyota,Camry,4d,109.3,u,f,2013,2017,,,TOYOTA-K-PRE,platform,compiled,
+Toyota,Camry,4d,111.2,u,f,2018,2024,,,2GR-FKS,engine-loop,compiled,3.5 V6 XSE/XLE V6
+Toyota,Camry,4d,111.2,u,f,2018,2024,,,A25A-FKS,engine-loop,compiled,2.5 4-cyl
+Toyota,Camry,4d,111.2,u,f,2018,2024,,,TNGA-K,platform,compiled,
+Toyota,Camry,4d,111.2,u,"f,4",2025,2025,,,A25A-FKS,engine-loop,compiled,2.5 hybrid only from 2025
+Toyota,Camry,4d,111.2,u,"f,4",2025,2025,,,TNGA-K,platform,compiled,
 Toyota,Camry Solara,"2d, Conv",105.2,u,f,1999,2003,Old Camry (97-01),,004892,structural,edc,
 Toyota,Camry Solara,2d,105.2,u,f,1999,2003,Camry,2-dr Camry Unique Styling,004892,structural,edc,
 Toyota,Camry Solara,"2d, Conv",107.1,u,f,2004,2008,,,004902,structural,edc,
+Toyota,Camry Solara,"2d, Conv",107.1,u,f,2004,2008,,,2GR-FE,engine-loop,compiled,3.5 V6 — 2.4 / 2.5 4-cyl excluded
 Toyota,Celica,"2d,3d",98.4,u,r,1980,1981,,,001070,structural,edc,
 Toyota,Celica,"2d,3d",98.4,u,r,1982,1985,,,001140,structural,edc,
 Toyota,Celica,"2d,3d",98.4,u,r,1986,1989,,,001150,structural,edc,
@@ -1771,7 +2715,17 @@ Toyota,Corolla,"4d,SW",97,u,f,1993,1997,Geo Prizm,,001250,structural,edc,
 Toyota,Corolla,"4d,SW",97,u,f,1998,2002,Chevrolet Prizm,Not New '03 Corolla,001260,structural,edc,
 Toyota,Corolla,"4d,SW",102.4,u,f,2003,2008,,,001270,structural,edc,
 Toyota,Corolla,4d,102.4,u,f,2009,2012,,,001280,structural,edc,
+Toyota,Corolla,4d,102.4,u,f,2009,2012,,,2ZR-FE,engine-loop,compiled,1.8 4-cyl
+Toyota,Corolla,4d,106.3,u,f,2014,2019,,,2ZR-FE,engine-loop,compiled,1.8 4-cyl
+Toyota,Corolla,4d,106.3,u,f,2014,2019,,,TOYOTA-MC,platform,compiled,
+Toyota,Corolla,4d,106.3,u,f,2020,2025,,,2ZR-FE,engine-loop,compiled,1.8 L/LE
+Toyota,Corolla,4d,106.3,u,f,2020,2025,,,M20A-FKS,engine-loop,compiled,2.0 SE/XSE
+Toyota,Corolla,4d,106.3,u,f,2020,2025,,,TNGA-C,platform,compiled,
+Toyota,Corolla Cross,SUV,103.9,u,"f,4",2022,2025,,,M20A-FKS,engine-loop,compiled,2.0 — sole gas engine
+Toyota,Corolla Cross,SUV,103.9,u,"f,4",2022,2025,,,TNGA-C,platform,compiled,
 Toyota,Corolla FX,3d,95.7,u,r,1987,1988,,Old body,001210,structural,edc-flagged,
+Toyota,Corolla Hatchback,5d,103.9,u,f,2019,2025,,,M20A-FKS,engine-loop,compiled,2.0 — sole engine
+Toyota,Corolla Hatchback,5d,103.9,u,f,2019,2025,,,TNGA-C,platform,compiled,
 Toyota,Corolla Sport,"2d,3d",94.5,u,r,1984,1987,,,001220,structural,edc,
 Toyota,Corolla Sport,"2d,3d",95.7,u,r,1988,1991,,,001230,structural,edc,
 Toyota,"Corolla,FX","3d,4d,5d",94.5,u,r,1984,1987,Chevrolet Nova,New 3d Corolla FX (NUMMI),001210,structural,edc-flagged,
@@ -1784,18 +2738,33 @@ Toyota,Cressida,"4d,SW",105.5,u,r,1989,1992,,,004050,structural,edc,
 Toyota,Cressida,4d,105.5,u,r,1989,1992,,New,004050,structural,edc,
 Toyota,Echo,"2d,4d",93.3,u,f,2000,2005,,,005920,structural,edc,
 Toyota,FJ Cruiser,SUV,105.9,f,4,2007,2012,,,006850,structural,edc,
+Toyota,FJ Cruiser,SUV,105.9,f,4,2007,2012,,,1GR-FE,engine-loop,compiled,4.0 V6 — sole engine
+Toyota,GR86,2d,101.4,u,r,2022,2025,,,FA24D,engine-loop,compiled,2.4 H4 — shared with BRZ
+Toyota,GR86,2d,101.4,u,r,2022,2025,,,TOYOTA-86,platform,compiled,
+Toyota,Grand Highlander,SUV,116.1,u,"f,4",2024,2025,,2.4T and hybrid only,TNGA-K,platform,compiled,
 Toyota,Highlander,SUV,106.9,f,"f,4",2001,2007,RX330,,006020,structural,edc,
 Toyota,Highlander,SUV,109.8,f,"f,4",2008,2012,,,006950,structural,edc,
+Toyota,Highlander,SUV,109.8,f,"f,4",2008,2012,,,2GR-FE,engine-loop,compiled,3.5 V6 — 2.7 4-cyl excluded
+Toyota,Highlander,SUV,109.8,u,"f,4",2014,2019,,,2AR-FE,engine-loop,compiled,2.5 4-cyl 2018-2019
+Toyota,Highlander,SUV,109.8,u,"f,4",2014,2019,,,2GR-FE,engine-loop,compiled,3.5 V6
+Toyota,Highlander,SUV,109.8,u,"f,4",2014,2019,,,TOYOTA-K-PRE,platform,compiled,
+Toyota,Highlander,SUV,112.2,u,"f,4",2020,2025,,2.4T from 2023,2GR-FKS,engine-loop,compiled,3.5 V6 2020-2022 only
+Toyota,Highlander,SUV,112.2,u,"f,4",2020,2025,,2.4T from 2023,TNGA-K,platform,compiled,
 Toyota,Land Cruiser,SUV,107.5,f,4,1980,1990,,,001110,structural,edc,
 Toyota,Land Cruiser,SUV,112.2,f,4,1991,1997,,,001290,structural,edc,
 Toyota,Land Cruiser,SUV,112.2,f,4,1998,2007,Lexus LX470,,001300,structural,edc,
 Toyota,Land Cruiser,SUV,112.2,f,4,2008,2012,Lexus LX570,,001310,structural,edc,
+Toyota,Land Cruiser,SUV,112.2,f,4,2008,2012,Lexus LX570,,3UR-FE,engine-loop,compiled,5.7 V8
+Toyota,Land Cruiser,SUV,112.2,f,4,2013,2021,,,3UR-FE,engine-loop,compiled,5.7 V8
+Toyota,Land Cruiser,SUV,112.2,f,4,2013,2021,,,TOYOTA-XK50,platform,compiled,
+Toyota,Land Cruiser,SUV,112.2,f,4,2024,2025,,2.4T hybrid,TNGA-F,platform,compiled,
 Toyota,MR2,2d,91.3,u,r,1985,1989,,,004300,structural,edc,
 Toyota,MR2,2d,94.5,u,r,1991,1995,,,004310,structural,edc,
 Toyota,MR2 Spyder,Conv,103.1,u,r,2000,2005,,,005910,structural,edc,
 Toyota,MR2 Spyder,conv,103.1,u,r,2000,2005,,New,005910,structural,edc,
 Toyota,Matrix,5d,102.4,u,"f,4",2003,2008,Pontiac Vibe,Corolla Chassis,001271,structural,edc,
 Toyota,Matrix,5d,102.4,u,"f,4",2009,2010,Pontiac Vibe,Corolla Chassis,001281,structural,edc,
+Toyota,Matrix,5d,102.4,u,"f,4",2009,2010,Pontiac Vibe,Corolla Chassis,2ZR-FE,engine-loop,compiled,1.8 4-cyl — 2.4 excluded
 Toyota,Paseo,2d,93.7,u,r,1992,1995,,Tercel Based,003861,structural,edc,
 Toyota,Paseo,"2d,Conv",93.7,u,r,1996,1998,,,004960,structural,edc,
 Toyota,Pickup,Pickup,"101.8,110.2",f,"r,4",1980,1983,,,001120,structural,edc,
@@ -1806,21 +2775,49 @@ Toyota,Previa,Van,112.8,u,"r,4",1991,1997,,,004860,structural,edc,
 Toyota,Prius,4d,100.4,u,f,2001,2003,,,005990,structural,edc,
 Toyota,Prius,5d,106.3,u,f,2004,2009,,,006000,structural,edc,
 Toyota,Prius,5d,106.3,u,f,2010,2012,,,006010,structural,edc-flagged,
+Toyota,Prius,5d,106.3,u,f,2010,2012,,,2ZR-FE,engine-loop,compiled,1.8 2ZR-FXE hybrid — Atkinson cycle
+Toyota,Prius,5d,106.3,u,"f,4",2016,2022,,hybrid 2ZR-FXE,TNGA-C,platform,compiled,
+Toyota,Prius,5d,108.3,u,"f,4",2023,2025,,hybrid M20A-FXS,TNGA-C,platform,compiled,
 Toyota,Prius V,SW,109.4,u,f,2012,2012,,New SW,006010,structural,edc-flagged,
 Toyota,RAV4,SUV,"86.6,94.9",f,"r,4",1996,2000,,,005480,structural,edc,
 Toyota,RAV4,SUV,98,u,"r,4",2001,2005,,,005490,structural,edc,
 Toyota,RAV4,SUV,104.7,u,"r,4",2006,2012,,,005500,structural,edc,
+Toyota,RAV4,SUV,104.7,u,"r,4",2006,2012,,,2AR-FE,engine-loop,compiled,2.5 4-cyl — V6 excluded
+Toyota,RAV4,SUV,104.7,u,"r,4",2006,2012,,,2GR-FE,engine-loop,compiled,3.5 V6 option only
+Toyota,RAV4,SUV,104.7,u,"f,4",2013,2018,,,2AR-FE,engine-loop,compiled,2.5 4-cyl
+Toyota,RAV4,SUV,104.7,u,"f,4",2013,2018,,,TOYOTA-MC,platform,compiled,
+Toyota,RAV4,SUV,105.9,u,"f,4",2019,2025,,,A25A-FKS,engine-loop,compiled,2.5 4-cyl
+Toyota,RAV4,SUV,105.9,u,"f,4",2019,2025,,,TNGA-K,platform,compiled,
 Toyota,Sequoia,SUV,121.8,f,"r,4",2001,2007,Older Tundra,,005901,structural,edc,
 Toyota,Sequoia,SUV,,f,"r,4",2008,2012,Tundra,,006661,structural,edc,
+Toyota,Sequoia,SUV,,f,"r,4",2008,2012,Tundra,,1UR-FE,engine-loop,compiled,4.6 V8 option
+Toyota,Sequoia,SUV,,f,"r,4",2008,2012,Tundra,,3UR-FE,engine-loop,compiled,5.7 V8 — 4.6 is 1UR
+Toyota,Sequoia,SUV,122.0,f,"r,4",2013,2022,,,3UR-FE,engine-loop,compiled,5.7 V8
+Toyota,Sequoia,SUV,122.0,f,"r,4",2013,2022,,,TOYOTA-XK50,platform,compiled,
+Toyota,Sequoia,SUV,122.0,f,"r,4",2023,2025,,,TNGA-F,platform,compiled,
+Toyota,Sequoia,SUV,122.0,f,"r,4",2023,2025,,,V35A-FTS,engine-loop,compiled,3.4 twin-turbo V6 hybrid
 Toyota,Sienna,Van,114.2,f,f,1998,2003,,,005730,structural,edc,
 Toyota,Sienna,Van,119.3,u,"f,4",2004,2010,,New Sienna is 2011,005740,structural,edc,
+Toyota,Sienna,Van,119.3,u,"f,4",2004,2010,,New Sienna is 2011,2GR-FE,engine-loop,compiled,3.5 V6
 Toyota,Sienna,Van,119.3,u,"f,4",2011,2012,,,007510,structural,edc,
+Toyota,Sienna,Van,119.3,u,"f,4",2011,2012,,,2GR-FE,engine-loop,compiled,3.5 V6
+Toyota,Sienna,Van,119.3,u,"f,4",2013,2020,,,2GR-FE,engine-loop,compiled,3.5 V6
+Toyota,Sienna,Van,119.3,u,"f,4",2013,2020,,,TOYOTA-K-PRE,platform,compiled,
+Toyota,Sienna,Van,120.5,u,"f,4",2021,2025,,,A25A-FKS,engine-loop,compiled,2.5 hybrid only
+Toyota,Sienna,Van,120.5,u,"f,4",2021,2025,,,TNGA-K,platform,compiled,
 Toyota,Starlet,3d,90.6,u,r,1981,1984,,,003820,structural,edc,
 Toyota,Supra,3d,100.4,u,r,1993,1998,,,001200,structural,edc,
+Toyota,Supra,2d,97.2,u,r,2020,2025,,BMW G29 co-development,B48,engine-loop,compiled,2.0 I4 2021-2025
+Toyota,Supra,2d,97.2,u,r,2020,2025,,BMW G29 co-development,B58,engine-loop,compiled,3.0 I6
+Toyota,Supra,2d,97.2,u,r,2020,2025,,BMW G29 co-development,BMW-G29,platform,compiled,
 Toyota,T100,Pickup,121.8,f,r,1993,1998,,,005140,structural,edc,
 Toyota,Tacoma,Pickup,"103.3,121.9",f,"r,4",1995,2004,,,001350,structural,edc,
 Toyota,Tacoma,Pickup,"103.3,121.9",f,"r,4",1995,2004,,,001450,structural,edc-flagged,
 Toyota,Tacoma,Pickup,"109,127,141",f,"r,4",2005,2012,,,001360,structural,edc,
+Toyota,Tacoma,Pickup,"109,127,141",f,"r,4",2005,2012,,,1GR-FE,engine-loop,compiled,4.0 V6 — 2.7 4-cyl excluded
+Toyota,Tacoma,Pickup,127.4,f,"r,4",2016,2023,,,2GR-FKS,engine-loop,compiled,3.5 V6 — 2.7 4-cyl excluded
+Toyota,Tacoma,Pickup,127.4,f,"r,4",2016,2023,,,TOYOTA-N280,platform,compiled,
+Toyota,Tacoma,Pickup,131.9,f,"r,4",2024,2025,,2.4T only,TNGA-F,platform,compiled,
 Toyota,Tercel,"2d,3d",98.4,u,f,1980,1981,,Or Corolla Tercel,001130,structural,edc,
 Toyota,Tercel,"3d,5d,SW",95.7,u,f,1982,1986,,,003840,structural,edc,
 Toyota,Tercel,"2d,3d",95.7,u,f,1982,1986,,,003840,structural,edc,
@@ -1828,40 +2825,81 @@ Toyota,Tercel,"3d,5d,SW",95.7,u,f,1987,1990,,,003850,structural,edc,
 Toyota,Tercel,"3d,4d",93.7,u,f,1991,1994,,,003860,structural,edc,
 Toyota,Tercel,"2d,4d",93.7,u,f,1995,1998,,,003870,structural,edc,
 Toyota,Tundra,Pickup,121.8,f,"r,4",2000,2006,,,005900,structural,edc,
+Toyota,Tundra,Pickup,121.8,f,"r,4",2000,2006,,,1GR-FE,engine-loop,compiled,4.0 V6 option only
 Toyota,Tundra,Pickup,"131.8,145.7",f,"r,4",2007,2012,,,006660,structural,edc,
+Toyota,Tundra,Pickup,"131.8,145.7",f,"r,4",2007,2012,,,1GR-FE,engine-loop,compiled,4.0 V6 option only
+Toyota,Tundra,Pickup,"131.8,145.7",f,"r,4",2007,2012,,,1UR-FE,engine-loop,compiled,4.6 V8 option
+Toyota,Tundra,Pickup,"131.8,145.7",f,"r,4",2007,2012,,,3UR-FE,engine-loop,compiled,5.7 V8 — 4.6 is 1UR
+Toyota,Tundra,Pickup,145.7,f,"r,4",2014,2021,,,1GR-FE,engine-loop,compiled,4.0 V6 2014-2015 only
+Toyota,Tundra,Pickup,145.7,f,"r,4",2014,2021,,,3UR-FE,engine-loop,compiled,5.7 V8
+Toyota,Tundra,Pickup,145.7,f,"r,4",2014,2021,,,TOYOTA-XK50,platform,compiled,
+Toyota,Tundra,Pickup,145.7,f,"r,4",2022,2025,,,TNGA-F,platform,compiled,
+Toyota,Tundra,Pickup,145.7,f,"r,4",2022,2025,,,V35A-FTS,engine-loop,compiled,3.4 twin-turbo V6
 Toyota,Van,Van,88,f,r,1984,1989,,,004230,structural,edc,
 Toyota,Van,Van,88,f,r,1984,1990,,,004230,structural,edc,
 Toyota,Venza,SW,109.3,u,f,2009,2012,Camry?,Essentially a Camry Wagon,004912,structural,edc,
+Toyota,Venza,SW,109.3,u,f,2009,2012,Camry?,Essentially a Camry Wagon,2GR-FE,engine-loop,compiled,3.5 V6 — 2.7 4-cyl excluded
+Toyota,Venza,SUV,105.9,u,4,2021,2024,,,A25A-FKS,engine-loop,compiled,2.5 hybrid
+Toyota,Venza,SUV,105.9,u,4,2021,2024,,,TNGA-K,platform,compiled,
 Toyota,Yaris 3d,3d,96.9,u,f,2006,2012,,,006550,structural,edc,
 Toyota,Yaris 4d,4d,100.4,u,f,2006,2012,,,006540,structural,edc,
 Toyota,Yaris 5d,5d,98.8,u,f,2012,2012,,New,007500,structural,edc,
+Volkswagen,Arteon,4d,111.9,u,"f,4",2019,2023,,,EA888-G3,engine-loop,compiled,2.0 TSI
+Volkswagen,Arteon,4d,111.9,u,"f,4",2019,2023,,,VW-MQB,platform,compiled,
+Volkswagen,Atlas,SUV,117.3,u,"f,4",2018,2025,,,EA888-G3,engine-loop,compiled,2.0 TSI
+Volkswagen,Atlas,SUV,117.3,u,"f,4",2018,2025,,,VR6-36,engine-loop,compiled,3.6 VR6 2018-2023
+Volkswagen,Atlas,SUV,117.3,u,"f,4",2018,2025,,,VW-MQB,platform,compiled,
 Volkswagen,Beetle,3d,99.8,u,f,2012,2012,,New,007740,structural,edc,
 Volkswagen,CC,4d,106.7,u,"f,4",2009,2012,Older Passat,,006531,structural,edc,
+Volkswagen,CC,4d,106.7,u,"f,4",2009,2012,Older Passat,,EA888-G2,engine-loop,compiled,2.0 TSI
+Volkswagen,CC,4d,106.7,u,"f,4",2009,2012,Older Passat,,VR6-36,engine-loop,compiled,3.6 VR6 option
 Volkswagen,Cabrio,Conv,97.4,u,f,1994,2002,93-98 Golf III,,001430,structural,edc,
 Volkswagen,Cabriolet,Conv,94.5,u,f,1985,1993,,,001380,structural,edc-flagged,
 Volkswagen,Corrado,3d,97.3,u,f,1990,1994,,,004710,structural,edc,
 Volkswagen,Dasher,"3d,5d,SW",97.2,u,f,1980,1981,,,001370,structural,edc,
 Volkswagen,Eos,Conv,101.5,u,f,2007,2012,,Mild restyle,006840,structural,edc,
+Volkswagen,Eos,Conv,101.5,u,f,2007,2012,,Mild restyle,EA888-G2,engine-loop,compiled,2.0 TSI
 Volkswagen,EuroVan,Van,115,u,r,1993,2003,,,005130,structural,edc,
 Volkswagen,Fox,"2d,4d,SW",92.8,u,f,1987,1993,,,004490,structural,edc,
+Volkswagen,GTI,5d,103.8,u,f,2015,2021,,,EA888-G3,engine-loop,compiled,2.0 TSI
+Volkswagen,GTI,5d,103.8,u,f,2015,2021,,,VW-MQB,platform,compiled,
+Volkswagen,GTI,5d,103.6,u,f,2022,2025,,,EA888-G3,engine-loop,compiled,2.0 TSI
+Volkswagen,GTI,5d,103.6,u,f,2022,2025,,,VW-MQB,platform,compiled,
 Volkswagen,Golf,"3d,5d",97.3,u,f,1985,1992,,,001420,structural,edc,
 Volkswagen,Golf,"3d,5d",98.9,u,f,1999,2006,,Also GTI,001440,structural,edc,
 Volkswagen,Golf,"3d,5d",101.5,u,f,2010,2012,,Also GTI,007040,structural,edc,
+Volkswagen,Golf,"3d,5d",101.5,u,f,2010,2012,,Also GTI,EA888-G2,engine-loop,compiled,GTI 2.0 TSI only
+Volkswagen,Golf,5d,103.8,u,f,2015,2021,,,EA888-G3,engine-loop,compiled,2.0 TSI Golf R
+Volkswagen,Golf,5d,103.8,u,f,2015,2021,,,VW-MQB,platform,compiled,
 Volkswagen,Golf III,"3d,5d",97.4,u,f,1993,1998,,Also GTI,001430,structural,edc,
 Volkswagen,Jetta,"2d,4d",94.5,u,f,1980,1984,,,001382,structural,edc,
 Volkswagen,Jetta,"2d,4d",97.3,u,f,1985,1992,,,001421,structural,edc,
 Volkswagen,Jetta,"4d, SW",98.9,u,f,1999,2005,,,001441,structural,edc,
 Volkswagen,Jetta,4d,98.9,u,f,1999,2005,,,001441,structural,edc,
 Volkswagen,Jetta,4d,101.5,u,f,2006,2010,,,001451,structural,edc,
+Volkswagen,Jetta,4d,101.5,u,f,2006,2010,,,EA888-G2,engine-loop,compiled,GLI 2.0 TSI only
 Volkswagen,Jetta,4d,104.3,u,f,2011,2012,,Also GLI,007520,structural,edc,
+Volkswagen,Jetta,4d,104.3,u,f,2011,2012,,Also GLI,EA888-G2,engine-loop,compiled,GLI 2.0 TSI only
+Volkswagen,Jetta,4d,104.4,u,f,2013,2018,,,EA211-14T,engine-loop,compiled,1.4 TSI 2016-2018
+Volkswagen,Jetta,4d,104.4,u,f,2013,2018,,,EA888-G3,engine-loop,compiled,2.0 TSI GLI
+Volkswagen,Jetta,4d,105.7,u,f,2019,2025,,,EA211-14T,engine-loop,compiled,1.4/1.5 TSI
+Volkswagen,Jetta,4d,105.7,u,f,2019,2025,,,EA888-G3,engine-loop,compiled,2.0 TSI GLI
+Volkswagen,Jetta,4d,105.7,u,f,2019,2025,,,VW-MQB,platform,compiled,
 Volkswagen,Jetta III,4d,97.4,u,f,1993,1998,,,001431,structural,edc,
 Volkswagen,New Beetle,"2d, Conv",98.9,u,f,1998,2010,,,005720,structural,edc,
 Volkswagen,New Beetle,2d,98.9,u,f,1998,2010,,,005720,structural,edc,
 Volkswagen,Passat,"5d,SW",103.3,u,f,1990,1997,,,004700,structural,edc,
 Volkswagen,Passat,"5d,SW",106.4,u,"f,4",1998,2005,Audi A6(98-04),,001931,structural,edc,
 Volkswagen,Passat,"4d,SW",106.7,u,"f,4",2006,2012,,,006530,structural,edc,
+Volkswagen,Passat,"4d,SW",106.7,u,"f,4",2006,2012,,,EA888-G2,engine-loop,compiled,2.0 TSI option
+Volkswagen,Passat,"4d,SW",106.7,u,"f,4",2006,2012,,,VR6-36,engine-loop,compiled,3.6 VR6 option
 Volkswagen,Passat,"5d,SW",106.7,u,"f,4",2006,2012,,,006530,structural,edc,
+Volkswagen,Passat,"5d,SW",106.7,u,"f,4",2006,2012,,,EA888-G2,engine-loop,compiled,2.0 TSI option
+Volkswagen,Passat,"5d,SW",106.7,u,"f,4",2006,2012,,,VR6-36,engine-loop,compiled,3.6 VR6 option
 Volkswagen,Passat,4d,110.4,u,"f,4",2012,2012,,New,007230,structural,edc,
+Volkswagen,Passat,4d,110.4,u,"f,4",2012,2012,,New,EA888-G2,engine-loop,compiled,2.0 TSI option
+Volkswagen,Passat,4d,110.4,u,f,2013,2022,,,EA888-G3,engine-loop,compiled,2.0 TSI 2016-2022
+Volkswagen,Passat,4d,110.4,u,f,2013,2022,,,VR6-36,engine-loop,compiled,3.6 VR6 2013-2015
 Volkswagen,Phaeton,4d,118,u,f,2004,2006,,,006290,structural,edc,
 Volkswagen,Quantum,"2d,4d,SW",100.4,u,f,1982,1988,,,004030,structural,edc,
 Volkswagen,Rabbit,"3d,5d",94.5,u,f,1980,1984,,,001380,structural,edc-flagged,
@@ -1870,8 +2908,14 @@ Volkswagen,Rabbit Pickup,Car/Pckup,103.3,u,f,1980,1983,Rabbit Car(Fr),,001381,st
 Volkswagen,Routan,Van,121.2,u,f,2009,2012,"Town&Cntry, Caravan",,003780,structural,edc,
 Volkswagen,Scirocco,3d,94.5,u,f,1980,1981,,,001390,structural,edc,
 Volkswagen,Scirocco,3d,94.5,u,f,1982,1988,,,001391,structural,edc,
+Volkswagen,Taos,SUV,105.9,u,"f,4",2022,2025,,1.5 TSI EA211 evo,VW-MQB,platform,compiled,
 Volkswagen,Tiguan,SUV,102.5,u,f,2009,2012,,Golf chassis,006820,structural,edc,
+Volkswagen,Tiguan,SUV,102.5,u,f,2009,2012,,Golf chassis,EA888-G2,engine-loop,compiled,2.0 TSI — sole engine
+Volkswagen,Tiguan,SUV,109.9,u,"f,4",2018,2025,,,EA888-G3,engine-loop,compiled,2.0 TSI
+Volkswagen,Tiguan,SUV,109.9,u,"f,4",2018,2025,,,VW-MQB,platform,compiled,
 Volkswagen,Touareg,SUV,112.4,u,4,2004,2012,Porsche Cayenne,,001970,structural,edc,
+Volkswagen,Touareg,SUV,112.4,u,4,2004,2012,Porsche Cayenne,,VR6-36,engine-loop,compiled,3.6 VR6 option
+Volkswagen,Touareg,SUV,113.9,u,4,2011,2017,,,VR6-36,engine-loop,compiled,3.6 VR6
 Volkswagen,Vanagon,Van,96.9,u,r,1980,1992,,,001400,structural,edc,
 Volvo,240,"4d,SW",104.3,u,r,1980,1993,,,001410,structural,edc,
 Volvo,"240,260","2d,4d,SW",104,u,r,1980,1993,,,001410,structural,edc,
@@ -1898,19 +2942,33 @@ Volvo,"S40,V40","4d,SW",100.9,u,f,2000,2004,,,005890,structural,edc,
 Volvo,"S40,V50","4d,SW",100.9,u,f,2005,2011,,,006420,structural,edc-flagged,
 Volvo,S60,4d,107,u,f,2001,2009,,,005980,structural,edc-flagged,
 Volvo,S60,4d,109.3,u,"f,4",2011,2012,,,007530,structural,edc,
+Volvo,S60,4d,109.3,u,f,2015,2018,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,S60,4d,113.1,u,4,2019,2025,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,S60,4d,113.1,u,4,2019,2025,,,VOLVO-SPA,platform,compiled,
 Volvo,"S60, V70","4d, SW","107,108.5",u,f,2001,2009,,,005980,structural,edc-flagged,
 Volvo,"S70, V70","4d, SW",104.9,u,f,1993,2000,,Was 850,005120,structural,edc,
 Volvo,"S70, V70","2d,4d,Cnv",104.9,u,f,1993,2000,,Was 850,005120,structural,edc,
 Volvo,"S70, V70","2d,4d,SW",104.9,u,f,1993,2000,,Was 850,005120,structural,edc,
 Volvo,S80,4d,109.9,u,f,1999,2006,,,005810,structural,edc-flagged,
 Volvo,S80,4d,111.6,u,f,2007,2012,,,006650,structural,edc-flagged,
+Volvo,S90,4d,120.5,u,4,2017,2025,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,S90,4d,120.5,u,4,2017,2025,,,VOLVO-SPA,platform,compiled,
 Volvo,"S90,V90",4d,109.1,u,r,1995,1998,Older 940/60,Was 960,004141,structural,edc,
 Volvo,Spider,Cnv,88.6,u,r,1980,1993,,,000280,structural,edc,
+Volvo,V60,SW,113.1,u,4,2019,2025,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,V60,SW,113.1,u,4,2019,2025,,,VOLVO-SPA,platform,compiled,
 Volvo,"V70,XC70",SW,"108.5,108.8",u,"f,4",2008,2012,S80,,006650,structural,edc-flagged,
+Volvo,XC40,SUV,106.4,u,4,2019,2025,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,XC40,SUV,106.4,u,4,2019,2025,,,VOLVO-CMA,platform,compiled,
 Volvo,XC60,SW,109.2,u,4,2009,2012,Land Rover LR2,,006961,structural,edc,
+Volvo,XC60,SUV,109.2,u,4,2015,2017,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,XC60,SUV,112.8,u,4,2018,2025,,,VEA-B420,engine-loop,compiled,2.0 turbo I4
+Volvo,XC60,SUV,112.8,u,4,2018,2025,,,VOLVO-SPA,platform,compiled,
 Volvo,XC70,SW,108.8,u,4,2002,2012,,Basically a raised V70 Wagon,005980,structural,edc-flagged,
 Volvo,XC70,SW(SUV?),108.8,u,4,2002,2012,,Basically a raised V70 Wagon,005980,structural,edc-flagged,
 Volvo,XC90,SW,112.5,u,4,2003,2012,,,005810,structural,edc-flagged,
+Volvo,XC90,SUV,117.5,u,4,2016,2025,,,VEA-B420,engine-loop,compiled,2.0 turbo/supercharged I4
+Volvo,XC90,SUV,117.5,u,4,2016,2025,,,VOLVO-SPA,platform,compiled,
 Yugo,3d,,84.6,u,f,1986,1992,,,004390,structural,edc,
 Yugo,"GV,Cabriolet","3d,Cnv",84.6,u,f,1986,1992,,New Convertible,004390,structural,edc,
 Yugo,Spider,Cnv,88.6,u,r,1980,1993,,,000280,structural,edc,
