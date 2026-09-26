@@ -10,6 +10,18 @@ from spw.decode import DecodeError, decode_vin
 from spw.export import write_exports
 from spw.lookup import donor_pool, format_donor_pool, parse_lookup_query
 from spw.parse import apply_curated_sql, parse_pdf
+from spw.sop import (
+    DEFAULT_EFFORT,
+    DEFAULT_MODEL,
+    PRICES,
+    collect_batches,
+    export_sops,
+    load_targets,
+    pending_targets,
+    plan,
+    run_sample,
+    submit_batch,
+)
 from spw.validate import ValidationError, validate_database
 from spw.verdicts import add_verdict, report_verdicts
 from web.build import build_html_bundle
@@ -56,6 +68,24 @@ def main(argv: list[str] | None = None) -> int:
     build_parser.add_argument("--db")
     build_parser.add_argument("--dist", default=str(DIST_DIR))
 
+    sop_parser = subparsers.add_parser("sop")
+    sop_subparsers = sop_parser.add_subparsers(dest="sop_command", required=True)
+    for name in ("plan", "sample", "submit"):
+        sub = sop_subparsers.add_parser(name)
+        sub.add_argument("--scope", action="append", choices=["engine-loop", "platform"])
+        sub.add_argument("--cluster", action="append", help="limit to these cluster ids")
+        sub.add_argument("--limit", type=int)
+        sub.add_argument("--model", default=DEFAULT_MODEL, choices=sorted(PRICES))
+        sub.add_argument("--effort", default=DEFAULT_EFFORT, choices=["low", "medium", "high", "xhigh", "max"])
+        sub.add_argument("--db")
+    sop_subparsers.choices["sample"].set_defaults(limit=5)
+    sop_subparsers.choices["submit"].add_argument("--yes", action="store_true", help="skip the cost confirmation prompt")
+    sop_collect = sop_subparsers.add_parser("collect")
+    sop_collect.add_argument("--db")
+    sop_export = sop_subparsers.add_parser("export")
+    sop_export.add_argument("--db")
+    sop_export.add_argument("--dist", default=str(DIST_DIR))
+
     args = parser.parse_args(argv)
 
     if args.command == "parse":
@@ -99,8 +129,53 @@ def main(argv: list[str] | None = None) -> int:
         html_path = build_html_bundle(_db_path(args.db), Path(args.dist) / "spw.html")
         print(json.dumps({"json": str(outputs["json"]), "csv": str(outputs["csv"]), "html": str(html_path)}, indent=2))
         return 0
+    if args.command == "sop":
+        return _sop(args)
     parser.error("unknown command")
     return 2
+
+
+def _anthropic_client():
+    try:
+        import anthropic
+    except ImportError:
+        print("spw sop needs the Anthropic SDK: pip install -e .[sop]", file=sys.stderr)
+        raise SystemExit(1) from None
+    return anthropic.Anthropic()
+
+
+def _sop(args: argparse.Namespace) -> int:
+    db_path = _db_path(args.db)
+    if args.sop_command == "collect":
+        print(json.dumps(collect_batches(_anthropic_client(), db_path), indent=2))
+        return 0
+    if args.sop_command == "export":
+        print(json.dumps(export_sops(db_path, args.dist), indent=2))
+        return 0
+    scopes = tuple(args.scope or ("engine-loop", "platform"))
+    targets = pending_targets(load_targets(scopes=scopes, clusters=set(args.cluster or [])), db_path)
+    if args.limit is not None and args.sop_command == "sample" and targets:
+        # Spread the sample across clusters and both scopes so the measured cost is representative.
+        step = max(1, len(targets) // args.limit)
+        targets = targets[::step][: args.limit]
+    elif args.limit is not None:
+        targets = targets[: args.limit]
+    estimate = plan(targets, args.model)
+    if args.sop_command == "plan":
+        print(json.dumps(estimate, indent=2))
+        return 0
+    if not targets:
+        print("nothing to generate: every selected SOP is stored or in flight")
+        return 0
+    if args.sop_command == "sample":
+        print(json.dumps(run_sample(_anthropic_client(), targets, db_path, args.model, args.effort), indent=2))
+        return 0
+    print(json.dumps(estimate, indent=2))
+    if not args.yes and input("submit batch? [y/N] ").strip().lower() != "y":
+        print("aborted")
+        return 1
+    print(json.dumps(submit_batch(_anthropic_client(), targets, db_path, args.model, args.effort), indent=2))
+    return 0
 
 
 if __name__ == "__main__":
