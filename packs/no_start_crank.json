@@ -1,0 +1,65 @@
+{
+  "id": "no_start_crank",
+  "title": "Cranks, won't fire",
+  "ecu_family": "marelli",
+  "symptoms": ["crank\\w*.*(won'?t|will not|not|doesn'?t|wont).*(start|fire|run|catch)", "no[- ]?start"],
+  "start": "DTCS",
+  "terminals": {
+    "CAPTURE_DTCS": "DTCs not captured yet. Pull and record codes from every module before anything else.",
+    "BATT_LOW": "Battery or starting circuit is below spec under load. Fix charging and cabling first, then restart this flow.",
+    "SUPPLY_LOW": "ECU supply is low. Trace the supply fuse, relay and wiring back to the source.",
+    "SUPPLY_HIGH": "ECU supply is high. Check the charging system and the supply feed for a bad regulator.",
+    "GROUND_BAD": "Ground fault found. Clean or replace the ground, clear codes, retest.",
+    "CAN_OUT_OF_SPEC": "CAN termination is out of spec. Isolate modules one at a time to find the loading node.",
+    "COMMS_OK": "Bus traffic present. Move on to fuel and ignition diagnosis with the captured DTCs.",
+    "COMMS_FAULT": "No bus traffic at the probe point. Suspect the harness or a shorted node on the bus."
+  },
+  "gates": [
+    {
+      "id": "DTCS", "type": "boolean", "title": "DTCs captured",
+      "instruction": "Scan every module and write down all stored and pending codes. Do not clear anything.",
+      "safeguard": "Do not disconnect the battery or clear codes until every DTC is recorded.",
+      "captures_dtcs": true,
+      "next": {"YES": "BATT", "NO": "TERMINAL-CAPTURE_DTCS"}
+    },
+    {
+      "id": "BATT", "type": "threshold", "title": "Battery voltage while cranking",
+      "quantity": "battery voltage", "condition": "CRANKING", "unit": "V", "op": ">=",
+      "spec_ref": "generic.battery_voltage_cranking",
+      "instruction": "Meter across the battery posts, not the cable clamps. Crank for a few seconds and hold the lowest reading.",
+      "safeguard": "Measure at the posts so a bad clamp doesn't hide behind a good number.",
+      "next": {"PASS": "ECUPWR", "FAIL": "TERMINAL-BATT_LOW"}
+    },
+    {
+      "id": "ECUPWR", "type": "window", "title": "ECU supply, key on engine off",
+      "quantity": "ECU supply", "condition": "KOEO", "unit": "V",
+      "spec_ref": "marelli.ecu_supply_koeo",
+      "instruction": "Key on, engine off. Meter the ECU supply at the supply fuse or relay output. Don't pierce any wire.",
+      "safeguard": "Keep the key on and the engine off for this reading.",
+      "next": {"LOW": "TERMINAL-SUPPLY_LOW", "PASS": "GROUNDS", "HIGH": "TERMINAL-SUPPLY_HIGH"}
+    },
+    {
+      "id": "GROUNDS", "type": "boolean", "title": "ECU grounds corroded or loose",
+      "condition": "KEY_OFF", "cuts_power": true,
+      "instruction": "Disconnect the battery, then inspect and wiggle-test every ECU ground. Is any ground corroded, loose or damaged?",
+      "safeguard": "DTCs must already be captured before the battery comes off.",
+      "next": {"YES": "TERMINAL-GROUND_BAD", "NO": "CANRES"}
+    },
+    {
+      "id": "CANRES", "type": "window", "title": "CAN-H to CAN-L resistance, key off",
+      "quantity": "CAN bus resistance", "condition": "KEY_OFF", "unit": "ohm",
+      "spec_ref": "marelli.can_bus_resistance_key_off",
+      "instruction": "Key off. Meter between CAN-H and CAN-L at the diagnostic connector.",
+      "safeguard": "Meter only. Do not bridge CAN-H and CAN-L.",
+      "next": {"LOW": "TERMINAL-CAN_OUT_OF_SPEC", "PASS": "BACKPROBE", "HIGH": "TERMINAL-CAN_OUT_OF_SPEC"}
+    },
+    {
+      "id": "BACKPROBE", "type": "boolean", "title": "Bus traffic present at the sealed connector",
+      "condition": "KOEO",
+      "risk": "Back-probing a sealed connector breaks the seal and can let water in, causing intermittent faults later.",
+      "instruction": "Back-probe the bus lines at the sealed connector with a scope or logger. Do you see traffic on the bus?",
+      "safeguard": "Reseal the connector with dielectric grease when you're done.",
+      "next": {"YES": "TERMINAL-COMMS_OK", "NO": "TERMINAL-COMMS_FAULT"}
+    }
+  ]
+}
