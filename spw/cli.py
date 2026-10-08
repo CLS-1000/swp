@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from spw import DEFAULT_DB_PATH, DIST_DIR
+from spw import DEFAULT_DB_PATH, DIST_DIR, KB_PATH
 from spw.decode import DecodeError, decode_vin
 from spw.export import write_exports
 from spw.lookup import donor_pool, format_donor_pool, parse_lookup_query
@@ -68,6 +68,10 @@ def main(argv: list[str] | None = None) -> int:
     build_parser.add_argument("--db")
     build_parser.add_argument("--dist", default=str(DIST_DIR))
 
+    ingest_parser = subparsers.add_parser("ingest", help="build knowledge.db from a docs directory (needs .[ingest])")
+    ingest_parser.add_argument("source")
+    ingest_parser.add_argument("--kb", default=str(KB_PATH))
+
     sop_parser = subparsers.add_parser("sop")
     sop_subparsers = sop_parser.add_subparsers(dest="sop_command", required=True)
     for name in ("plan", "sample", "submit"):
@@ -128,6 +132,12 @@ def main(argv: list[str] | None = None) -> int:
         outputs = write_exports(_db_path(args.db), args.dist)
         html_path = build_html_bundle(_db_path(args.db), Path(args.dist) / "spw.html")
         print(json.dumps({"json": str(outputs["json"]), "csv": str(outputs["csv"]), "html": str(html_path)}, indent=2))
+        return 0
+    if args.command == "ingest":
+        from spw.ingest import ingest_dir, stats
+
+        report = ingest_dir(args.source, args.kb)
+        print(json.dumps({"report": report.as_dict(), "knowledge_db": stats(args.kb)}, indent=2))
         return 0
     if args.command == "sop":
         return _sop(args)
