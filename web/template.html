@@ -38,9 +38,18 @@
     <div class="banner">UNVERIFIED SPECS — AI-generated values. Verify all torque figures against the factory service manual before final tightening.</div>
     <div id="sop-output" class="note">No SOP generated yet.</div>
   </section>
+  <section id="diag">
+    <h2>Diagnose</h2>
+    <p class="note">Offline gate walk-through. Specs this file can't cite show UNVERIFIED: type the number from your manual.</p>
+    <div class="actions"><select id="dg-pack"></select><button class="btn" id="dg-start">Start</button></div>
+    <div id="dg-view"></div>
+    <pre id="dg-log" class="note"></pre>
+  </section>
 </main>
+<script>__GATES_JS__</script>
 <script>
 const DATA=__DATA__;
+const PACKS=__PACKS__;
 const ROWS=DATA.rows;
 const IDX={make:0,model:1,y1:2,y2:3,cid:4,type:5,conf:6,note:7,styles:8};
 const hosted=location.protocol!=="file:";
@@ -84,6 +93,28 @@ function updateGenerateState(){const offlineBlocked=!hosted&&!els.apiKey.value.t
 els.decode.addEventListener('click',async()=>{const vin=els.vin.value.trim();if(!vin){els.decodeStatus.textContent='Enter a VIN first.';return;}els.decodeStatus.textContent='Decoding…';try{const res=await fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/${encodeURIComponent(vin)}?format=json`);if(!res.ok)throw new Error(`HTTP ${res.status}`);const data=await res.json();const row=(data.Results||[])[0]||{};els.year.value=row.ModelYear||els.year.value;els.make.value=row.Make||els.make.value;els.model.value=row.Model||els.model.value;const engine=[row.EngineModel,row.EngineCylinders,row.DisplacementL].filter(Boolean).join(' ');if(engine)els.engine.value=engine;els.decodeStatus.textContent='Decode complete.';updateDonor();updateGenerateState();}catch(err){els.decodeStatus.textContent='VIN decode unavailable offline or blocked; manual entry still works.';}});
 els.generate.addEventListener('click',async()=>{els.generate.disabled=true;els.generateStatus.textContent='Generating…';try{const headers={'content-type':'application/json','anthropic-version':'2023-06-01'};if(!hosted)headers['x-api-key']=els.apiKey.value.trim();const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers,body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:2400,messages:[{role:'user',content:sopPrompt()}]})});if(!res.ok)throw new Error(`HTTP ${res.status}`);const data=await res.json();const text=(data.content||[]).map(part=>part.text||'').join('\n').trim();els.sop.innerHTML=renderMarkdown(text);els.generateStatus.textContent='SOP ready.';}catch(err){els.generateStatus.textContent='SOP generation failed. Check connectivity or API key.';}finally{updateGenerateState();}});
 ['year','make','model','engine','job'].forEach(key=>els[key].addEventListener('input',()=>{updateDonor();updateGenerateState();}));els.apiKey.addEventListener('input',updateGenerateState);updateDonor();updateGenerateState();
+(function(){
+const sel=document.getElementById("dg-pack"),view=document.getElementById("dg-view"),log=document.getElementById("dg-log"),start=document.getElementById("dg-start");
+PACKS.forEach((p,i)=>{const o=document.createElement("option");o.value=i;o.textContent=p.title;sel.appendChild(o);});
+if(!PACKS.length){document.getElementById("diag").classList.add("hidden");return;}
+let eng,s;
+function note(evs){evs.forEach(e=>{log.textContent+="COMMIT: "+e+"\n";});}
+function btn(label,fn){const b=document.createElement("button");b.className="btn";b.style.marginRight="8px";b.textContent=label;b.onclick=fn;return b;}
+function num(ph){const i=document.createElement("input");i.type="number";i.step="any";i.placeholder=ph;i.style.cssText="padding:8px;border-radius:8px;border:1px solid #3a404b;background:#0f1115;color:inherit;margin-right:8px";return i;}
+function render(){
+  const v=eng.view(s);view.innerHTML="";
+  const p=document.createElement("div");p.className=v.kind==="NEED_ACK"?"banner":"plate";p.innerHTML=esc(v.text).replace(/\n/g,"<br>");view.appendChild(p);
+  const g=v.gate||eng.gates[s.current],row=document.createElement("div");row.className="actions";
+  if(v.kind==="NEED_ACK")row.appendChild(btn("ack",()=>{note(eng.ack(s));render();}));
+  else if(v.kind==="NEED_DTCS")row.appendChild(btn("DTCs captured",()=>{note(eng.markDtcs(s));render();}));
+  else if(v.kind==="NEED_SPEC"){const a=num(g.type==="window"?"low":"limit"),b=g.type==="window"?num("high"):null;row.appendChild(a);if(b)row.appendChild(b);
+    row.appendChild(btn("Use my spec",()=>{if(a.value===""||(b&&b.value===""))return;const sp=g.type==="window"?{vmin:+a.value,vmax:+b.value,unit:g.unit}:{value:+a.value,unit:g.unit};note(eng.setSpec(s,sp));render();}));}
+  else if(v.kind==="NEED_READING"&&g.type==="boolean"){[["Yes",true],["No",false]].forEach(([l,val])=>row.appendChild(btn(l,()=>{const r=eng.record(s,{value:val});note(r.events);render();})));}
+  else if(v.kind==="NEED_READING"){const a=num(g.unit+", "+SPWGates.COND[g.condition]);row.appendChild(a);row.appendChild(btn("Log",()=>{if(a.value==="")return;const r=eng.record(s,{value:+a.value,unit:g.unit,state:g.condition});note(r.events);render();}));}
+  view.appendChild(row);
+}
+start.onclick=()=>{eng=new SPWGates.Engine(PACKS[+sel.value],{});s=eng.newSession();log.textContent="";note(eng.completeIntake(s));render();};
+})();
 </script>
 </body>
 </html>
