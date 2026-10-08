@@ -113,6 +113,13 @@ def _bound(gate: dict, spec: SpecValue) -> float | None:
     return spec.vmin if gate["op"] in (">=", ">") else spec.vmax
 
 
+def spec_text(gate: dict, spec: SpecValue) -> str:
+    """Spec as the operator reads it: thresholds carry their operator, windows are a range."""
+    if gate["type"] == "threshold" and spec_fits(gate, spec):
+        return f"{gate['op']} {_bound(gate, spec):g} {spec.unit} [{spec.cite}]"
+    return spec.describe()
+
+
 def spec_fits(gate: dict, spec: SpecValue) -> bool:
     if gate["type"] == "window":
         return spec.vmin is not None and spec.vmax is not None
@@ -273,7 +280,7 @@ class Engine:
         res = self.resolution(s, g)
         cond = COND_LABEL[g["condition"]]
         if res.status == "RESOLVED":
-            spec_line = f"Spec ({cond}): {res.spec.describe()}"
+            spec_line = f"Spec ({cond}): {spec_text(g, res.spec)}"
         elif res.status == "CONFLICT":
             spec_line = "Spec: sources conflict — UNVERIFIED until you pick one."
         else:

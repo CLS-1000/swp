@@ -58,3 +58,21 @@ def build_docs(root) -> None:
     (root / "specs.csv").write_text(SPEC_CSV)
     (root / "notes.txt").write_text("Plain note about synthetic crankshaft sensor.")
     (root / "image.png").write_bytes(b"\x89PNG")
+
+
+class StubLLM:
+    """Scripted stand-in for the model. `explain_fn(system, user)` and `extract_fn(text)` are plain callables."""
+
+    def __init__(self, explain_fn=None, extract_fn=None):
+        self.explain_fn = explain_fn or (lambda system, user: "Take the reading at the spot described. What's the reading?")
+        self.extract_fn = extract_fn or (lambda text: {})
+        self.explain_calls = []
+        self.extract_calls = []
+
+    def explain(self, system, user):
+        self.explain_calls.append((system, user))
+        return self.explain_fn(system, user)
+
+    def extract(self, text):
+        self.extract_calls.append(text)
+        return self.extract_fn(text)

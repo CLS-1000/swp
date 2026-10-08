@@ -183,11 +183,14 @@ def stats(kb_path: str | Path = KB_PATH) -> dict:
 
 
 _WORD = re.compile(r"[A-Za-z0-9]{2,}")
+_STOP = frozenset(
+    ["the", "an", "and", "or", "of", "to", "in", "on", "at", "is", "are", "was", "be", "it", "its", "this", "that", "with", "for", "from", "by", "as", "do", "does", "did", "not", "no", "yes", "how", "what", "why", "when", "where", "which", "who", "can", "could", "should", "will", "about", "any", "all"]
+)
 
 
 def retrieve(query: str, k: int = 4, kb_path: str | Path = KB_PATH) -> list[Chunk]:
     """BM25 over chunks. This is the single seam to swap for embeddings later."""
-    terms = list(dict.fromkeys(w.lower() for w in _WORD.findall(query)))
+    terms = list(dict.fromkeys(w.lower() for w in _WORD.findall(query) if w.lower() not in _STOP))
     if not terms or not Path(kb_path).exists():
         return []
     match = " OR ".join(f'"{t}"' for t in terms)

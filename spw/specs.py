@@ -55,6 +55,7 @@ class Resolution:
     spec: SpecValue | None = None
     candidates: list[SpecValue] = field(default_factory=list)
     note: str = ""
+    needs_vehicle: bool = False
 
     @property
     def usable(self) -> bool:
@@ -142,6 +143,7 @@ def resolve(
     if operator is not None:
         return Resolution("RESOLVED", operator, [], "operator supplied")
     note = "No cited spec — confirm from your manual"
-    if ignored and not vehicle.known:
+    needs_vehicle = bool(ignored) and not vehicle.known
+    if needs_vehicle:
         note += " (vehicle unknown, so vehicle-specific rows were not used)"
-    return Resolution("UNVERIFIED", None, [], note)
+    return Resolution("UNVERIFIED", None, [], note, needs_vehicle)
