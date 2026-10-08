@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from spw import DEFAULT_DB_PATH, DIST_DIR
+from spw import DEFAULT_DB_PATH, DIAG_DB_PATH, DIST_DIR, KB_PATH, PACKS_DIR
 from spw.decode import DecodeError, decode_vin
 from spw.export import write_exports
 from spw.lookup import donor_pool, format_donor_pool, parse_lookup_query
@@ -68,6 +68,27 @@ def main(argv: list[str] | None = None) -> int:
     build_parser.add_argument("--db")
     build_parser.add_argument("--dist", default=str(DIST_DIR))
 
+    ingest_parser = subparsers.add_parser("ingest", help="build knowledge.db from a docs directory (needs .[ingest])")
+    ingest_parser.add_argument("source")
+    ingest_parser.add_argument("--kb", default=str(KB_PATH))
+
+    packs_parser = subparsers.add_parser("packs", help="gate pack integrity + UNVERIFIED count against knowledge.db")
+    packs_parser.add_argument("--kb", default=str(KB_PATH))
+    packs_parser.add_argument("--packs", default=str(PACKS_DIR))
+
+    chat_parser = subparsers.add_parser("chat", help="terminal diagnostic chat grounded in knowledge.db")
+    chat_parser.add_argument("--kb", default=str(KB_PATH))
+    chat_parser.add_argument("--packs", default=str(PACKS_DIR))
+    chat_parser.add_argument("--diag-db", default=str(DIAG_DB_PATH))
+    chat_parser.add_argument("--offline", action="store_true", help="deterministic mode: no LLM phrasing")
+
+    serve_parser = subparsers.add_parser("serve", help="local web chat on localhost")
+    serve_parser.add_argument("--kb", default=str(KB_PATH))
+    serve_parser.add_argument("--packs", default=str(PACKS_DIR))
+    serve_parser.add_argument("--diag-db", default=str(DIAG_DB_PATH))
+    serve_parser.add_argument("--port", type=int, default=8765)
+    serve_parser.add_argument("--offline", action="store_true")
+
     sop_parser = subparsers.add_parser("sop")
     sop_subparsers = sop_parser.add_subparsers(dest="sop_command", required=True)
     for name in ("plan", "sample", "submit"):
@@ -129,10 +150,57 @@ def main(argv: list[str] | None = None) -> int:
         html_path = build_html_bundle(_db_path(args.db), Path(args.dist) / "spw.html")
         print(json.dumps({"json": str(outputs["json"]), "csv": str(outputs["csv"]), "html": str(html_path)}, indent=2))
         return 0
+    if args.command == "ingest":
+        from spw.ingest import ingest_dir, stats
+
+        report = ingest_dir(args.source, args.kb)
+        print(json.dumps({"report": report.as_dict(), "knowledge_db": stats(args.kb)}, indent=2))
+        return 0
+    if args.command == "packs":
+        from spw.gates.pack import PackError, load_packs
+        from spw.gates.report import unverified_report
+
+        try:
+            load_packs(args.packs)
+        except PackError as exc:
+            print(f"pack integrity failed: {exc}", file=sys.stderr)
+            return 1
+        print(json.dumps(unverified_report(args.packs, args.kb), indent=2))
+        return 0
+    if args.command == "chat":
+        return _chat(args)
+    if args.command == "serve":
+        from spw.serve import serve
+
+        serve(args.kb, args.packs, args.diag_db, args.port, offline=args.offline)
+        return 0
     if args.command == "sop":
         return _sop(args)
     parser.error("unknown command")
     return 2
+
+
+def _chat(args: argparse.Namespace) -> int:
+    from spw.chat import ChatSession
+    from spw.gates.pack import load_packs
+    from spw.llm import default_llm
+
+    packs = load_packs(args.packs)
+    if not packs:
+        print(f"no gate packs in {args.packs}", file=sys.stderr)
+        return 1
+    session = ChatSession(packs, args.kb, llm=None if args.offline else default_llm(), diag_db=args.diag_db)
+    print(f"spw chat ({session.mode} mode). Say the symptom and vehicle. 'quit' to leave.\n")
+    while True:
+        try:
+            line = input("you> ")
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return 0
+        if line.strip().lower() in {"quit", "exit"}:
+            return 0
+        if line.strip():
+            print("\n" + session.turn(line).reply + "\n")
 
 
 def _anthropic_client():

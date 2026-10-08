@@ -6,3 +6,6 @@ __pycache__/
 *.egg-info/
 assets/clone_clusters.db
 .deps-installed
+assets/knowledge.db
+assets/diag.db
+*.db-journal

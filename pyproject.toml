@@ -16,6 +16,11 @@ dependencies = [
 sop = [
   "anthropic>=1.8,<2",
 ]
+ingest = [
+  "pypdf>=4",
+  "pandas>=2",
+  "openpyxl>=3.1",
+]
 dev = [
   "pytest>=8",
   "ruff>=0.6",
@@ -26,3 +31,9 @@ spw = "spw.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["spw", "spw.*", "web", "web.*"]
+
+[tool.setuptools.package-data]
+spw = ["prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
