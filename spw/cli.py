@@ -72,6 +72,10 @@ def main(argv: list[str] | None = None) -> int:
     ingest_parser.add_argument("source")
     ingest_parser.add_argument("--kb", default=str(KB_PATH))
 
+    packs_parser = subparsers.add_parser("packs", help="gate pack integrity + UNVERIFIED count against knowledge.db")
+    packs_parser.add_argument("--kb", default=str(KB_PATH))
+    packs_parser.add_argument("--packs", default=str(PACKS_DIR))
+
     chat_parser = subparsers.add_parser("chat", help="terminal diagnostic chat grounded in knowledge.db")
     chat_parser.add_argument("--kb", default=str(KB_PATH))
     chat_parser.add_argument("--packs", default=str(PACKS_DIR))
@@ -151,6 +155,17 @@ def main(argv: list[str] | None = None) -> int:
 
         report = ingest_dir(args.source, args.kb)
         print(json.dumps({"report": report.as_dict(), "knowledge_db": stats(args.kb)}, indent=2))
+        return 0
+    if args.command == "packs":
+        from spw.gates.pack import PackError, load_packs
+        from spw.gates.report import unverified_report
+
+        try:
+            load_packs(args.packs)
+        except PackError as exc:
+            print(f"pack integrity failed: {exc}", file=sys.stderr)
+            return 1
+        print(json.dumps(unverified_report(args.packs, args.kb), indent=2))
         return 0
     if args.command == "chat":
         return _chat(args)

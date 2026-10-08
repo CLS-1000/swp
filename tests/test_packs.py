@@ -122,3 +122,15 @@ def test_conflict_shows_both_and_operator_chooses(tmp_path):
     assert "a.csv p.1" in r.candidates[0].cite and "c.csv p.3" in r.candidates[0].cite  # agreeing sources merge
     chosen = resolve(GATES["BATT"], VEH, kb, choice=1)
     assert chosen.status == "RESOLVED" and chosen.spec.value == 4.44
+
+
+def test_unverified_report_counts(kb, tmp_path):
+    from spw.gates.report import unverified_report
+
+    packs = tmp_path / "p"
+    packs.mkdir()
+    (packs / "s.json").write_text(FIX.read_text())
+    # vehicle-specific table rows don't count for the vehicle-agnostic report; the literal does
+    rep = unverified_report(packs, kb)[0]
+    assert rep["pack"] == "synthetic" and rep["numeric_gates"] == 4
+    assert rep["RESOLVED"] == 1 and rep["UNVERIFIED"] == 3

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPW Diagnostic Chat</title>
+<style>
+
+:root{--bg:#14161A;--panel:#1E2127;--edge:#2C313A;--text:#E7EAEE;--muted:#9EA7B3;--amber:#F2A33C;--red:#E5484D;--steel:#C4CCD6}*{box-sizing:border-box}body{margin:0;font:15px/1.5 "IBM Plex Mono",ui-monospace,monospace;background:var(--bg);color:var(--text)}main{max-width:1180px;margin:0 auto;padding:24px}h1,h2,h3,h4{font-family:Archivo,"Arial Narrow",sans-serif;letter-spacing:.04em;margin:0 0 .6rem}h1{font-size:2.4rem}section,.plate,.output{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:16px;margin:0 0 16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.field label{display:block;color:var(--muted);font-size:.8rem;margin-bottom:4px;text-transform:uppercase}.field input,.field textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #3a404b;background:#0f1115;color:var(--text);font:inherit}.field textarea{min-height:120px;resize:vertical}.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.btn{background:var(--steel);color:#111;border:0;border-radius:999px;padding:10px 16px;font:700 14px Archivo,"Arial Narrow",sans-serif;cursor:pointer}.btn[disabled]{opacity:.45;cursor:not-allowed}.note,.status{color:var(--muted)}.status{min-height:1.2rem}.tag{display:inline-block;padding:2px 7px;border-radius:999px;font-size:.76rem;font-weight:700}.tag.edc{background:#32445d}.tag.flagged{background:var(--amber);color:#241500}.tag.curated{background:#2d5535}.plate{position:relative;padding-left:22px}.plate:before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:repeating-linear-gradient(-45deg,#5b6068 0 8px,#232830 8px 16px)}table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{border-bottom:1px solid var(--edge);padding:8px;text-align:left;vertical-align:top}blockquote.hazard{margin:12px 0;padding:12px 14px 12px 18px;border-left:8px solid var(--amber);background:linear-gradient(90deg,rgba(242,163,60,.14),transparent)}blockquote.warning{border-left-color:var(--red);background:linear-gradient(90deg,rgba(229,72,77,.16),transparent)}.banner{margin:0 0 12px;padding:10px 12px;border:1px solid var(--amber);color:var(--amber)}.hidden{display:none!important}ul,ol{padding-left:24px}code{background:#121418;padding:1px 4px;border-radius:4px}@media print{body{background:#fff;color:#111}main{max-width:none;padding:0}section.controls,.actions,.status,.note#print-note{display:none!important}section,.plate,.output{background:#fff;border:0;box-shadow:none;padding:0;margin:0 0 18px}a{color:#111}}
+#log{min-height:50vh;max-height:68vh;overflow-y:auto;display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 12px;border-radius:10px;border:1px solid var(--edge);white-space:pre-wrap;word-break:break-word}
+.me{align-self:flex-end;background:#232a35;max-width:85%}
+.bot{align-self:flex-start;background:var(--panel);max-width:95%}
+.meta{color:var(--muted);font-size:.8rem;margin-top:6px}
+.risk{border-left:8px solid var(--red);background:linear-gradient(90deg,rgba(229,72,77,.16),transparent);padding:8px 10px;margin:6px 0}
+form{display:flex;gap:8px;margin-top:12px}
+form input{flex:1;padding:12px;border-radius:8px;border:1px solid #3a404b;background:#0f1115;color:var(--text);font:inherit}
+#mode{float:right}
+</style>
+</head>
+<body>
+<main>
+  <h1>Diagnostic Chat</h1>
+  <p class="note">Local only. Readings are echoed back and nothing counts until you confirm. <span class="tag curated" id="mode">...</span></p>
+  <section><div id="log" aria-live="polite"></div>
+  <form id="f"><input id="q" autocomplete="off" placeholder="cranks but won't fire, 2008 BMW 528i, battery read about 12.3" autofocus><button class="btn" id="send">Send</button></form></section>
+</main>
+<script>
+const log=document.getElementById("log"),q=document.getElementById("q"),send=document.getElementById("send");
+let session=null;
+function add(cls,text){
+  const d=document.createElement("div");d.className="msg "+cls;
+  const meta=document.createElement("div");meta.className="meta";
+  text.split("\n").forEach(line=>{
+    if(/^(COMMIT|SAFEGUARD):/.test(line)){meta.textContent+=(meta.textContent?"\n":"")+line;return;}
+    const el=document.createElement("div");
+    if(line.startsWith("> ")){el.className="risk";el.textContent=line.slice(2).replace(/\*\*/g,"");}else{el.textContent=line||"\u00a0";}
+    d.appendChild(el);
+  });
+  if(meta.textContent)d.appendChild(meta);
+  log.appendChild(d);log.scrollTop=log.scrollHeight;
+}
+fetch("/api/health").then(r=>r.json()).then(h=>{document.getElementById("mode").textContent=h.mode+" mode";}).catch(()=>{});
+document.getElementById("f").addEventListener("submit",async e=>{
+  e.preventDefault();const text=q.value.trim();if(!text)return;
+  add("me",text);q.value="";send.disabled=true;
+  try{
+    const r=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({session,message:text})});
+    const j=await r.json();
+    if(!r.ok)throw new Error(j.error||r.status);
+    session=j.session;document.getElementById("mode").textContent=j.mode+" mode";add("bot",j.reply);
+  }catch(err){add("bot","Connection problem: "+err.message);}
+  send.disabled=false;q.focus();
+});
+</script>
+</body>
+</html>
