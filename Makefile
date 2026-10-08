@@ -1,5 +1,5 @@
 PYTHON ?= python
-PIP_INSTALL = $(PYTHON) -m pip install -q -e .[dev]
+PIP_INSTALL = $(PYTHON) -m pip install -q -e .[dev,ingest]
 
 .PHONY: setup parse curated validate test build all
 
